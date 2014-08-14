@@ -1,0 +1,114 @@
+normal
+0:0:Before School:7:15
+7:15:Period 1:7:57
+7:57:Passing Period:8:1
+8:1:Annoucements:8:6
+8:6:Period 2:8:48
+8:48:Passing Period:8:52
+8:52:Period 3:9:34
+9:34:Passing Period:9:38
+9:38:Period 4:10:20
+10:20:Passing Period:10:24
+10:24:Period 5:11:6
+11:6:1st Lunch:11:36:1
+11:6:Passing Period:11:10:2
+11:10:Period 6:11:52:2
+11:36:Passing Period:11:40:1
+11:40:Period 6:12:22:1
+11:52:2nd Lunch:12:22:2
+12:22:Passing Period:12:26
+12:26:Period 7:13:8
+13:8:Passing Period:13:12
+13:12:Period 8:13:54
+13:54:Assistance:14:15
+14:15:After School:23:59
+wednesday
+0:0:Before School:7:15
+7:15:Period 1:8:40
+8:40:Annoucements:8:45
+8:45:Passing Period:8:49
+8:49:Period 3:10:14
+10:14:1st Lunch:10:44:1
+10:14:Passing Period:10:18:2
+10:18:Period 5:11:43:2
+10:44:Passing Period:10:48:1
+10:48:Period 5:12:13:1
+11:43:2nd Lunch:12:13:2
+12:13:Passing Period:12:17
+12:17:Period 7:13:42
+13:42:After School:23:59
+thursday
+0:0:Before School:7:15
+7:15:Period 2:8:40
+8:40:Annoucements:8:45
+8:45:Passing Period:8:49
+8:49:Period 4:10:14
+10:14:1st Lunch:10:44:1
+10:14:Passing Period:10:18:2
+10:18:Period 6:11:43:2
+10:44:Passing Period:10:48:1
+10:48:Period 6:12:13:1
+11:43:2nd Lunch:12:13:2
+12:13:Passing Period:12:17
+12:17:Period 8:13:42
+13:42:After School:23:59
+assembly
+0:0:Before School:7:15
+7:15:Period 1:7:50
+7:50:Passing Period:7:54
+7:54:Period 2:8:29
+8:29:Passing Period:8:33
+8:33:Period 3:9:8
+9:8:Passing Period:9:12
+9:12:Period 4:9:47
+9:47:Passing Period:9:51
+9:51:Period 5:10:26
+10:26:1st Lunch:10:56:1
+10:26:Passing Period:10:30:2
+10:30:Period 6:11:5:2
+10:56:Passing Period:11:0:1
+11:0:Period 6:11:35:1
+11:5:2nd Lunch:11:35:2
+11:35:Passing Period:11:39
+11:39:Period 7:12:14
+12:14:Passing Period:12:18
+12:18:Period 8 or Assembly:13:54
+13:54:After School:23:59
+Senior
+0:0:Before School:7:15
+7:15:Period 5:9:0
+9:05:Period 6:10:50
+10:50:1st Lunch:11:20:1
+10:55:Period 3:11:55:2
+11:25:Period 3:12:25:1
+11:55:2nd Lunch:12:25:2
+12:30:Period 4:13:35
+13:35:After School:23:59
+Final1
+0:0:Before School:7:15
+7:15:Period 7:9:0
+9:05:Period 8:10:50
+10:50:1st Lunch:11:20:1
+10:55:Period 1:11:55:2
+11:25:Period 1:12:25:1
+11:55:2nd Lunch:12:25
+12:30:Period 2:13:35
+13:35:After School:23:59
+Final2
+0:0:Before School:7:15
+7:15:Period 1:9:0
+9:0:Nutrition Break:9:15
+9:15:Period 2:11:0
+11:0:After School:23:59
+Final3
+0:0:Before School:7:15
+7:15:Period 3:9:0
+9:0:Nutrition Break:9:15
+9:15:Period 4:11:0
+11:0:After School:23:59
+Last
+0:0:Before School:7:15
+7:15:Period 5:9:0
+9:0:Nutrition Break:9:15
+9:15:Period 6:11:0
+11:0:After School:23:59
