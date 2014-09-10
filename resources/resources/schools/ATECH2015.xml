@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ATECH>
+    <Holidays>
+        <Holiday>
+            <Name>Start Summer</Name>
+            <Month>6</Month>
+            <Day>4</Day>
+        </Holiday>
+        <Holiday>
+            <Name>End Summer</Name>
+            <Month>8</Month>
+            <Day>24</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Labor Day</Name>
+            <Month>9</Month>
+            <Day>1</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Staff Development</Name>
+            <Month>9</Month>
+            <Day>2</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Nevada Day</Name>
+            <Month>10</Month>
+            <Day>31</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Veterans Day</Name>
+            <Month>11</Month>
+            <Day>10</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Veterans Day</Name>
+            <Month>11</Month>
+            <Day>11</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Thanksgiving</Name>
+            <Month>11</Month>
+            <Day>27</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Thanksgiving</Name>
+            <Month>11</Month>
+            <Day>28</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Martin Luther King, Jr. Day</Name>
+            <Month>1</Month>
+            <Day>19</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Presidents' Day</Name>
+            <Month>2</Month>
+            <Day>16</Day>
+        </Holiday>
+        <Holiday>
+            <Name>Memorial Day</Name>
+            <Month>5</Month>
+            <Day>25</Day>
+        </Holiday>
+    </Holidays>
+    <Schedule>
+        <Normal>
+            <Length>42</Length>
+            <Class period="1">
+                <Start>7:15</Start>
+                <End>7:57</End>
+            </Class>
+            <Class period="An">
+                <Start>8:01</Start>
+                <End>8:06</End>
+            </Class>
+            <Class period="2">
+                <Start>8:06</Start>
+                <End>8:48</End>
+            </Class>
+            <Class period="3">
+                <Start>8:52</Start>
+                <End>9:38</End>
+            </Class>
+            <Class period="4">
+                <Start>9:38</Start>
+                <End>10:20</End>
+            </Class>
+            <Class period="5">
+                <Start>10:24</Start>
+                <End>11:06</End>
+            </Class>
+            <Class period="6">
+                <Start lunch="1">11:40</Start>
+                <End lunch="1">12:22</End>
+                <Start lunch="2">11:10</Start>
+                <End lunch="2">11:52</End>
+            </Class>
+            <Class period="7">
+                <Start>12:26</Start>
+                <End>1:08</End>
+            </Class>
+            <Class period="8">
+                <Start>1:12</Start>
+                <End>1:54</End>
+            </Class>
+            <Class period="As">
+                <Start>1:54</Start>
+                <End>2:15</End>
+            </Class>
+            <Lunch lunch="1">
+                <Start>11:06</Start>
+                <End>11:36</End>
+                <length>30</length>
+            </Lunch>
+            <Lunch lunch="2">
+                <Start>11:52</Start>
+                <End>12:22</End>
+                <length>30</length>
+            </Lunch>
+        </Normal>
+        <Wednesday>
+            <Length>85</Length>
+            <Class period="1">
+                <Start>7:15</Start>
+                <End>8:40</End>
+            </Class>
+            <Class period="An">
+                <Start>8:40</Start>
+                <End>8:45</End>
+            </Class>
+            <Class period="3">
+                <Start>8:49</Start>
+                <End>10:14</End>
+            </Class>
+            <Class period="5">
+                <Start lunch="1">10:48</Start>
+                <End lunch="1">12:13</End>
+                <Start lunch="2">10:18</Start>
+                <End lunch="2">11:43</End>
+            </Class>
+            <Class period="7">
+                <Start>12:17</Start>
+                <End>1:42</End>
+            </Class>
+            <Lunch lunch="1">
+                <Start>10:18</Start>
+                <End>10:44</End>
+                <length>30</length>
+            </Lunch>
+            <Lunch lunch="2">
+                <Start>11:43</Start>
+                <End>12:13</End>
+                <length>30</length>
+            </Lunch>
+        </Wednesday>
+        <Thursday>
+            <Length>85</Length>
+            <Class period="2">
+                <Start>7:15</Start>
+                <End>8:40</End>
+            </Class>
+            <Class period="An">
+                <Start>8:40</Start>
+                <End>8:45</End>
+            </Class>
+            <Class period="4">
+                <Start>8:49</Start>
+                <End>10:14</End>
+            </Class>
+            <Class period="6">
+                <Start lunch="1">10:48</Start>
+                <End lunch="1">12:13</End>
+                <Start lunch="2">10:18</Start>
+                <End lunch="2">11:43</End>
+            </Class>
+            <Class period="8">
+                <Start>12:17</Start>
+                <End>1:42</End>
+            </Class>
+            <Lunch lunch="1">
+                <Start>10:18</Start>
+                <End>10:44</End>
+                <length>30</length>
+            </Lunch>
+            <Lunch lunch="2">
+                <Start>11:43</Start>
+                <End>12:13</End>
+                <length>30</length>
+            </Lunch>
+        </Thursday>
+        <Assembly>
+            <Length>35</Length>
+            <Class period="1">
+                <Start>7:15</Start>
+                <End>7:50</End>
+            </Class>
+            <Class period="2">
+                <Start>7:54</Start>
+                <End>8:29</End>
+            </Class>
+            <Class period="3">
+                <Start>8:33</Start>
+                <End>9:08</End>
+            </Class>
+            <Class period="4">
+                <Start>9:12</Start>
+                <End>9:47</End>
+            </Class>
+            <Class period="5">
+                <Start>9:51</Start>
+                <End>10:26</End>
+            </Class>
+            <Class period="6">
+                <Start lunch="1">11:00</Start>
+                <End lunch="1">11:35</End>
+                <Start lunch="2">10:30</Start>
+                <End lunch="2">11:05</End>
+            </Class>
+            <Class period="7">
+                <Start>11:39</Start>
+                <End>12:14</End>
+            </Class>
+            <Class period="8">
+                <Start>12:18</Start>
+                <End>1:54</End>
+            </Class>
+            <Lunch lunch="1">
+                <Start>10:26</Start>
+                <End>10:56</End>
+                <length>30</length>
+            </Lunch>
+            <Lunch lunch="2">
+                <Start>11:05</Start>
+                <End>11:35</End>
+                <length>30</length>
+            </Lunch>
+        </Assembly>
+    </Schedule>
+</ATECH>

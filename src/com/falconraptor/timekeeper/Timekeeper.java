@@ -23,9 +23,12 @@ public class Timekeeper {
         }
         References.shutdown.packagename = Timekeeper.class.getSimpleName();
         References.init = new Init();
-        References.shutdown.attachShutDownHook(new Thread(() -> {
-            References.timekeeper.shutdown();
-        }));
+        References.shutdown.attachShutDownHook(new Thread() {
+            @Override
+            public void run() {
+                new Timekeeper().shutdown();
+            }
+        });
         References.init.start();
     }
 

@@ -2,7 +2,7 @@ package com.falconraptor.timekeeper.settings;
 
 import java.awt.*;
 
-public class Colors {
+public final class Colors {
     public final Color blue = Color.blue;
     public final Color red = Color.red;
     public final Color orange = Color.orange;

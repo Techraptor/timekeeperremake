@@ -18,6 +18,6 @@ public class References {
     public static Settings settings;
     public static Colors colors;
     public static XML xml;
-    public static Timekeeper timekeeper;
     public static Shutdown shutdown = new Shutdown();
+    public static Timekeeper timekeeper;
 }
