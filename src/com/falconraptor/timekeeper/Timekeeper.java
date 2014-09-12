@@ -34,7 +34,7 @@ public class Timekeeper {
 
     public void shutdown() {
         Logger.logINFO("Shutting Down");
-        References.config.saveConfig();
+        //References.config.saveConfig();
         Logger.logINFO("Config Saved");
         Write.makeDir("logs");
         Logger.saveLog("logs/" + References.shutdown.packagename + "Log.log");

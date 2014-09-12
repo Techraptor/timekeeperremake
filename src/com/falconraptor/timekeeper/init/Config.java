@@ -1,6 +1,7 @@
 package com.falconraptor.timekeeper.init;
 
 import com.falconraptor.timekeeper.references.References;
+import com.falconraptor.timekeeper.school.School;
 import com.falconraptor.timekeeper.settings.Settings;
 import com.falconraptor.utilities.Colors;
 import com.falconraptor.utilities.files.XML;
@@ -53,7 +54,9 @@ public class Config {
     }
 
     private void setDefaultSchool() {
-
+        References.settings.schools[0] = new School(References.settings.defaultSchool, 8);
+        for (int i = 0; i < References.settings.schools[0].schedule.getAmountOfClasses(); i++)
+            References.settings.schools[0].schedule.addClass(i, i + 1 + "");
     }
 
     public void saveConfig() {
