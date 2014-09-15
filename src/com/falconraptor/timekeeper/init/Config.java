@@ -6,6 +6,7 @@ import com.falconraptor.timekeeper.settings.Settings;
 import com.falconraptor.utilities.Colors;
 import com.falconraptor.utilities.files.XML;
 import com.falconraptor.utilities.logger.Logger;
+import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
 import java.awt.*;
@@ -17,8 +18,8 @@ public class Config {
         XML xml = References.xml;
         Settings settings = References.settings;
         Logger.logINFO("Loading Config");
-        Node nodes = xml.readXML("Timekeeper.xml").item(0);
-        Node colors = nodes.getChildNodes().item(0).getNextSibling();
+        Document doc = xml.readXMLDoc("Timekeeper.xml");
+        Node colors = doc.getDocumentElement().getElementsByTagName("Colors").item(0);
         Node foreground = colors.getChildNodes().item(0).getNextSibling();
         Node background = foreground.getNextSibling().getNextSibling();
         Node lunch = colors.getNextSibling().getNextSibling();
@@ -97,7 +98,7 @@ public class Config {
         xml.setAttribute(5, "Default", defualt);
         xml.addElement("Schools");
         xml.appendElement(0, 6);
-        int added = 0;
+        /*int added = 0;
         for (int i = 0; i < settings.schools.length; i++) {
             xml.addElement(settings.schools[i].getName());
             xml.appendElement(6, i + 7 + added);
@@ -112,7 +113,7 @@ public class Config {
                 xml.addTextToElement(i + 7 + added + 3, settings.schools[i].schedule.aClass[j].getEnd().toString());
                 added += 3;
             }
-        }
+        }*/
         xml.saveFile("Timekeeper.xml");
         References.settings = settings;
         References.xml = xml;
