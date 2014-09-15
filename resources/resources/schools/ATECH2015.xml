@@ -1,1414 +1,1897 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ATECH>
-    <Holidays>
-        <Holiday>
-            <Name>Start Summer</Name>
-            <Month>6</Month>
-            <Day>4</Day>
-        </Holiday>
-        <Holiday>
-            <Name>End Summer</Name>
-            <Month>8</Month>
-            <Day>24</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Labor Day</Name>
-            <Month>9</Month>
-            <Day>1</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Staff Development</Name>
-            <Month>9</Month>
-            <Day>2</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Nevada Day</Name>
-            <Month>10</Month>
-            <Day>31</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Veterans Day</Name>
-            <Month>11</Month>
-            <Day>10</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Veterans Day</Name>
-            <Month>11</Month>
-            <Day>11</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Thanksgiving</Name>
-            <Month>11</Month>
-            <Day>27</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Thanksgiving</Name>
-            <Month>11</Month>
-            <Day>28</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Martin Luther King, Jr. Day</Name>
-            <Month>1</Month>
-            <Day>19</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Presidents' Day</Name>
-            <Month>2</Month>
-            <Day>16</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Memorial Day</Name>
-            <Month>5</Month>
-            <Day>25</Day>
-        </Holiday>
-    </Holidays>
-    <Schedule>
-        <Normal>
-            <Length>42</Length>
-            <Class period="1">
-                <Start>7:15</Start>
-                <End>7:57</End>
-            </Class>
-            <Class period="An">
-                <Start>8:01</Start>
-                <End>8:06</End>
-            </Class>
-            <Class period="2">
-                <Start>8:06</Start>
-                <End>8:48</End>
-            </Class>
-            <Class period="3">
-                <Start>8:52</Start>
-                <End>9:38</End>
-            </Class>
-            <Class period="4">
-                <Start>9:38</Start>
-                <End>10:20</End>
-            </Class>
-            <Class period="5">
-                <Start>10:24</Start>
-                <End>11:06</End>
-            </Class>
-            <Class period="6">
-                <Start lunch="1">11:40</Start>
-                <End lunch="1">12:22</End>
-                <Start lunch="2">11:10</Start>
-                <End lunch="2">11:52</End>
-            </Class>
-            <Class period="7">
-                <Start>12:26</Start>
-                <End>1:08</End>
-            </Class>
-            <Class period="8">
-                <Start>1:12</Start>
-                <End>1:54</End>
-            </Class>
-            <Class period="As">
-                <Start>1:54</Start>
-                <End>2:15</End>
-            </Class>
-            <Lunch lunch="1">
-                <Start>11:06</Start>
-                <End>11:36</End>
-                <length>30</length>
-            </Lunch>
-            <Lunch lunch="2">
-                <Start>11:52</Start>
-                <End>12:22</End>
-                <length>30</length>
-            </Lunch>
-        </Normal>
-        <Wednesday>
-            <Length>85</Length>
-            <Class period="1">
-                <Start>7:15</Start>
-                <End>8:40</End>
-            </Class>
-            <Class period="An">
-                <Start>8:40</Start>
-                <End>8:45</End>
-            </Class>
-            <Class period="3">
-                <Start>8:49</Start>
-                <End>10:14</End>
-            </Class>
-            <Class period="5">
-                <Start lunch="1">10:48</Start>
-                <End lunch="1">12:13</End>
-                <Start lunch="2">10:18</Start>
-                <End lunch="2">11:43</End>
-            </Class>
-            <Class period="7">
-                <Start>12:17</Start>
-                <End>1:42</End>
-            </Class>
-            <Lunch lunch="1">
-                <Start>10:18</Start>
-                <End>10:44</End>
-                <length>30</length>
-            </Lunch>
-            <Lunch lunch="2">
-                <Start>11:43</Start>
-                <End>12:13</End>
-                <length>30</length>
-            </Lunch>
-        </Wednesday>
-        <Thursday>
-            <Length>85</Length>
-            <Class period="2">
-                <Start>7:15</Start>
-                <End>8:40</End>
-            </Class>
-            <Class period="An">
-                <Start>8:40</Start>
-                <End>8:45</End>
-            </Class>
-            <Class period="4">
-                <Start>8:49</Start>
-                <End>10:14</End>
-            </Class>
-            <Class period="6">
-                <Start lunch="1">10:48</Start>
-                <End lunch="1">12:13</End>
-                <Start lunch="2">10:18</Start>
-                <End lunch="2">11:43</End>
-            </Class>
-            <Class period="8">
-                <Start>12:17</Start>
-                <End>1:42</End>
-            </Class>
-            <Lunch lunch="1">
-                <Start>10:18</Start>
-                <End>10:44</End>
-                <length>30</length>
-            </Lunch>
-            <Lunch lunch="2">
-                <Start>11:43</Start>
-                <End>12:13</End>
-                <length>30</length>
-            </Lunch>
-        </Thursday>
-        <Assembly>
-            <Length>35</Length>
-            <Class period="1">
-                <Start>7:15</Start>
-                <End>7:50</End>
-            </Class>
-            <Class period="2">
-                <Start>7:54</Start>
-                <End>8:29</End>
-            </Class>
-            <Class period="3">
-                <Start>8:33</Start>
-                <End>9:08</End>
-            </Class>
-            <Class period="4">
-                <Start>9:12</Start>
-                <End>9:47</End>
-            </Class>
-            <Class period="5">
-                <Start>9:51</Start>
-                <End>10:26</End>
-            </Class>
-            <Class period="6">
-                <Start lunch="1">11:00</Start>
-                <End lunch="1">11:35</End>
-                <Start lunch="2">10:30</Start>
-                <End lunch="2">11:05</End>
-            </Class>
-            <Class period="7">
-                <Start>11:39</Start>
-                <End>12:14</End>
-            </Class>
-            <Class period="8">
-                <Start>12:18</Start>
-                <End>1:54</End>
-                <length>96</length>
-            </Class>
-            <Lunch lunch="1">
-                <Start>10:26</Start>
-                <End>10:56</End>
-                <length>30</length>
-            </Lunch>
-            <Lunch lunch="2">
-                <Start>11:05</Start>
-                <End>11:35</End>
-                <length>30</length>
-            </Lunch>
-        </Assembly>
-    </Schedule>
-    <Teachers>
-        <Teacher>
-            <Name>
-                <Title></Title>
-                <FirstName>Paul</FirstName>
-                <LastName>Bassett</LastName>
-            </Name>
-            <Room>Port</Room>
-            <Department>PE</Department>
-            <Lunch>
-                <Normal>2</Normal>
-                <Wednesday>2</Wednesday>
-                <Thursday>2</Thursday>
-            </Lunch>
-            <Classes>
-                <1>PE 1
-            </1>
-            <2>PE 1
-        </2>
-        <3>PE 1
-    </3>
-    <4>PE 1
-</4>
-<5>PREP</5>
-<6>PE 1</6>
-<7>PE 1</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Danielle</FirstName>
-    <LastName>Belin</LastName>
-</Name>
-<Room>404</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>Biology
-</1>
-<2>PREP
-</2>
-<3>Biology</3>
-<4>Biology H</4>
-<5>Biology H</5>
-<6>AP Biology</6>
-<7>PREP</7>
-<8>Biology H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Lara</FirstName>
-    <LastName>Bouchard</LastName>
-</Name>
-<Room>616</Room>
-<Department>E</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>English 9 H
-</1>
-<2>English 9 H
-</2>
-<3>English 9 CC</3>
-<4>Public Speaking</4>
-<5>PREP</5>
-<6>Public Speaking</6>
-<7>Public Speaking</7>
-<8>Public Speaking</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Dennis</FirstName>
-    <LastName>Brown</LastName>
-</Name>
-<Room>803</Room>
-<Department>IT</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Animation 1/2
-</1>
-<2>Animation 1
-</2>
-<3>Digital Game Development 1</3>
-<4>Civil Engineering</4>
-<5>Digital Game Development 1</5>
-<6>Animation 1</6>
-<7>Digital Game Development 2</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Lloyd</FirstName>
-    <LastName>Bunn</LastName>
-</Name>
-<Room>314</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>Chemistry
-</1>
-<2>Physics
-</2>
-<3>Chemistry</3>
-<4>Chemistry</4>
-<5>Physics</5>
-<6>Chemistry</6>
-<7>PREP</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Lee</FirstName>
-    <LastName>Carlton</LastName>
-</Name>
-<Room>314</Room>
-<Department>Sp</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>Spanish 1
-</2>
-<3>Spanish 1</3>
-<4>Spanish 1</4>
-<5>Spanish 2 H</5>
-<6>Spanish 2 H</6>
-<7>Spanish 2 H</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Kelly</FirstName>
-    <LastName>Charles</LastName>
-</Name>
-<Room>407</Room>
-<Department>G</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>Graphics Design 1
-</2>
-<3>Graphics Design 2</3>
-<4>Graphics Design 1</4>
-<5>Graphics Design 1</5>
-<6>Publication 1/2</6>
-<7>Graphics Design 1</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Becky</FirstName>
-    <LastName>College</LastName>
-</Name>
-<Room>403</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>Geoscience
-</2>
-<3>Geoscience CC</3>
-<4>Chemistry H</4>
-<5>Chemistry H</5>
-<6>Geoscience</6>
-<7>Chemistry H</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Vali</FirstName>
-    <LastName>Crawford</LastName>
-</Name>
-<Room>609</Room>
-<Department>E</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>English 12
-</1>
-<2>Journalism Found/Journalism 2
-</2>
-<3>English 9 H</3>
-<4>English 12</4>
-<5>PREP</5>
-<6>PREP</6>
-<7>English 9 H</7>
-<8>English 12</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Geoffrey</FirstName>
-    <LastName>DeMaio</LastName>
-</Name>
-<Room>313</Room>
-<Department>B</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Guidance/Virtual Lab
-</1>
-<2>Business Software App
-</2>
-<3>PREP</3>
-<4>Business Software App</4>
-<5>Business Software App</5>
-<6>Business Software App</6>
-<7>PREP</7>
-<8>Guidance/Virtual Lab</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>James</FirstName>
-    <LastName>Dickson</LastName>
-</Name>
-<Room>325</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>Physics H
-</2>
-<3>Intro to Robotics</3>
-<4>PREP</4>
-<5>Physics H</5>
-<6>Intro to Robotics</6>
-<7>Physics H</7>
-<8>Physics H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Maureen</FirstName>
-    <LastName>Doyle</LastName>
-</Name>
-<Room>308</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>PREP
-</2>
-<3>Civil Rights & Liberty</3>
-<4>Civil Rights & Liberty</4>
-<5>Psychology 1</5>
-<6>Crime & Justice</6>
-<7>Crime & Justice</7>
-<8>Psychology 1</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>David</FirstName>
-    <LastName>Eason</LastName>
-</Name>
-<Room>307</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>Fund Law & Research
-</1>
-<2>Trial Advocacy
-</2>
-<3>PREP</3>
-<4>Criminal Justice 1/Project Based Learning</4>
-<5>Fund Law & Research</5>
-<6>PREP</6>
-<7>Criminal Justice 1</7>
-<8>Trial Advocacy</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Bruce</FirstName>
-    <LastName>Ellithorpe</LastName>
-</Name>
-<Room>601</Room>
-<Department>CS</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Computer Science 2 H
-</1>
-<2>Computer Science 3 H
-</2>
-<3>Business Management 1</3>
-<4>Computer Science 3 H</4>
-<5>Computer Science 3 L</5>
-<6>Computer Science 3 L</6>
-<7>PREP</7>
-<8>Business Management 1</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Daniel</FirstName>
-    <LastName>Gakuru</LastName>
-</Name>
-<Room>703</Room>
-<Department>M</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Algebra 2 H
-</1>
-<2>PREP
-</2>
-<3>Geometry</3>
-<4>Algebra 2 H</4>
-<5>Geometry CC</5>
-<6>Algebra 2 H</6>
-<7>Geometry</7>
-<8>Geometry</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Lucas</FirstName>
-    <LastName>GearHart</LastName>
-</Name>
-<Room>401</Room>
-<Department>G</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Graphic Design 3
-</1>
-<2>PREP
-</2>
-<3>Graphic Design 2</3>
-<4>Graphic Design AS</4>
-<5>Graphic Design AS</5>
-<6>Graphic Design 3</6>
-<7>Graphic Design 3 L</7>
-<8>Graphic Design 3 L</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Daphne</FirstName>
-    <LastName>Grabovoi</LastName>
-</Name>
-<Room>326</Room>
-<Department>E</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Video Production 1/2
-</1>
-<2>Engilsh 9
-</2>
-<3>PREP</3>
-<4>English 9</4>
-<5>AP English Language/Composition</5>
-<6>AP English Language/Composition</6>
-<7>AP English Language/Composition</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Kellie</FirstName>
-    <LastName>Guild</LastName>
-</Name>
-<Room>321</Room>
-<Department>E</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>AP English Language/Composition
-</1>
-<2>PREP
-</2>
-<3>AP English Language/Composition</3>
-<4>English 11</4>
-<5>English 11 H</5>
-<6>PREP</6>
-<7>AP English Language/Composition</7>
-<8>English 11H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Doug</FirstName>
-    <LastName>Hall</LastName>
-</Name>
-<Room>715</Room>
-<Department>M</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>Precalculus BC H
-</2>
-<3>Algebra 2 H</3>
-<4>AP Calculus BC</4>
-<5>Algebra 2 H</5>
-<6>PREP</6>
-<7>Algebra 2 H</7>
-<8>Precalculus BC H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Bonnie</FirstName>
-    <LastName>Harmon</LastName>
-</Name>
-<Room>800</Room>
-<Department>B</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>
-</1>
-<2>
-</2>
-<3></3>
-<4></4>
-<5>Entrepreneur 1</5>
-<6>Entrepreneur 1</6>
-<7></7>
-<8></8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>David</FirstName>
-    <LastName>Hatch</LastName>
-</Name>
-<Room>301</Room>
-<Department>NT</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>IT Essentials 2
-</1>
-<2>PREP
-</2>
-<3>IT Network 1 (Part 1)</3>
-<4>IT Network 1 (Part 2)</4>
-<5>IT Essentials 1</5>
-<6>IT Network 3 H (Part 1)</6>
-<7>IT Network 3 H (Part 2)</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Robert</FirstName>
-    <LastName>Henderson</LastName>
-</Name>
-<Room>618</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>World History H
-</1>
-<2>World History CC
-</2>
-<3>World History H</3>
-<4>World History H</4>
-<5>World History</5>
-<6>History of Pop Music</6>
-<7>PREP</7>
-<8>History of Pop Music</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Stephanie</FirstName>
-    <LastName>Hill</LastName>
-</Name>
-<Room>615</Room>
-<Department>E Sp</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Spanish 2 H
-</1>
-<2>Spanish 2 H
-</2>
-<3>Spanish 2 H</3>
-<4>PREP</4>
-<5>English 10 H</5>
-<6>English 10 H</6>
-<7>PREP</7>
-<8>English 10 H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Jeff</FirstName>
-    <LastName>Hinton</LastName>
-</Name>
-<Room>626</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>US Government
-</1>
-<2>PREP
-</2>
-<3>US Government</3>
-<4>US History H</4>
-<5>US Government</5>
-<6>US History H</6>
-<7>US History H</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Julie</FirstName>
-    <LastName>Jack</LastName>
-</Name>
-<Room>Port</Room>
-<Department>A</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Orchestra Ensemble
-</1>
-<2>Music Appreciation
-</2>
-<3>Music Appreciation</3>
-<4>PREP</4>
-<5>Advanced Orchestra</5>
-<6>Band HS Advanced</6>
-<7>Music Appreciation</7>
-<8>Band HS Advanced</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Dave</FirstName>
-    <LastName>Johannessohn</LastName>
-</Name>
-<Room>312</Room>
-<Department>AD</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Architecture CADD 1
-</1>
-<2>PREP
-</2>
-<3>CADD 1</3>
-<4>Architecture CADD 1</4>
-<5>Architecture CADD 1 L</5>
-<6>CADD 1</6>
-<7>Architecture CADD 1 L</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Kenya</FirstName>
-    <LastName>Johnson</LastName>
-</Name>
-<Room>Gym</Room>
-<Department>PE</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PE 1/2
-</1>
-<2>PREP
-</2>
-<3>PREP</3>
-<4>PE 1/2</4>
-<5>PE 1/2</5>
-<6>PE 1/2</6>
-<7>PE 1/2</7>
-<8>PE 1/2</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Rich</FirstName>
-    <LastName>Knoeppel</LastName>
-</Name>
-<Room>414</Room>
-<Department>AD</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Architecture CADD 2
-</1>
-<2>Architecture CADD 3
-</2>
-<3>Architecture CADD 3</3>
-<4>Architecture CADD 2</4>
-<5>Architecture CADD 2 L/3 L</5>
-<6>Architecture CADD 2 L/3 L</6>
-<7>Architecture CADD 2 L/3 L</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Nancy</FirstName>
-    <LastName>Lee</LastName>
-</Name>
-<Room>802</Room>
-<Department>CS</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Computer Science 1
-</1>
-<2>Web Design Development 3
-</2>
-<3>Web Design Development 1</3>
-<4>Web Design Development 2</4>
-<5>PREP</5>
-<6>Computer Science 1</6>
-<7>Web Design Development 1</7>
-<8>Web Design Development 1</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Taylor</FirstName>
-    <LastName>Lee</LastName>
-</Name>
-<Room>625</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>US History H
-</1>
-<2>PREP
-</2>
-<3>US History H</3>
-<4>AP Psychology</4>
-<5>AP Psychology</5>
-<6>AP Psychology</6>
-<7>PREP</7>
-<8>AP Psychology</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>William</FirstName>
-    <LastName>Loose</LastName>
-</Name>
-<Room>708</Room>
-<Department>M</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Topics in Modern MAth
-</1>
-<2>Precalculus AB H
-</2>
-<3>Topics in Modern Math</3>
-<4>PREP</4>
-<5>AP Statistics</5>
-<6>PREP</6>
-<7>Precalculus AB H</7>
-<8>Topics in Modern Math</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Roger</FirstName>
-    <LastName>Mayo</LastName>
-</Name>
-<Room>322</Room>
-<Department>CS</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Computer Science AS
-</1>
-<2>Computer Science 2 H
-</2>
-<3>Digital Game Development 1</3>
-<4>Computer Science AS</4>
-<5>Computer Science 1</5>
-<6>PREP</6>
-<7>Computer Science 1</7>
-<8>Computer Science 2 H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Suzanne</FirstName>
-    <LastName>Mccenachan</LastName>
-</Name>
-<Room>706</Room>
-<Department>Sped</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>Study Skills APP
-</2>
-<3>English 9 CC Grabovoi</3>
-<4>English 10 CC Shriner</4>
-<5>Geometry CC Gakuru</5>
-<6>PREP</6>
-<7>Algebra CC Slobodnick</7>
-<8>Math APP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Kin</FirstName>
-    <LastName>McNair-Styles</LastName>
-</Name>
-<Room>808</Room>
-<Department>BM</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>Accounting and Finance 1
-</1>
-<2>Accounting and Finance 1
-</2>
-<3>Math of Pers Fin</3>
-<4>Accounting and Finance 1</4>
-<5>PREP</5>
-<6>PREP</6>
-<7>Math of Pers Fin</7>
-<8>Algebra 2</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Jessica</FirstName>
-    <LastName>Medina</LastName>
-</Name>
-<Room>406</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Biology H
-</1>
-<2>Biology H
-</2>
-<3>Biology H</3>
-<4>PREP</4>
-<5>Biology CC</5>
-<6>Biology H</6>
-<7>Biology</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Scott</FirstName>
-    <LastName>Meikle</LastName>
-</Name>
-<Room>624</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>US Government H
-</1>
-<2>AP US Government/Pol
-</2>
-<3>AP Microeconomics</3>
-<4>US Government H</4>
-<5>US Government H</5>
-<6>US Government H</6>
-<7>AP US Government/Pol</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Victoria</FirstName>
-    <LastName>Norby</LastName>
-</Name>
-<Room>610</Room>
-<Department>E</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>English 10 H
-</1>
-<2>English 10 H
-</2>
-<3>English 10 H</3>
-<4>PREP</4>
-<5>English 11</5>
-<6>English 11</6>
-<7>PREP</7>
-<8>English 10 H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Caroline</FirstName>
-    <LastName>Pankonen</LastName>
-</Name>
-<Room>627</Room>
-<Department>SS</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>AP World History
-</1>
-<2>Economics
-</2>
-<3>PREP</3>
-<4>PREP</4>
-<5>AP World History</5>
-<6>World History</6>
-<7>AP World History</7>
-<8>AP World History</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Mike</FirstName>
-    <LastName>Patterson</LastName>
-</Name>
-<Room>804</Room>
-<Department>M</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>Geometry H
-</1>
-<2>Algebra 2
-</2>
-<3>Geometry H</3>
-<4>Algebra 2</4>
-<5>Algebra 2</5>
-<6>Geometry H</6>
-<7>Geometry H</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>David</FirstName>
-    <LastName>Peltz</LastName>
-</Name>
-<Room>315</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>Chemistry H
-</1>
-<2>AP Chemistry
-</2>
-<3>AP Chemistry</3>
-<4>Physics H</4>
-<5>PREP</5>
-<6>Physics H</6>
-<7>PREP</7>
-<8>Chemistry H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Betsy</FirstName>
-    <LastName>Reed</LastName>
-</Name>
-<Room>702</Room>
-<Department>Sped</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>World H CC Henderson
-</2>
-<3>Geoscience CC Colledge</3>
-<4>Study Skills APP</4>
-<5>Biology CC Medina</5>
-<6>PREP</6>
-<7>Study Skills APP</7>
-<8>US History Zoitopolous</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Amy</FirstName>
-    <LastName>Ruggles</LastName>
-</Name>
-<Room>605</Room>
-<Department>Sp</Department>
-<Lunch>
-    <Normal>2</Normal>
-    <Wednesday>2</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>AP Spanish Language Culture
-</2>
-<3>PREP</3>
-<4>Spanish 1</4>
-<5>Spanish 1</5>
-<6>AP Spanish Language Culture</6>
-<7>Spanish 1</7>
-<8>Spanish 2 H</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Paul</FirstName>
-    <LastName>Schaper</LastName>
-</Name>
-<Room>Gym</Room>
-<Department>PE</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>2</Thursday>
-</Lunch>
-<Classes>
-    <1>PREP
-</1>
-<2>PE 2
-</2>
-<3>Lifetime Sports Recreation</3>
-<4>PE 2</4>
-<5>PREP</5>
-<6>PE 2</6>
-<7>PE 2</7>
-<8>PE 2</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName>Mary</FirstName>
-    <LastName>Shane</LastName>
-</Name>
-<Room>324</Room>
-<Department>S</Department>
-<Lunch>
-    <Normal>1</Normal>
-    <Wednesday>1</Wednesday>
-    <Thursday>1</Thursday>
-</Lunch>
-<Classes>
-    <1>AP Environmental Science
-</1>
-<2>Chemistry H
-</2>
-<3>AP Environmental Science</3>
-<4>Geoscience H</4>
-<5>PREP</5>
-<6>Chemistry H</6>
-<7>Geoscience H</7>
-<8>PREP</8>
-        </Classes>
-        </Teacher>
-<Teacher>
-<Name>
-    <Title></Title>
-    <FirstName></FirstName>
-    <LastName></LastName>
-</Name>
-<Room></Room>
-<Department></Department>
-<Lunch>
-    <Normal></Normal>
-    <Wednesday></Wednesday>
-    <Thursday></Thursday>
-</Lunch>
-<Classes>
-    <1>
-</1>
-<2>
-</2>
-<3></3>
-<4></4>
-<5></5>
-<6></6>
-<7></7>
-<8></8>
-        </Classes>
-        </Teacher>
-        </Teachers>
-        </ATECH>
+	<Holidays>
+		<Holiday>
+			<Name>Start Summer</Name>
+			<Month>6</Month>
+			<Day>4</Day>
+		</Holiday>
+		<Holiday>
+			<Name>End Summer</Name>
+			<Month>8</Month>
+			<Day>24</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Labor Day</Name>
+			<Month>9</Month>
+			<Day>1</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Staff Development</Name>
+			<Month>9</Month>
+			<Day>2</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Nevada Day</Name>
+			<Month>10</Month>
+			<Day>31</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Veterans Day</Name>
+			<Month>11</Month>
+			<Day>10</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Veterans Day</Name>
+			<Month>11</Month>
+			<Day>11</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Thanksgiving</Name>
+			<Month>11</Month>
+			<Day>27</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Thanksgiving</Name>
+			<Month>11</Month>
+			<Day>28</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Martin Luther King, Jr. Day</Name>
+			<Month>1</Month>
+			<Day>19</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Presidents' Day</Name>
+			<Month>2</Month>
+			<Day>16</Day>
+		</Holiday>
+		<Holiday>
+			<Name>Memorial Day</Name>
+			<Month>5</Month>
+			<Day>25</Day>
+		</Holiday>
+	</Holidays>
+	<Schedule>
+		<Normal>
+			<Length>42</Length>
+			<Class period="1">
+				<Start>7:15</Start>
+				<End>7:57</End>
+			</Class>
+			<Class period="An">
+				<Start>8:01</Start>
+				<End>8:06</End>
+			</Class>
+			<Class period="2">
+				<Start>8:06</Start>
+				<End>8:48</End>
+			</Class>
+			<Class period="3">
+				<Start>8:52</Start>
+				<End>9:38</End>
+			</Class>
+			<Class period="4">
+				<Start>9:38</Start>
+				<End>10:20</End>
+			</Class>
+			<Class period="5">
+				<Start>10:24</Start>
+				<End>11:06</End>
+			</Class>
+			<Class period="6">
+				<Start lunch="1">11:40</Start>
+				<End lunch="1">12:22</End>
+				<Start lunch="2">11:10</Start>
+				<End lunch="2">11:52</End>
+			</Class>
+			<Class period="7">
+				<Start>12:26</Start>
+				<End>1:08</End>
+			</Class>
+			<Class period="8">
+				<Start>1:12</Start>
+				<End>1:54</End>
+			</Class>
+			<Class period="As">
+				<Start>1:54</Start>
+				<End>2:15</End>
+			</Class>
+			<Lunch lunch="1">
+				<Start>11:06</Start>
+				<End>11:36</End>
+				<length>30</length>
+			</Lunch>
+			<Lunch lunch="2">
+				<Start>11:52</Start>
+				<End>12:22</End>
+				<length>30</length>
+			</Lunch>
+		</Normal>
+		<Wednesday>
+			<Length>85</Length>
+			<Class period="1">
+				<Start>7:15</Start>
+				<End>8:40</End>
+			</Class>
+			<Class period="An">
+				<Start>8:40</Start>
+				<End>8:45</End>
+			</Class>
+			<Class period="3">
+				<Start>8:49</Start>
+				<End>10:14</End>
+			</Class>
+			<Class period="5">
+				<Start lunch="1">10:48</Start>
+				<End lunch="1">12:13</End>
+				<Start lunch="2">10:18</Start>
+				<End lunch="2">11:43</End>
+			</Class>
+			<Class period="7">
+				<Start>12:17</Start>
+				<End>1:42</End>
+			</Class>
+			<Lunch lunch="1">
+				<Start>10:18</Start>
+				<End>10:44</End>
+				<length>30</length>
+			</Lunch>
+			<Lunch lunch="2">
+				<Start>11:43</Start>
+				<End>12:13</End>
+				<length>30</length>
+			</Lunch>
+		</Wednesday>
+		<Thursday>
+			<Length>85</Length>
+			<Class period="2">
+				<Start>7:15</Start>
+				<End>8:40</End>
+			</Class>
+			<Class period="An">
+				<Start>8:40</Start>
+				<End>8:45</End>
+			</Class>
+			<Class period="4">
+				<Start>8:49</Start>
+				<End>10:14</End>
+			</Class>
+			<Class period="6">
+				<Start lunch="1">10:48</Start>
+				<End lunch="1">12:13</End>
+				<Start lunch="2">10:18</Start>
+				<End lunch="2">11:43</End>
+			</Class>
+			<Class period="8">
+				<Start>12:17</Start>
+				<End>1:42</End>
+			</Class>
+			<Lunch lunch="1">
+				<Start>10:18</Start>
+				<End>10:44</End>
+				<length>30</length>
+			</Lunch>
+			<Lunch lunch="2">
+				<Start>11:43</Start>
+				<End>12:13</End>
+				<length>30</length>
+			</Lunch>
+		</Thursday>
+		<Assembly>
+			<Length>35</Length>
+			<Class period="1">
+				<Start>7:15</Start>
+				<End>7:50</End>
+			</Class>
+			<Class period="2">
+				<Start>7:54</Start>
+				<End>8:29</End>
+			</Class>
+			<Class period="3">
+				<Start>8:33</Start>
+				<End>9:08</End>
+			</Class>
+			<Class period="4">
+				<Start>9:12</Start>
+				<End>9:47</End>
+			</Class>
+			<Class period="5">
+				<Start>9:51</Start>
+				<End>10:26</End>
+			</Class>
+			<Class period="6">
+				<Start lunch="1">11:00</Start>
+				<End lunch="1">11:35</End>
+				<Start lunch="2">10:30</Start>
+				<End lunch="2">11:05</End>
+			</Class>
+			<Class period="7">
+				<Start>11:39</Start>
+				<End>12:14</End>
+			</Class>
+			<Class period="8">
+				<Start>12:18</Start>
+				<End>1:54</End>
+				<length>96</length>
+			</Class>
+			<Lunch lunch="1">
+				<Start>10:26</Start>
+				<End>10:56</End>
+				<length>30</length>
+			</Lunch>
+			<Lunch lunch="2">
+				<Start>11:05</Start>
+				<End>11:35</End>
+				<length>30</length>
+			</Lunch>
+		</Assembly>
+	</Schedule>
+	<Teachers>
+		<Phone>(702) 799-7870</Phone>
+		<Email>@interact.ccsd.net</Email>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Paul</FirstName>
+				<LastName>Bassett</LastName>
+			</Name>
+			<Contact>
+				<Extension>4046</Extension>
+				<Email>pbassett</Email>
+				<Website></Website>
+			</Contact>
+			<Room>Port</Room>
+			<Department>PE</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PE 1</1>
+				<2>PE 1</2>
+				<3>PE 1</3>
+				<4>PE 1</4>
+				<5>PREP</5>
+				<6>PE 1</6>
+				<7>PE 1</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Danielle</FirstName>
+				<LastName>Belin</LastName>
+			</Name>
+			<Contact>
+				<Extension>3403</Extension>
+				<Email>dmbelin</Email>
+				<Website></Website>
+			</Contact>
+			<Room>404</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Biology</1>
+				<2>PREP</2>
+				<3>Biology</3>
+				<4>Biology H</4>
+				<5>Biology H</5>
+				<6>AP Biology</6>
+				<7>PREP</7>
+				<8>Biology H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Lara</FirstName>
+				<LastName>Bouchard</LastName>
+			</Name>
+			<Contact>
+				<Extension>3616</Extension>
+				<Email>lsboucha</Email>
+				<Website></Website>
+			</Contact>
+			<Room>616</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>English 9 H</1>
+				<2>English 9 H</2>
+				<3>English 9 CC</3>
+				<4>Public Speaking</4>
+				<5>PREP</5>
+				<6>Public Speaking</6>
+				<7>Public Speaking</7>
+				<8>Public Speaking</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Dennis</FirstName>
+				<LastName>Brown</LastName>
+			</Name>
+			<Contact>
+				<Extension>3803</Extension>
+				<Email>drbrow1</Email>
+				<Website></Website>
+			</Contact>
+			<Room>803</Room>
+			<Department>IT</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Animation 1/2</1>
+				<2>Animation 1</2>
+				<3>Digital Game Development 1</3>
+				<4>Civil Engineering</4>
+				<5>Digital Game Development 1</5>
+				<6>Animation 1</6>
+				<7>Digital Game Development 2</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Lloyd</FirstName>
+				<LastName>Bunn</LastName>
+			</Name>
+			<Contact>
+				<Extension>3314</Extension>
+				<Email>lebunn</Email>
+				<Website></Website>
+			</Contact>
+			<Room>314</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Chemistry</1>
+				<2>Physics</2>
+				<3>Chemistry</3>
+				<4>Chemistry</4>
+				<5>Physics</5>
+				<6>Chemistry</6>
+				<7>PREP</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Lee</FirstName>
+				<LastName>Carlton</LastName>
+			</Name>
+			<Contact>
+				<Extension>3603</Extension>
+				<Email>lcarlton</Email>
+				<Website></Website>
+			</Contact>
+			<Room>314</Room>
+			<Department>Sp</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>Spanish 1</2>
+				<3>Spanish 1</3>
+				<4>Spanish 1</4>
+				<5>Spanish 2 H</5>
+				<6>Spanish 2 H</6>
+				<7>Spanish 2 H</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Kelly</FirstName>
+				<LastName>Charles</LastName>
+			</Name>
+			<Contact>
+				<Extension>3407</Extension>
+				<Email>kcharles1</Email>
+				<Website></Website>
+			</Contact>
+			<Room>407</Room>
+			<Department>G</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>Graphics Design 1</2>
+				<3>Graphics Design 2</3>
+				<4>Graphics Design 1</4>
+				<5>Graphics Design 1</5>
+				<6>Publication 1/2</6>
+				<7>Graphics Design 1</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Becky</FirstName>
+				<LastName>College</LastName>
+			</Name>
+			<Contact>
+				<Extension>3403</Extension>
+				<Email>BCC436</Email>
+				<Website></Website>
+			</Contact>
+			<Room>403</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>Geoscience</2>
+				<3>Geoscience CC</3>
+				<4>Chemistry H</4>
+				<5>Chemistry H</5>
+				<6>Geoscience</6>
+				<7>Chemistry H</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Vali</FirstName>
+				<LastName>Crawford</LastName>
+			</Name>
+			<Contact>
+				<Extension>3609</Extension>
+				<Email>vcrawford</Email>
+				<Website></Website>
+			</Contact>
+			<Room>609</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>English 12</1>
+				<2>Journalism Found/Journalism 2</2>
+				<3>English 9 H</3>
+				<4>English 12</4>
+				<5>PREP</5>
+				<6>PREP</6>
+				<7>English 9 H</7>
+				<8>English 12</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Geoffrey</FirstName>
+				<LastName>DeMaio</LastName>
+			</Name>
+			<Contact>
+				<Extension>3805</Extension>
+				<Email>ggdemaio</Email>
+				<Website></Website>
+			</Contact>
+			<Room>313</Room>
+			<Department>B</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Guidance/Virtual Lab</1>
+				<2>Business Software App</2>
+				<3>PREP</3>
+				<4>Business Software App</4>
+				<5>Business Software App</5>
+				<6>Business Software App</6>
+				<7>PREP</7>
+				<8>Guidance/Virtual Lab</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>James</FirstName>
+				<LastName>Dickson</LastName>
+			</Name>
+			<Contact>
+				<Extension>3325</Extension>
+				<Email>jhdickson</Email>
+				<Website></Website>
+			</Contact>
+			<Room>325</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>Physics H</2>
+				<3>Intro to Robotics</3>
+				<4>PREP</4>
+				<5>Physics H</5>
+				<6>Intro to Robotics</6>
+				<7>Physics H</7>
+				<8>Physics H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Maureen</FirstName>
+				<LastName>Doyle</LastName>
+			</Name>
+			<Contact>
+				<Extension>3308</Extension>
+				<Email>mpdoyle1</Email>
+				<Website></Website>
+			</Contact>
+			<Room>308</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>PREP</2>
+				<3>Civil Rights & Liberty</3>
+				<4>Civil Rights & Liberty</4>
+				<5>Psychology 1</5>
+				<6>Crime & Justice</6>
+				<7>Crime & Justice</7>
+				<8>Psychology 1</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>David</FirstName>
+				<LastName>Eason</LastName>
+			</Name>
+			<Contact>
+				<Extension>3307</Extension>
+				<Email>deason</Email>
+				<Website></Website>
+			</Contact>
+			<Room>307</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Fund Law & Research</1>
+				<2>Trial Advocacy</2>
+				<3>PREP</3>
+				<4>Criminal Justice 1/Project Based Learning</4>
+				<5>Fund Law & Research</5>
+				<6>PREP</6>
+				<7>Criminal Justice 1</7>
+				<8>Trial Advocacy</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Bruce</FirstName>
+				<LastName>Ellithorpe</LastName>
+			</Name>
+			<Contact>
+				<Extension>3601</Extension>
+				<Email>bellithorpe</Email>
+				<Website></Website>
+			</Contact>
+			<Room>601</Room>
+			<Department>CS</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Computer Science 2 H</1>
+				<2>Computer Science 3 H</2>
+				<3>Business Management 1</3>
+				<4>Computer Science 3 H</4>
+				<5>Computer Science 3 L</5>
+				<6>Computer Science 3 L</6>
+				<7>PREP</7>
+				<8>Business Management 1</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Daniel</FirstName>
+				<LastName>Gakuru</LastName>
+			</Name>
+			<Contact>
+				<Extension>3703</Extension>
+				<Email>dkgakuru</Email>
+				<Website></Website>
+			</Contact>
+			<Room>703</Room>
+			<Department>M</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Algebra 2 H</1>
+				<2>PREP</2>
+				<3>Geometry</3>
+				<4>Algebra 2 H</4>
+				<5>Geometry CC</5>
+				<6>Algebra 2 H</6>
+				<7>Geometry</7>
+				<8>Geometry</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Lucas</FirstName>
+				<LastName>GearHart</LastName>
+			</Name>
+			<Contact>
+				<Extension>3407</Extension>
+				<Email>lsgearhart</Email>
+				<Website></Website>
+			</Contact>
+			<Room>401</Room>
+			<Department>G</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Graphic Design 3</1>
+				<2>PREP</2>
+				<3>Graphic Design 2</3>
+				<4>Graphic Design AS</4>
+				<5>Graphic Design AS</5>
+				<6>Graphic Design 3</6>
+				<7>Graphic Design 3 L</7>
+				<8>Graphic Design 3 L</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Daphne</FirstName>
+				<LastName>Grabovoi</LastName>
+			</Name>
+			<Contact>
+				<Extension>3609</Extension>
+				<Email>DGrabov</Email>
+				<Website></Website>
+			</Contact>
+			<Room>326</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Video Production 1/2</1>
+				<2>Engilsh 9</2>
+				<3>PREP</3>
+				<4>English 9</4>
+				<5>AP English Language/Composition</5>
+				<6>AP English Language/Composition</6>
+				<7>AP English Language/Composition</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Kellie</FirstName>
+				<LastName>Guild</LastName>
+			</Name>
+			<Contact>
+				<Extension>3321</Extension>
+				<Email>kguild</Email>
+				<Website></Website>
+			</Contact>
+			<Room>321</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>AP English Language/Composition</1>
+				<2>PREP</2>
+				<3>AP English Language/Composition</3>
+				<4>English 11</4>
+				<5>English 11 H</5>
+				<6>PREP</6>
+				<7>AP English Language/Composition</7>
+				<8>English 11H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Doug</FirstName>
+				<LastName>Hall</LastName>
+			</Name>
+			<Contact>
+				<Extension>3715</Extension>
+				<Email>doughall</Email>
+				<Website></Website>
+			</Contact>
+			<Room>715</Room>
+			<Department>M</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>Precalculus BC H</2>
+				<3>Algebra 2 H</3>
+				<4>AP Calculus BC</4>
+				<5>Algebra 2 H</5>
+				<6>PREP</6>
+				<7>Algebra 2 H</7>
+				<8>Precalculus BC H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Bonnie</FirstName>
+				<LastName>Harmon</LastName>
+			</Name>
+			<Contact>
+				<Extension></Extension>
+				<Email></Email>
+				<Website></Website>
+			</Contact>
+			<Room>800</Room>
+			<Department>B</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1></1>
+				<2></2>
+				<3></3>
+				<4></4>
+				<5>Entrepreneur 1</5>
+				<6>Entrepreneur 1</6>
+				<7></7>
+				<8></8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>David</FirstName>
+				<LastName>Hatch</LastName>
+			</Name>
+			<Contact>
+				<Extension>4037</Extension>
+				<Email>dhatch</Email>
+				<Website></Website>
+			</Contact>
+			<Room>301</Room>
+			<Department>NT</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>IT Essentials 2</1>
+				<2>PREP</2>
+				<3>IT Network 1 (Part 1)</3>
+				<4>IT Network 1 (Part 2)</4>
+				<5>IT Essentials 1</5>
+				<6>IT Network 3 H (Part 1)</6>
+				<7>IT Network 3 H (Part 2)</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Robert</FirstName>
+				<LastName>Henderson</LastName>
+			</Name>
+			<Contact>
+				<Extension>3618</Extension>
+				<Email>rwhenderson</Email>
+				<Website></Website>
+			</Contact>
+			<Room>618</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>World History H</1>
+				<2>World History CC</2>
+				<3>World History H</3>
+				<4>World History H</4>
+				<5>World History</5>
+				<6>History of Pop Music</6>
+				<7>PREP</7>
+				<8>History of Pop Music</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Stephanie</FirstName>
+				<LastName>Hill</LastName>
+			</Name>
+			<Contact>
+				<Extension>3615</Extension>
+				<Email>shillvegas</Email>
+				<Website></Website>
+			</Contact>
+			<Room>615</Room>
+			<Department>E Sp</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Spanish 2 H</1>
+				<2>Spanish 2 H</2>
+				<3>Spanish 2 H</3>
+				<4>PREP</4>
+				<5>English 10 H</5>
+				<6>English 10 H</6>
+				<7>PREP</7>
+				<8>English 10 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Jeff</FirstName>
+				<LastName>Hinton</LastName>
+			</Name>
+			<Contact>
+				<Extension>3626</Extension>
+				<Email>jahinton</Email>
+				<Website></Website>
+			</Contact>
+			<Room>626</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>US Government</1>
+				<2>PREP</2>
+				<3>US Government</3>
+				<4>US History H</4>
+				<5>US Government</5>
+				<6>US History H</6>
+				<7>US History H</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Julie</FirstName>
+				<LastName>Jack</LastName>
+			</Name>
+			<Contact>
+				<Extension>5109</Extension>
+				<Email>jjack</Email>
+				<Website></Website>
+			</Contact>
+			<Room>Port</Room>
+			<Department>A</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Orchestra Ensemble</1>
+				<2>Music Appreciation</2>
+				<3>Music Appreciation</3>
+				<4>PREP</4>
+				<5>Advanced Orchestra</5>
+				<6>Band HS Advanced</6>
+				<7>Music Appreciation</7>
+				<8>Band HS Advanced</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Dave</FirstName>
+				<LastName>Johannessohn</LastName>
+			</Name>
+			<Contact>
+				<Extension>3312</Extension>
+				<Email>dljohnannessohn</Email>
+				<Website></Website>
+			</Contact>
+			<Room>312</Room>
+			<Department>AD</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Architecture CADD 1</1>
+				<2>PREP</2>
+				<3>CADD 1</3>
+				<4>Architecture CADD 1</4>
+				<5>Architecture CADD 1 L</5>
+				<6>CADD 1</6>
+				<7>Architecture CADD 1 L</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Kenya</FirstName>
+				<LastName>Johnson</LastName>
+			</Name>
+			<Contact>
+				<Extension>4054</Extension>
+				<Email>kjohnson</Email>
+				<Website></Website>
+			</Contact>
+			<Room>Gym</Room>
+			<Department>PE</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PE 1/2</1>
+				<2>PREP</2>
+				<3>PREP</3>
+				<4>PE 1/2</4>
+				<5>PE 1/2</5>
+				<6>PE 1/2</6>
+				<7>PE 1/2</7>
+				<8>PE 1/2</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Rich</FirstName>
+				<LastName>Knoeppel</LastName>
+			</Name>
+			<Contact>
+				<Extension>4036</Extension>
+				<Email>rknoeppel</Email>
+				<Website></Website>
+			</Contact>
+			<Room>414</Room>
+			<Department>AD</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Architecture CADD 2</1>
+				<2>Architecture CADD 3</2>
+				<3>Architecture CADD 3</3>
+				<4>Architecture CADD 2</4>
+				<5>Architecture CADD 2 L/3 L</5>
+				<6>Architecture CADD 2 L/3 L</6>
+				<7>Architecture CADD 2 L/3 L</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Nancy</FirstName>
+				<LastName>Lee</LastName>
+			</Name>
+			<Contact>
+				<Extension>3802</Extension>
+				<Email>nlee1</Email>
+				<Website></Website>
+			</Contact>
+			<Room>802</Room>
+			<Department>CS</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Computer Science 1</1>
+				<2>Web Design Development 3</2>
+				<3>Web Design Development 1</3>
+				<4>Web Design Development 2</4>
+				<5>PREP</5>
+				<6>Computer Science 1</6>
+				<7>Web Design Development 1</7>
+				<8>Web Design Development 1</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Taylor</FirstName>
+				<LastName>Lee</LastName>
+			</Name>
+			<Contact>
+				<Extension>3625</Extension>
+				<Email>tcyi</Email>
+				<Website></Website>
+			</Contact>
+			<Room>625</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>US History H</1>
+				<2>PREP</2>
+				<3>US History H</3>
+				<4>AP Psychology</4>
+				<5>AP Psychology</5>
+				<6>AP Psychology</6>
+				<7>PREP</7>
+				<8>AP Psychology</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>William</FirstName>
+				<LastName>Loose</LastName>
+			</Name>
+			<Contact>
+				<Extension>3708</Extension>
+				<Email>wtloose</Email>
+				<Website></Website>
+			</Contact>
+			<Room>708</Room>
+			<Department>M</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Topics in Modern MAth</1>
+				<2>Precalculus AB H</2>
+				<3>Topics in Modern Math</3>
+				<4>PREP</4>
+				<5>AP Statistics</5>
+				<6>PREP</6>
+				<7>Precalculus AB H</7>
+				<8>Topics in Modern Math</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Roger</FirstName>
+				<LastName>Mayo</LastName>
+			</Name>
+			<Contact>
+				<Extension>3322</Extension>
+				<Email>rlamyo</Email>
+				<Website></Website>
+			</Contact>
+			<Room>322</Room>
+			<Department>CS</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Computer Science AS</1>
+				<2>Computer Science 2 H</2>
+				<3>Digital Game Development 1</3>
+				<4>Computer Science AS</4>
+				<5>Computer Science 1</5>
+				<6>PREP</6>
+				<7>Computer Science 1</7>
+				<8>Computer Science 2 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Suzanne</FirstName>
+				<LastName>Mccenachan</LastName>
+			</Name>
+			<Contact>
+				<Extension>3603</Extension>
+				<Email>smcclenachan</Email>
+				<Website></Website>
+			</Contact>
+			<Room>706</Room>
+			<Department>Sped</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>Study Skills APP</2>
+				<3>English 9 CC Grabovoi</3>
+				<4>English 10 CC Shriner</4>
+				<5>Geometry CC Gakuru</5>
+				<6>PREP</6>
+				<7>Algebra CC Slobodnick</7>
+				<8>Math APP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Kin</FirstName>
+				<LastName>McNair-Styles</LastName>
+			</Name>
+			<Contact>
+				<Extension>3808</Extension>
+				<Email>KRStyles</Email>
+				<Website></Website>
+			</Contact>
+			<Room>808</Room>
+			<Department>BM</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Accounting and Finance 1</1>
+				<2>Accounting and Finance 1</2>
+				<3>Math of Personal Finance</3>
+				<4>Accounting and Finance 1</4>
+				<5>PREP</5>
+				<6>PREP</6>
+				<7>Math of Personal Finance</7>
+				<8>Algebra 2</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Jessica</FirstName>
+				<LastName>Medina</LastName>
+			</Name>
+			<Contact>
+				<Extension>3406</Extension>
+				<Email>jjmedina</Email>
+				<Website></Website>
+			</Contact>
+			<Room>406</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Biology H</1>
+				<2>Biology H</2>
+				<3>Biology H</3>
+				<4>PREP</4>
+				<5>Biology CC</5>
+				<6>Biology H</6>
+				<7>Biology</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Scott</FirstName>
+				<LastName>Meikle</LastName>
+			</Name>
+			<Contact>
+				<Extension>3624</Extension>
+				<Email>smeikle</Email>
+				<Website></Website>
+			</Contact>
+			<Room>624</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>US Government H</1>
+				<2>AP US Government/Politics</2>
+				<3>AP Microeconomics</3>
+				<4>US Government H</4>
+				<5>US Government H</5>
+				<6>US Government H</6>
+				<7>AP US Government/Politics</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Victoria</FirstName>
+				<LastName>Norby</LastName>
+			</Name>
+			<Contact>
+				<Extension>3610</Extension>
+				<Email>vnorby</Email>
+				<Website></Website>
+			</Contact>
+			<Room>610</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>English 10 H</1>
+				<2>English 10 H</2>
+				<3>English 10 H</3>
+				<4>PREP</4>
+				<5>English 11</5>
+				<6>English 11</6>
+				<7>PREP</7>
+				<8>English 10 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Caroline</FirstName>
+				<LastName>Pankonen</LastName>
+			</Name>
+			<Contact>
+				<Extension>3627</Extension>
+				<Email>Ctpankonen</Email>
+				<Website></Website>
+			</Contact>
+			<Room>627</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>AP World History</1>
+				<2>Economics</2>
+				<3>PREP</3>
+				<4>PREP</4>
+				<5>AP World History</5>
+				<6>World History</6>
+				<7>AP World History</7>
+				<8>AP World History</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Mike</FirstName>
+				<LastName>Patterson</LastName>
+			</Name>
+			<Contact>
+				<Extension>3804</Extension>
+				<Email>mnpatt</Email>
+				<Website></Website>
+			</Contact>
+			<Room>804</Room>
+			<Department>M</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Geometry H</1>
+				<2>Algebra 2</2>
+				<3>Geometry H</3>
+				<4>Algebra 2</4>
+				<5>Algebra 2</5>
+				<6>Geometry H</6>
+				<7>Geometry H</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>David</FirstName>
+				<LastName>Peltz</LastName>
+			</Name>
+			<Contact>
+				<Extension>3315</Extension>
+				<Email>DJP452</Email>
+				<Website></Website>
+			</Contact>
+			<Room>315</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Chemistry H</1>
+				<2>AP Chemistry</2>
+				<3>AP Chemistry</3>
+				<4>Physics H</4>
+				<5>PREP</5>
+				<6>Physics H</6>
+				<7>PREP</7>
+				<8>Chemistry H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Betsy</FirstName>
+				<LastName>Reed</LastName>
+			</Name>
+			<Contact>
+				<Extension>4032</Extension>
+				<Email>eareed</Email>
+				<Website></Website>
+			</Contact>
+			<Room>702</Room>
+			<Department>Sped</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>World H CC Henderson</2>
+				<3>Geoscience CC Colledge</3>
+				<4>Study Skills APP</4>
+				<5>Biology CC Medina</5>
+				<6>PREP</6>
+				<7>Study Skills APP</7>
+				<8>US History Zoitopolous</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Amy</FirstName>
+				<LastName>Ruggles</LastName>
+			</Name>
+			<Contact>
+				<Extension>3605</Extension>
+				<Email>aaruggles</Email>
+				<Website></Website>
+			</Contact>
+			<Room>605</Room>
+			<Department>Sp</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>AP Spanish Language Culture</2>
+				<3>PREP</3>
+				<4>Spanish 1</4>
+				<5>Spanish 1</5>
+				<6>AP Spanish Language Culture</6>
+				<7>Spanish 1</7>
+				<8>Spanish 2 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Paul</FirstName>
+				<LastName>Schaper</LastName>
+			</Name>
+			<Contact>
+				<Extension>4043</Extension>
+				<Email>pschaper</Email>
+				<Website></Website>
+			</Contact>
+			<Room>Gym</Room>
+			<Department>PE</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>PE 2</2>
+				<3>Lifetime Sports Recreation</3>
+				<4>PE 2</4>
+				<5>PREP</5>
+				<6>PE 2</6>
+				<7>PE 2</7>
+				<8>PE 2</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Mary</FirstName>
+				<LastName>Shane</LastName>
+			</Name>
+			<Contact>
+				<Extension>3324</Extension>
+				<Email>shanem</Email>
+				<Website></Website>
+			</Contact>
+			<Room>324</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>AP Environmental Science</1>
+				<2>Chemistry H</2>
+				<3>AP Environmental Science</3>
+				<4>Geoscience H</4>
+				<5>PREP</5>
+				<6>Chemistry H</6>
+				<7>Geoscience H</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Natasha</FirstName>
+				<LastName>Shriner</LastName>
+			</Name>
+			<Contact>
+				<Extension>3707</Extension>
+				<Email>nshriner</Email>
+				<Website></Website>
+			</Contact>
+			<Room>707</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>English 12 H</1>
+				<2>English 12 H</2>
+				<3>PREP</3>
+				<4>English 10 CC</4>
+				<5>English 12 H</5>
+				<6>PREP</6>
+				<7>English 10</7>
+				<8>English 12 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Ricci</FirstName>
+				<LastName>Slobodnik</LastName>
+			</Name>
+			<Contact>
+				<Extension>3706</Extension>
+				<Email>rslobodnik</Email>
+				<Website></Website>
+			</Contact>
+			<Room>705</Room>
+			<Department>M</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Precalculus AB H</1>
+				<2>Precalculus AB H</2>
+				<3>Algebra 1</3>
+				<4>PREP</4>
+				<5>Precalculus AB H</5>
+				<6>Precalculus AB H</6>
+				<7>Algebra 1 CC</7>
+				<8>Algebra 1</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Courtney</FirstName>
+				<LastName>Stern</LastName>
+			</Name>
+			<Contact>
+				<Extension>3606</Extension>
+				<Email>cstern</Email>
+				<Website></Website>
+			</Contact>
+			<Room>606</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>English 11</1>
+				<2>English 11 H</2>
+				<3>English 9 H</3>
+				<4>English 9 H</4>
+				<5>PREP</5>
+				<6>English 9 H</6>
+				<7>PREP</7>
+				<8>English 9 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Sherry</FirstName>
+				<LastName>Stidhum</LastName>
+			</Name>
+			<Contact>
+				<Extension>4048</Extension>
+				<Email>sstidhum</Email>
+				<Website></Website>
+			</Contact>
+			<Room>800</Room>
+			<Department>B</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Business Management 2</1>
+				<2>Principles in Business Management</2>
+				<3>PREP</3>
+				<4>Business Management AS</4>
+				<5>Business Management 2</5>
+				<6>PREP</6>
+				<7>Principles in Business Management</7>
+				<8>Principles in Business Management</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Scott</FirstName>
+				<LastName>Stridde</LastName>
+			</Name>
+			<Contact>
+				<Extension>3902</Extension>
+				<Email>sstridd</Email>
+				<Website></Website>
+			</Contact>
+			<Room>902</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Health Education</1>
+				<2>Health Education</2>
+				<3>PREP</3>
+				<4>Health Education</4>
+				<5>PE 1</5>
+				<6>Lifetime Sports Recreation</6>
+				<7>PREP</7>
+				<8>PE 1</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Kristen</FirstName>
+				<LastName>Taylor</LastName>
+			</Name>
+			<Contact>
+				<Extension>3710</Extension>
+				<Email>ktaylor</Email>
+				<Website></Website>
+			</Contact>
+			<Room>710</Room>
+			<Department>M</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>AP Calculus AB</1>
+				<2>AP Calculus AB</2>
+				<3>PREP</3>
+				<4>AP Calculus AB</4>
+				<5>Geometry H</5>
+				<6>PREP</6>
+				<7>AP Calculus AB</7>
+				<8>Geometry H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Scott</FirstName>
+				<LastName>Underwood</LastName>
+			</Name>
+			<Contact>
+				<Extension>3305</Extension>
+				<Email>sunderwood</Email>
+				<Website></Website>
+			</Contact>
+			<Room>305</Room>
+			<Department>ET</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>PREP</1>
+				<2>PLTW Engineering Design and Development</2>
+				<3>PLTW Principles of Engineering</3>
+				<4>PLTW Engineering Design and Development</4>
+				<5>PLTW Principles of Engineering</5>
+				<6>PLTW Engineering Design and Development</6>
+				<7>Cicle Engineering</7>
+				<8>PLTW Engineering Design</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Ana</FirstName>
+				<LastName>Urena</LastName>
+			</Name>
+			<Contact>
+				<Extension>3604</Extension>
+				<Email>alurena</Email>
+				<Website></Website>
+			</Contact>
+			<Room>604</Room>
+			<Department>SP</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Spanish 1</1>
+				<2>Spanish Speakers 2 H</2>
+				<3>PREP</3>
+				<4>Spanish Speakers 2 H</4>
+				<5>PREP</5>
+				<6>Spanish 1</6>
+				<7>Spanish 3 H</7>
+				<8>Spanish 3 H</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Gina</FirstName>
+				<LastName>Vallari</LastName>
+			</Name>
+			<Contact>
+				<Extension>3701</Extension>
+				<Email>gmvallari</Email>
+				<Website></Website>
+			</Contact>
+			<Room>701</Room>
+			<Department>S</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>AP Physics 1: Algebra Based</1>
+				<2>AP Physics C: Mechanics</2>
+				<3>AP Physics 1: Algebra Based</3>
+				<4>AP Physics 1: Algebra Based</4>
+				<5>AP Physics C: Mechanics</5>
+				<6>Principles of Leadership</6>
+				<7>PREP</7>
+				<8>PREP</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Dee</FirstName>
+				<LastName>Woodbury</LastName>
+			</Name>
+			<Contact>
+				<Extension>3325</Extension>
+				<Email>deewoodbury</Email>
+				<Website></Website>
+			</Contact>
+			<Room>409</Room>
+			<Department>G</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Drawing 1/2</1>
+				<2>Drawing 1/2</2>
+				<3>PREP</3>
+				<4>PREP</4>
+				<5>Art 1</5>
+				<6>Art 1</6>
+				<7>Art 1</7>
+				<8>Art 1</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Paula</FirstName>
+				<LastName>Woods</LastName>
+			</Name>
+			<Contact>
+				<Extension>3623</Extension>
+				<Email>PDW269</Email>
+				<Website></Website>
+			</Contact>
+			<Room>623</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>AP Human Geography</1>
+				<2>AP US History</2>
+				<3>US History</3>
+				<4>AP Human Geography</4>
+				<5>PREP</5>
+				<6>PREP</6>
+				<7>AP Human Geography</7>
+				<8>AP US History</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title></Title>
+				<FirstName>Mary</FirstName>
+				<LastName>Ziegler</LastName>
+			</Name>
+			<Contact>
+				<Extension>4002</Extension>
+				<Email>zieglml</Email>
+				<Website></Website>
+			</Contact>
+			<Room>607</Room>
+			<Department>E</Department>
+			<Lunch>
+				<Normal>1</Normal>
+				<Wednesday>1</Wednesday>
+				<Thursday>1</Thursday>
+			</Lunch>
+			<Classes>
+				<1>English 10 H</1>
+				<2>English 10 H</2>
+				<3>AP English Literature and Composition</3>
+				<4>English 10 H</4>
+				<5>AP English Literature and Composition</5>
+				<6>PREP</6>
+				<7>PREP</7>
+				<8>AP English Literature and Composition</8>
+			</Classes>
+		</Teacher>
+		<Teacher>
+			<Name>
+				<Title>Mr.</Title>
+				<FirstName>Dimitrius</FirstName>
+				<LastName>Zoitopoulous</LastName>
+			</Name>
+			<Contact>
+				<Extension>3313</Extension>
+				<Email>dzoitopoulos</Email>
+				<Website></Website>
+			</Contact>
+			<Room>805</Room>
+			<Department>SS</Department>
+			<Lunch>
+				<Normal>2</Normal>
+				<Wednesday>2</Wednesday>
+				<Thursday>2</Thursday>
+			</Lunch>
+			<Classes>
+				<1>Survey Social Studies</1>
+				<2>Survey Social Studies</2>
+				<3>PREP</3>
+				<4>Survey Social Studies</4>
+				<5>PREP</5>
+				<6>World History</6>
+				<7>US History</7>
+				<8>US History CC</8>
+			</Classes>
+		</Teacher>
+	</Teachers>
+</ATECH>
