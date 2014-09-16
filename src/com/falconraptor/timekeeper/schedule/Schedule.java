@@ -5,6 +5,7 @@ import com.falconraptor.utilities.logger.Logger;
 
 public class Schedule {
     public com.falconraptor.timekeeper.school.Class[] aClass;
+    private Lunch lunch;
 
     public Schedule(int classes) {
         aClass = new Class[classes];
