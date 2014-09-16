@@ -3,6 +3,16 @@ public class Lunch{
   private Time start;
   private Time end;
   private int lunch;
+  public Lunch(int l,Time s,Time e){
+    lunch=l;
+    start=s;
+    end=e;
+  }
+  public Lunch(int l,int sh,int sm,int eh,int em){
+    lunch=l;
+    start=new Time(sh,sm);
+    end=new Time(eh,em);
+  }
   public void setLunch(int l){
     lunch=l;
   }
