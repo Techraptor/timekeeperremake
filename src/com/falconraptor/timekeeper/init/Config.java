@@ -19,10 +19,10 @@ public class Config {
         Settings settings = References.settings;
         Logger.logINFO("Loading Config");
         Document doc = xml.readXMLDoc("Timekeeper.xml");
-        Node colors = doc.getDocumentElement().getElementsByTagName("Colors").item(0);
-        Node foreground = colors.getChildNodes().item(0).getNextSibling();
-        Node background = foreground.getNextSibling().getNextSibling();
-        Node lunch = colors.getNextSibling().getNextSibling();
+        Node colors = doc.getElementById("Color");
+        Node foreground = doc.getElementById("Foreground");
+        Node background = doc.getElementById("Background");
+        Node lunch = doc.getElementById("Lunch");
         Node school = lunch.getNextSibling().getNextSibling();
         Node defaultatt = foreground.getAttributes().getNamedItem("Default");
         if (defaultatt.getNodeValue().equals("true")) settings.foreground = settings.defaultForeground;
