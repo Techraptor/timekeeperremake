@@ -10,6 +10,9 @@ public class Schedule {
     public Schedule(int classes) {
         aClass = new Class[classes];
     }
+    public void setLunch(int i){
+        
+    }
 
     public int getAmountOfClasses() {
         return aClass.length;
