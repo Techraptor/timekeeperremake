@@ -17,7 +17,7 @@ public class Config {
         XML xml = References.xml;
         Settings settings = References.settings;
         Logger.logINFO("Loading Config");
-        Node nodes = xml.readXML("Timekeeper.xml").item(0);
+        Node nodes = xml.readXMLNode("Timekeeper.xml").item(0);
         Node colors = nodes.getChildNodes().item(0).getNextSibling();
         Node foreground = colors.getChildNodes().item(0).getNextSibling();
         Node background = foreground.getNextSibling().getNextSibling();
@@ -98,9 +98,9 @@ public class Config {
         xml.addElement("Schools");
         xml.appendElement(0, 6);
         int added = 0;
-        for (int i = 0; i < settings.schools.length; i++) {
-            xml.addElement(settings.schools[i].getName());
-            xml.appendElement(6, i + 7 + added);
+/*       for (int i = 0; i < settings.schools.length; i++) {
+           xml.addElement(settings.schools[i].getName());
+           xml.appendElement(6, i + 7 + added);
             for (int j = 0; j < settings.schools[i].schedule.getAmountOfClasses(); j++) {
                 xml.addElement(settings.schools[i].schedule.aClass[j].getName());
                 xml.appendElement(i + 7 + added, i + 7 + added + 1);
@@ -112,7 +112,7 @@ public class Config {
                 xml.addTextToElement(i + 7 + added + 3, settings.schools[i].schedule.aClass[j].getEnd().toString());
                 added += 3;
             }
-        }
+*        }*/
         xml.saveFile("Timekeeper.xml");
         References.settings = settings;
         References.xml = xml;
