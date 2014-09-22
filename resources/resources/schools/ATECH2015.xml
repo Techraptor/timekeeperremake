@@ -64,7 +64,6 @@
     </Holidays>
     <Schedule>
         <Normal>
-            <Length>42</Length>
             <Class period="1">
                 <Start>7:15</Start>
                 <End>7:57</End>

@@ -1,7 +1,7 @@
 package com.falconraptor.timekeeper.init;
 
 import com.falconraptor.timekeeper.references.References;
-import com.falconraptor.timekeeper.school.School;
+import com.falconraptor.timekeeper.school.schools.Atech;
 import com.falconraptor.timekeeper.settings.Settings;
 import com.falconraptor.utilities.Colors;
 import com.falconraptor.utilities.files.XML;
@@ -19,10 +19,11 @@ public class Config {
         Settings settings = References.settings;
         Logger.logINFO("Loading Config");
         Document doc = xml.readXMLDoc("Timekeeper.xml");
-        Node colors = doc.getElementById("Color");
-        Node foreground = doc.getElementById("Foreground");
-        Node background = doc.getElementById("Background");
-        Node lunch = doc.getElementById("Lunch");
+        Node docnode = doc.getDocumentElement();
+        Node colors = docnode.getFirstChild().getNextSibling();
+        Node foreground = colors.getFirstChild().getNextSibling();
+        Node background = foreground.getNextSibling().getNextSibling();
+        Node lunch = colors.getNextSibling().getNextSibling();
         Node school = lunch.getNextSibling().getNextSibling();
         Node defaultatt = foreground.getAttributes().getNamedItem("Default");
         if (defaultatt.getNodeValue().equals("true")) settings.foreground = settings.defaultForeground;
@@ -47,17 +48,14 @@ public class Config {
             }
         }
         defaultatt = school.getAttributes().getNamedItem("Default");
-        if (defaultatt.getNodeValue().equals("true")) settings.school = settings.defaultSchool;
-        else settings.school = school.getTextContent();
-        setDefaultSchool();
+        if (defaultatt.getNodeValue().equals("true")) {
+            settings.school = settings.defaultSchool;
+            References.settings.atech = new Atech();
+            References.settings.atech.loadAtech();
+        } else settings.school = school.getTextContent();
         References.settings = settings;
         References.xml = xml;
-    }
 
-    private void setDefaultSchool() {
-        References.settings.schools[0] = new School(References.settings.defaultSchool, 8);
-        for (int i = 0; i < References.settings.schools[0].schedule.getAmountOfClasses(); i++)
-            References.settings.schools[0].schedule.addClass(i, i + 1 + "");
     }
 
     public void saveConfig() {
@@ -98,28 +96,16 @@ public class Config {
         xml.setAttribute(5, "Default", defualt);
         xml.addElement("Schools");
         xml.appendElement(0, 6);
-        /*int added = 0;
-        for (int i = 0; i < settings.schools.length; i++) {
-            xml.addElement(settings.schools[i].getName());
-            xml.appendElement(6, i + 7 + added);
-            for (int j = 0; j < settings.schools[i].schedule.getAmountOfClasses(); j++) {
-                xml.addElement(settings.schools[i].schedule.aClass[j].getName());
-                xml.appendElement(i + 7 + added, i + 7 + added + 1);
-                xml.addElement("Start Time");
-                xml.appendElement(i + 7 + added, i + 7 + added + 2);
-                xml.addTextToElement(i + 7 + added + 2, settings.schools[i].schedule.aClass[j].getStart().toString());
-                xml.addElement("End Time");
-                xml.appendElement(i + 7 + added, i + 7 + added + 3);
-                xml.addTextToElement(i + 7 + added + 3, settings.schools[i].schedule.aClass[j].getEnd().toString());
-                added += 3;
-            }
-        }*/
         xml.saveFile("Timekeeper.xml");
         References.settings = settings;
         References.xml = xml;
     }
 
     private void setDefaults() {
+
+    }
+
+    public void load() {
 
     }
 }

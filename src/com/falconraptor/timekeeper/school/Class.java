@@ -6,6 +6,8 @@ public class Class {
     private String name;
     private Time start;
     private Time end;
+    private int lunch;
+    private int length;
 
     public Class(String name, Time start, Time end) {
         this.name = name;
@@ -13,8 +15,40 @@ public class Class {
         this.end = end;
     }
 
+    public Class(String n, int sh, int sm, int eh, int em) {
+        name = n;
+        start = new Time(sh, sm);
+        end = new Time(eh, em);
+
+    }
+
     public Class(String name) {
         this.name = name;
+    }
+
+    public int getLunch() {
+        return lunch;
+    }
+
+    public void setLunch(int lunch) {
+        this.lunch = lunch;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void calcLength() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Class{" + "name='" + name + '\'' + ", start=" + start + ", end=" + end + ", lunch=" + lunch + ", length=" + length + '}';
     }
 
     public String getName() {

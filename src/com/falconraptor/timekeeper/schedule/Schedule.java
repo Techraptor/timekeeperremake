@@ -15,7 +15,7 @@ public class Schedule {
     }
 
     public int getAmountOfClasses() {
-        return aClass.length;
+        return aClass.length - 1;
     }
 
     public void addClass(int index, String name) {
