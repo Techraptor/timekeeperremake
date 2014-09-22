@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class Atech extends School {
     private final String filename = "ATECH2015.xml";
     public Schedule normal = new Schedule(11);
-    public Schedule blockodd = new Schedule(8);
-    public Schedule blockeven = new Schedule(8);
+    public Schedule wednesday = new Schedule(8);
+    public Schedule thursday = new Schedule(8);
     private Lunch normalfirst;
     private Lunch normalsecond;
     private Lunch wednesdayfirst;
@@ -50,17 +50,15 @@ public class Atech extends School {
 
     private void loadAtechScheduleNormal(Node n) {
         Logger.logINFO("Loading ATECH Normal Schedule");
+        
+    }
+    private void loadschedule(String day,Node n){
         Node loop = n.getFirstChild().getNextSibling();
         int index = 0;
         while (loop != null) {
             if (loop.getAttributes().getNamedItem("period") != null) {
                 if (loop.getAttributes().getNamedItem("period").getNodeValue().equals("6")) {
-                    normal.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
-                    String[] stuff = loop.getFirstChild().getNextSibling().getTextContent().split(":");
-                    Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-                    stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
-                    Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-                    normal.setClass(index, s, e);
+                    addclass(day,loop);
                     index++;
                     normal.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
                     stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
@@ -69,23 +67,12 @@ public class Atech extends School {
                     e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
                     normal.setClass(index, s, e);
                 } else {
-                    normal.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
-                    String[] stuff = loop.getFirstChild().getNextSibling().getTextContent().split(":");
-                    Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-                    stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
-                    Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-                    normal.setClass(index, s, e);
+                    addclass(day,loop);
                 }
-                normal.aClass[index].calcLength();
-                Logger.logALL("Class Loaded for Normal Schedule: " + normal.aClass[index].toString());
             } else if (loop.getAttributes().getNamedItem("lunch") != null) {
                 if (loop.getAttributes().getNamedItem("lunch").getNodeValue().equals("1")) {
-                    String[] stuff = loop.getFirstChild().getNextSibling().getTextContent().split(":");
-                    Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-                    stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
-                    Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-                    normalfirst = new Lunch(1, s, e);
-                    normalfirst.setLength(Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent()));
+                    normalfirst = getlunch(loop);
+                    normalfirst.calcLength();
                 } else if (loop.getAttributes().getNamedItem("lunch").getNodeValue().equals("2")) {
                     String[] stuff = loop.getFirstChild().getNextSibling().getTextContent().split(":");
                     Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
@@ -97,6 +84,41 @@ public class Atech extends School {
             }
             index++;
             loop = loop.getNextSibling().getNextSibling();
+        }
+    }
+    private Lunch getlunch(Node n){
+        String[] stuff = loop.getFirstChild().getNextSibling().getTextContent().split(":");
+        Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+        stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
+        Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+        return new Lunch(integer.parseInt(loop.getAttributes().getNamedItem("lunch").getNodeValue()),s,e)
+    }
+    private void addclass(String day,Node c){
+        Node child=loop.getFirstChild().getNextSibling();
+        String[] stuff = child.getTextContent().split(":");
+        Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+        stuff = child.getNextSibling().getNextSibling().getTextContent().split(":");
+        Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+        if (day.equals("normal")){
+            normal.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+            normal.setClass(index, s, e);
+            normal.aClass[index].calcLength();
+            Logger.logALL("Class Loaded for Normal Schedule: " + normal.aClass[index].toString());
+        } else if (day.equals("wednesday")){
+            wednesday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+            wednesday.setClass(index, s, e);
+            wednesday.aClass[index].calcLength();
+            Logger.logALL("Class Loaded for Wednesday Schedule: " + wednesday.aClass[index].toString());
+        } else if (day.equals("thursday")){
+            thursday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+            thursday.setClass(index, s, e);
+            thursday.aClass[index].calcLength();
+            Logger.logALL("Class Loaded for Thurdays Schedule: " + thursday.aClass[index].toString());
+        } else if (day.equals("assembly")){
+            assembly.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+            assembly.setClass(index, s, e);
+            assembly.aClass[index].calcLength();
+            Logger.logALL("Class Loaded for Assembly Schedule: " + assembly.aClass[index].toString());
         }
     }
 
