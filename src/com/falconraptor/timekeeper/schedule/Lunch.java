@@ -1,5 +1,6 @@
 package com.falconraptor.timekeeper.schedule;
-public class Lunch{
+
+public class Lunch {
     private Time start;
     private Time end;
     private int lunch;
@@ -55,5 +56,9 @@ public class Lunch{
 
     public void setLunch(int l) {
         lunch = l;
+    }
+
+    public void calcLength() {
+
     }
 }

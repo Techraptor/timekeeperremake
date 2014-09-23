@@ -1,9 +1,0 @@
-[2014-9-12] [14:1:55] [INFO] Log level set at: 1
-[2014-9-12] [14:1:55] [INFO] Console started
-[2014-9-12] [14:1:55] [INFO] Shut Down Hook Attached.
-[2014-9-12] [14:1:55] [INFO] Loading Config
-[2014-9-12] [14:1:55] [ERROR] Timekeeper.xml does not exist!
-[2014-9-12] [14:2:2] [INFO] Shutting Down
-[2014-9-12] [14:2:2] [INFO] Config Saved
-[2014-9-12] [14:2:2] [DEBUG] [com.falconraptor.utilities.files.Write.makeDir] Directory Created
-[2014-9-12] [14:2:2] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Created
