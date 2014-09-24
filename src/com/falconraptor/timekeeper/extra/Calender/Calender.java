@@ -1,9 +1,9 @@
 package com.falconraptor.timekeeper.extra.Calender;
 
+import com.falconraptor.timekeeper.references.References;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.time.LocalDate;
@@ -11,8 +11,8 @@ import java.util.ArrayList;
 
 //import java.util.Calendar;
 
-public class calender extends JFrame {
-    public static String log = "[com.falconraptor.timekeeper.extra.utilities.Calender.calender.";
+public class Calender extends JFrame {
+    public final static String log = References.log + ".extra.utilities.Calender.Calender.";
     public ArrayList<JPanel> p = new ArrayList<JPanel>(0);
     public ArrayList<JButton> b = new ArrayList<JButton>(0);
     public ArrayList<JLabel> l = new ArrayList<JLabel>(0);
@@ -35,12 +35,11 @@ public class calender extends JFrame {
     //Calendar c = Calendar.getInstance();
     //public int place = c.get(5);
 
-    public calender() {
+    public Calender() {
         super("Calender");
         super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         super.setLocationRelativeTo(null);
         super.setVisible(false);
-        setDates();
         super.setContentPane(setgui());
         super.pack();
         super.addWindowListener(new WindowAdapter() {
@@ -75,34 +74,32 @@ public class calender extends JFrame {
             p.get(i + 1).add(l.get(i + 1));
             p.get(0).add(p.get(i + 1));
         }
+
         setDates();
         setCalender();
 
         //adding action for the button to go back a month
-        left.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                if (workingDate.getMonthValue() == 1) {
-                    workingDate = workingDate.withYear(workingDate.getYear() - 1);
-                    workingDate = workingDate.withMonth(12);
-                } else {
-                    workingDate = workingDate.withMonth(workingDate.getMonthValue() - 1);
-                }
-                setDates();
-                setCalender();
+        left.addActionListener(evt -> {
+            if (workingDate.getMonthValue() == 1) {
+                workingDate = workingDate.withYear(workingDate.getYear() - 1);
+                workingDate = workingDate.withMonth(12);
+            } else {
+                workingDate = workingDate.withMonth(workingDate.getMonthValue() - 1);
+            }
+            setDates();
+            setCalender();
 
-                //this is a comment
-            }
+            //this is a comment
         });
-        right.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        right.addActionListener(e -> {
+            if (workingDate.getMonthValue() + 1 == 13) {
+                workingDate = workingDate.withMonth(1);
+                workingDate = workingDate.withYear(workingDate.getYear() + 1);
+            } else {
                 workingDate = workingDate.withMonth(workingDate.getMonthValue() + 1);
-                if (workingDate.getMonthValue() == 1) {
-                    workingDate = workingDate.withYear(workingDate.getYear() + 1);
-                }
-                setDates();
-                setCalender();
             }
+            setDates();
+            setCalender();
         });
 
         return p.get(0);
@@ -111,16 +108,16 @@ public class calender extends JFrame {
     private void setCalender() {
         l.get(0).setText(months[(workingDate.getMonth().getValue()) - 1] + " " + workingDate.getYear());
         //adding blank (soon days of prev month) entries if the month doesn't start on 0 (Monday)
-        for (int i = 1; i <= firstDayOfMonth; i++) {
+        for (int i = 1; i < firstDayOfMonth; i++) {
             l.get(i).setText("-");
         }
         //adding the days of th month
-        for (int i = firstDayOfMonth/* + 1*/; i <= lengthOfMonth + firstDayOfMonth; i++) {
-            l.get(i).setText("" + (i - firstDayOfMonth + 1));
+        for (int i = firstDayOfMonth; i <= lengthOfMonth + firstDayOfMonth + 1; i++) {
+            l.get(i).setText("" + (i - firstDayOfMonth));
         }
         //adding the blank entries after the month (will be next months days)
-        for (int i = lengthOfMonth + firstDayOfMonth; i < 43; i++) {
-            //l.get(i).setText("-");
+        for (int i = lengthOfMonth + firstDayOfMonth - 1; i < 42; i++) {
+            l.get(i).setText("-");
         }
     }
 
@@ -129,7 +126,6 @@ public class calender extends JFrame {
         lengthOfMonth = workingDate.lengthOfMonth();
         workingDate = workingDate.withDayOfMonth(lengthOfMonth);
         lastDayOfMonth = workingDate.getDayOfWeek().getValue();
-        int p = 4;
     }
 
     public void appear() {
