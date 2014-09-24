@@ -18,6 +18,16 @@ public class Lunch {
         end = new Time(eh, em);
     }
 
+    @Override
+    public String toString() {
+        return "Lunch{" +
+                "start=" + start +
+                ", end=" + end +
+                ", lunch=" + lunch +
+                ", length=" + length +
+                '}';
+    }
+
     public int getLength() {
         return length;
     }

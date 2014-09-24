@@ -3,6 +3,8 @@ package com.falconraptor.timekeeper.schedule;
 import com.falconraptor.timekeeper.school.Class;
 import com.falconraptor.utilities.logger.Logger;
 
+import java.util.Arrays;
+
 public class Schedule {
     public com.falconraptor.timekeeper.school.Class[] aClass;
     private Lunch lunch;
@@ -10,8 +12,17 @@ public class Schedule {
     public Schedule(int classes) {
         aClass = new Class[classes];
     }
-    public void setLunch(int i){
-        
+
+    public void setLunch(int i) {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Schedule{" +
+                "aClass=" + Arrays.toString(aClass) +
+                ", lunch=" + lunch +
+                '}';
     }
 
     public int getAmountOfClasses() {

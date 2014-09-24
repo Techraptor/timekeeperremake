@@ -6,6 +6,7 @@ import com.falconraptor.timekeeper.schedule.Lunch;
 import com.falconraptor.timekeeper.schedule.Schedule;
 import com.falconraptor.timekeeper.schedule.Time;
 import com.falconraptor.timekeeper.school.School;
+import com.falconraptor.timekeeper.school.Teacher;
 import com.falconraptor.utilities.files.XML;
 import com.falconraptor.utilities.logger.Logger;
 import org.w3c.dom.Document;
@@ -28,6 +29,7 @@ public class Atech extends School {
     private Lunch assemblyfirst;
     private Lunch assemblysecond;
     private ArrayList<Holidays> holidays = new ArrayList<>(0);
+    private ArrayList<Teacher> teachers = new ArrayList<>(0);
     private String schoolPhone;
     private String ccsdEmail;
 
@@ -56,6 +58,8 @@ public class Atech extends School {
     private void loadAtechScheduleNormal(Node n) {
         Logger.logINFO("Loading ATECH Normal Schedule");
         loadschedule("normal", n);
+        Logger.logINFO("Done loading ATECH Normal Schedule");
+        Logger.logALL("Normal: " + normal);
     }
 
     private void loadschedule(String day, Node n) {
@@ -136,50 +140,52 @@ public class Atech extends School {
             normal.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
             normal.setClass(index, s, e);
             normal.aClass[index].calcLength();
-            Logger.logALL("Class Loaded for Normal Schedule: " + normal.aClass[index].toString());
         } else if (day.equals("wednesday")) {
             wednesday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
             wednesday.setClass(index, s, e);
             wednesday.aClass[index].calcLength();
-            Logger.logALL("Class Loaded for Wednesday Schedule: " + wednesday.aClass[index].toString());
         } else if (day.equals("thursday")) {
             thursday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
             thursday.setClass(index, s, e);
             thursday.aClass[index].calcLength();
-            Logger.logALL("Class Loaded for Thurdays Schedule: " + thursday.aClass[index].toString());
         } else if (day.equals("assembly")) {
             assembly.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
             assembly.setClass(index, s, e);
             assembly.aClass[index].calcLength();
-            Logger.logALL("Class Loaded for Assembly Schedule: " + assembly.aClass[index].toString());
         }
     }
 
     private void loadAtechScheduleWednesday(Node w) {
         Logger.logINFO("Loading ATECH Wednesday Schedule");
         loadschedule("wednesday", w);
+        Logger.logINFO("Done loading ATECH Wednesday Schedule");
+        Logger.logALL("Wednesday: " + wednesday);
     }
 
     private void loadAtechScheduleThursday(Node t) {
         Logger.logINFO("Loading ATECH Thursday Schedule");
         loadschedule("thursday", t);
+        Logger.logINFO("Done loading ATECH Thursday Schedule");
+        Logger.logALL("Thursday: " + thursday);
     }
 
     private void loadAtechScheduleAssembly(Node a) {
         Logger.logINFO("Loading ATECH Assembly Schedule");
         loadschedule("assembly", a);
+        Logger.logINFO("Done loading ATECH Assembly Schedule");
+        Logger.logALL("Assembly: " + assembly);
     }
 
     private void loadAtechHolidays(Node h) {
         Logger.logINFO("Loading ATECH Holidays");
         Node loop = h.getFirstChild().getNextSibling();
         while (loop != null) {
-            Logger.logALL("Holiday: " + loop.getFirstChild().getNextSibling().getTextContent() + " Loaded");
             String name = loop.getFirstChild().getNextSibling().getTextContent();
             int day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent());
             int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
             loop = loop.getNextSibling().getNextSibling();
             holidays.add(new Holidays(name, day, month));
+            Logger.logALL("Holiday: " + holidays.get(holidays.size() - 1) + " Loaded");
         }
     }
 
@@ -191,7 +197,22 @@ public class Atech extends School {
         ccsdEmail = loop.getTextContent();
         loop = loop.getNextSibling().getNextSibling();
         while (loop != null) {
-            Node teacher = loop.getFirstChild().getNextSibling();
+            Node name = loop.getFirstChild().getNextSibling();
+            Node n = name.getFirstChild().getNextSibling();
+            Teacher temp = new Teacher(n.getNextSibling().getNextSibling().getTextContent(), n.getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent(), n.getTextContent());
+            n = name.getNextSibling().getNextSibling();
+            Node con = name.getNextSibling().getNextSibling().getFirstChild().getNextSibling();
+            if (!con.getTextContent().equals("")) temp.setExtension(Integer.parseInt(con.getTextContent()));
+            con = con.getNextSibling().getNextSibling();
+            temp.setEmail(con.getTextContent());
+            con = con.getNextSibling().getNextSibling();
+            temp.setWebsite(con.getTextContent());
+            n = name.getNextSibling().getNextSibling().getNextSibling().getNextSibling();
+            temp.setRoom(n.getTextContent());
+            n = n.getNextSibling().getNextSibling();
+            temp.setDepartment(n.getTextContent());
+            teachers.add(temp);
+            Logger.logALL("Teacher: " + teachers.get(teachers.size() - 1) + " Loaded");
             loop = loop.getNextSibling().getNextSibling();
         }
     }

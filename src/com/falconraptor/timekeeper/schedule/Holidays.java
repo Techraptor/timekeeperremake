@@ -11,6 +11,15 @@ public class Holidays {
         this.month = month;
     }
 
+    @Override
+    public String toString() {
+        return "Holidays{" +
+                "name='" + name + '\'' +
+                ", day=" + day +
+                ", month=" + month +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
