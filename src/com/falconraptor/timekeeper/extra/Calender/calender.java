@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Created by Kyle on 9/15/2014.
  */
-public class Calender extends JFrame {
+public class calender extends JFrame {
     public static String log = "[com.falconraptor.timekeeper.extra.utilities.Calender.calender.";
     public ArrayList<JPanel> p = new ArrayList<JPanel>(0);
     public ArrayList<JButton> b = new ArrayList<JButton>(0);
@@ -38,7 +38,7 @@ public class Calender extends JFrame {
     //Calendar c = Calendar.getInstance();
     //public int place = c.get(5);
 
-    public Calender() {
+    public calender() {
         super("Calender");
         super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         super.setLocationRelativeTo(null);
@@ -92,6 +92,8 @@ public class Calender extends JFrame {
                 }
                 setDates();
                 setCalender();
+
+                //this is a comment
             }
         });
         right.addActionListener(new ActionListener() {
@@ -121,7 +123,7 @@ public class Calender extends JFrame {
         }
         //adding the blank entries after the month (will be next months days)
         for (int i = lengthOfMonth + firstDayOfMonth; i < 43; i++) {
-            l.get(i).setText("-");
+            //l.get(i).setText("-");
         }
     }
 
@@ -130,6 +132,7 @@ public class Calender extends JFrame {
         lengthOfMonth = workingDate.lengthOfMonth();
         workingDate = workingDate.withDayOfMonth(lengthOfMonth);
         lastDayOfMonth = workingDate.getDayOfWeek().getValue();
+        int p = 4;
     }
 
     public void appear() {
