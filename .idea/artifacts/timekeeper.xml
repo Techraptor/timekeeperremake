@@ -2,8 +2,8 @@
   <artifact type="jar" build-on-make="true" name="timekeeper">
     <output-path>$PROJECT_DIR$/out/artifacts/timekeeper</output-path>
     <root id="archive" name="timekeeper.jar">
-      <element id="extracted-dir" path="$PROJECT_DIR$/../utilities/out/artifacts/utilities_jar/utilities.jar" path-in-jar="/" />
       <element id="module-output" name="timekeeperremake" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../utilities/out/artifacts/utilities_jar/utilities.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

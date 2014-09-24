@@ -4,8 +4,6 @@ import com.falconraptor.timekeeper.references.References;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -13,21 +11,18 @@ import java.util.ArrayList;
 
 public class Calender extends JFrame {
     public final static String log = References.log + ".extra.utilities.Calender.Calender.";
-    public ArrayList<JPanel> p = new ArrayList<JPanel>(0);
-    public ArrayList<JButton> b = new ArrayList<JButton>(0);
-    public ArrayList<JLabel> l = new ArrayList<JLabel>(0);
-    public ArrayList<Day> d = new ArrayList<Day>(0);
+    public ArrayList<JPanel> p = new ArrayList<>(0);
+    public ArrayList<JButton> b = new ArrayList<>(0);
+    public ArrayList<JLabel> l = new ArrayList<>(0);
     public JLabel[] ld = new JLabel[7];
     public boolean[] nm = new boolean[43];
     //public editdays ed = new editdays();
     public JButton left = new JButton(""), right = new JButton("");
     String[] days = {"", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
     String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-    int firstDayOfMonth;
-    int lastDayOfMonth;
-    int lengthOfMonth;
-    LocalDate currentDate = LocalDate.now().withMonth(12);
-    LocalDate workingDate = currentDate.withDayOfMonth(1);
+    int firstDayOfMonth, lastDayOfMonth, lengthOfMonth;
+    LocalDate currentDate = LocalDate.now();
+    LocalDate workingDate = currentDate;
 /*  public int curDate = currentDate.getDayOfMonth();
     public int curMonth = currentDate.getMonthValue();
     public int curYear = currentDate.getYear(); */
@@ -37,20 +32,11 @@ public class Calender extends JFrame {
 
     public Calender() {
         super("Calender");
-        super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        super.setLocationRelativeTo(null);
-        super.setVisible(false);
-        super.setContentPane(setgui());
-        super.pack();
-        super.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent we) {
-                //   ed.dispose();
-                //   ed.e.dispose();
-                //   ed.c.dispose();
-            }
-        });
-
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setVisible(false);
+        setContentPane(setgui());
+        pack();
     }
 
     private JPanel setgui() {
@@ -79,7 +65,7 @@ public class Calender extends JFrame {
         setCalender();
 
         //adding action for the button to go back a month
-        left.addActionListener(evt -> {
+        left.addActionListener(e -> {
             if (workingDate.getMonthValue() == 1) {
                 workingDate = workingDate.withYear(workingDate.getYear() - 1);
                 workingDate = workingDate.withMonth(12);
@@ -112,13 +98,14 @@ public class Calender extends JFrame {
             l.get(i).setText("-");
         }
         //adding the days of th month
-        for (int i = firstDayOfMonth; i <= lengthOfMonth + firstDayOfMonth + 1; i++) {
-            l.get(i).setText("" + (i - firstDayOfMonth));
+        for (int i = firstDayOfMonth; i <= lengthOfMonth + firstDayOfMonth; i++) {
+            l.get(i).setText("" + (i - firstDayOfMonth + 1));
         }
         //adding the blank entries after the month (will be next months days)
-        for (int i = lengthOfMonth + firstDayOfMonth - 1; i < 42; i++) {
+        for (int i = lengthOfMonth + firstDayOfMonth; i < 42; i++) {
             l.get(i).setText("-");
         }
+        pack();
     }
 
     private void setDates() {
@@ -129,6 +116,6 @@ public class Calender extends JFrame {
     }
 
     public void appear() {
-        super.setVisible(true);
+        setVisible(true);
     }
 }
