@@ -1,0 +1,12 @@
+Initial Calendar revision (9/19/14)
+    Current Calendar features
+        Basic calendar function,
+        Currently shows current month, through the Java 1.8 java.time API
+
+    Learned function through experimentation and reading of the java.time API
+    *Currently planned features
+        Ability to change month through buttons
+        Highlighting the current date
+        Ability to add events and checklists to the calendar.
+
+2nd Revision *(~/~/~)

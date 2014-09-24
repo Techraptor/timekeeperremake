@@ -1,0 +1,37 @@
+[2014-9-16] [14:2:53] [INFO] Log level set at: 1
+[2014-9-16] [14:2:53] [INFO] Console started
+[2014-9-16] [14:2:53] [INFO] Shut Down Hook Attached.
+[2014-9-16] [14:2:53] [INFO] Loading Config
+[2014-9-16] [14:2:53] [ERROR] Timekeeper.xml does not exist!
+[2014-9-16] [14:3:8] [INFO] Shutting Down
+[2014-9-16] [14:3:8] [INFO] Saving Config
+[2014-9-16] [14:3:8] [INFO] New File Set
+[2014-9-16] [14:3:8] [INFO] Added Element: Timekeeper
+[2014-9-16] [14:3:8] [INFO] Added [Timekeeper: null] to Document
+[2014-9-16] [14:3:8] [INFO] Added Element: Colors
+[2014-9-16] [14:3:8] [INFO] Added Colors to Timekeeper
+[2014-9-16] [14:3:8] [INFO] Added Element: Foreground
+[2014-9-16] [14:3:8] [INFO] Added Foreground to Colors
+[2014-9-16] [14:3:8] [INFO] Added String java.awt.Color[r=0,g=0,b=0] to Foreground
+[2014-9-16] [14:3:8] [INFO] Added Attribute Default with value of true to element Foreground
+[2014-9-16] [14:3:8] [INFO] Added Element: Background
+[2014-9-16] [14:3:8] [INFO] Added Background to Colors
+[2014-9-16] [14:3:8] [INFO] Added String java.awt.Color[r=255,g=255,b=255] to Background
+[2014-9-16] [14:3:8] [INFO] Added Attribute Default with value of true to element Background
+[2014-9-16] [14:3:8] [INFO] Added Element: Lunch
+[2014-9-16] [14:3:8] [INFO] Added Lunch to Timekeeper
+[2014-9-16] [14:3:8] [INFO] Added String 1 to Lunch
+[2014-9-16] [14:3:8] [INFO] Added Attribute Default with value of true to element Lunch
+[2014-9-16] [14:3:8] [INFO] Added Element: School
+[2014-9-16] [14:3:8] [INFO] Added School to Timekeeper
+[2014-9-16] [14:3:8] [INFO] Added String ATECH to School
+[2014-9-16] [14:3:8] [INFO] Added Attribute Default with value of true to element School
+[2014-9-16] [14:3:8] [INFO] Added Element: Schools
+[2014-9-16] [14:3:8] [INFO] Added Schools to Timekeeper
+[2014-9-16] [14:3:9] [INFO] XML File: Timekeeper.xml saved
+[2014-9-16] [14:3:9] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Recreated
+[2014-9-16] [14:3:9] [DEBUG] [com.falconraptor.utilities.files.Write.close] File Saved
+[2014-9-16] [14:3:9] [INFO] File Organized
+[2014-9-16] [14:3:9] [INFO] Config Saved
+[2014-9-16] [14:3:9] [DEBUG] [com.falconraptor.utilities.files.Write.makeDir] Directory Created
+[2014-9-16] [14:3:9] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Created

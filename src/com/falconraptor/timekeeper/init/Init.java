@@ -17,5 +17,6 @@ public class Init {
 
     public void start() {
         References.config.loadConfig();
+        Gui g = new Gui();
     }
 }
