@@ -2,6 +2,7 @@ package com.falconraptor.timekeeper.settings;
 
 import com.falconraptor.timekeeper.references.References;
 import com.falconraptor.timekeeper.school.School;
+import com.falconraptor.timekeeper.school.schools.Atech;
 
 import java.awt.*;
 
@@ -16,4 +17,5 @@ public class Settings {
     public int lunch = defaultLunch;
     public final String defaultSchool = "ATECH";
     public String school = defaultSchool;
+    public Atech atech;
 }

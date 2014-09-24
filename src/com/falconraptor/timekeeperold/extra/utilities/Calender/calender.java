@@ -24,9 +24,9 @@ public class calender extends JFrame {
     public boolean[] nm = new boolean[43];
     public editdays ed = new editdays();
     public JButton left = new JButton(""), right = new JButton("");
+    public Calendar c = Calendar.getInstance();
     public int place = c.get(5);
     String[] days = {"", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saterday"};
-    Calendar c = Calendar.getInstance();
 
     public calender() {
         super("Calender");
