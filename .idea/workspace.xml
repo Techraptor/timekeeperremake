@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7fcb138-651d-4d17-9ba9-e28105c4f6f8" name="Default" comment="Test push+commit">
+    <list default="true" id="d7fcb138-651d-4d17-9ba9-e28105c4f6f8" name="Default" comment="Test push+commit1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/calender.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/calender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,15 +34,15 @@
       <file leaf-file-name="calender.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/calender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1447811" vertical-offset="0" max-vertical-offset="2482">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.7154882" vertical-offset="0" max-vertical-offset="2431">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#550#558#0" expanded="true" />
-                <element signature="e#610#619#0" expanded="true" />
-                <element signature="e#670#678#0" expanded="true" />
-                <element signature="e#5535#5536#0" expanded="true" />
-                <element signature="e#5573#5574#0" expanded="true" />
+                <element signature="e#509#517#0" expanded="true" />
+                <element signature="e#569#578#0" expanded="true" />
+                <element signature="e#629#637#0" expanded="true" />
+                <element signature="e#5494#5495#0" expanded="true" />
+                <element signature="e#5532#5533#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -638,7 +638,11 @@
       <created>1411519745017</created>
       <updated>1411519745017</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test push+commit1">
+      <created>1411519849763</created>
+      <updated>1411519849763</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -661,7 +665,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18448023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18448023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -692,7 +696,8 @@
     <MESSAGE value="Initial Calendar revision (9/19/14)&#10;    Current Calendar features&#10;        Basic calendar function,&#10;        Currently shows current month, through the Java 1.8 java.time API,&#10; 9/23 revision&#10;        partial button function, opened up new bug" />
     <MESSAGE value="Initial Calendar revision (9/19/14)&#10;    Current Calendar features&#10;        Basic calendar function,&#10;        Currently shows current month, through the Java 1.8 java.time API&#10;        &#10;        Introduced bug with month changing function&#10;" />
     <MESSAGE value="Test push+commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test push+commit" />
+    <MESSAGE value="Test push+commit1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test push+commit1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1084,15 +1089,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/calender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1447811" vertical-offset="0" max-vertical-offset="2482">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.7154882" vertical-offset="0" max-vertical-offset="2431">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#550#558#0" expanded="true" />
-            <element signature="e#610#619#0" expanded="true" />
-            <element signature="e#670#678#0" expanded="true" />
-            <element signature="e#5535#5536#0" expanded="true" />
-            <element signature="e#5573#5574#0" expanded="true" />
+            <element signature="e#509#517#0" expanded="true" />
+            <element signature="e#569#578#0" expanded="true" />
+            <element signature="e#629#637#0" expanded="true" />
+            <element signature="e#5494#5495#0" expanded="true" />
+            <element signature="e#5532#5533#0" expanded="true" />
           </folding>
         </state>
       </provider>

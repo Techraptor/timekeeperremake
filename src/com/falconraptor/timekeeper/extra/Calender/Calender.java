@@ -11,10 +11,7 @@ import java.util.ArrayList;
 
 //import java.util.Calendar;
 
-/**
- * Created by Kyle on 9/15/2014.
- */
-public class Calender extends JFrame {
+public class calender extends JFrame {
     public static String log = "[com.falconraptor.timekeeper.extra.utilities.Calender.calender.";
     public ArrayList<JPanel> p = new ArrayList<JPanel>(0);
     public ArrayList<JButton> b = new ArrayList<JButton>(0);
