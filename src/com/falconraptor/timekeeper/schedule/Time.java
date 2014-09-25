@@ -14,6 +14,11 @@ public class Time {
         minute = 0;
     }
 
+    public int convert() {
+        if (hour < 4) return (hour + 12) * 60 + minute;
+        return hour * 60 + minute;
+    }
+
     public int getHour() {
         return hour;
     }

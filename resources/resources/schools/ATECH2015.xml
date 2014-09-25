@@ -118,7 +118,6 @@
             </Lunch>
         </Normal>
         <Wednesday>
-            <Length>85</Length>
             <Class period="1">
                 <Start>7:15</Start>
                 <End>8:40</End>
@@ -153,7 +152,6 @@
             </Lunch>
         </Wednesday>
         <Thursday>
-            <Length>85</Length>
             <Class period="2">
                 <Start>7:15</Start>
                 <End>8:40</End>
@@ -188,7 +186,6 @@
             </Lunch>
         </Thursday>
         <Assembly>
-            <Length>35</Length>
             <Class period="1">
                 <Start>7:15</Start>
                 <End>7:50</End>
