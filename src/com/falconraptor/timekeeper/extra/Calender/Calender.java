@@ -88,7 +88,7 @@ public class Calender extends JFrame {
 
     private void setCalender() {
         l.get(0).setText(workingDate.getMonth() + " " + workingDate.getYear());
-        //adding blank (soon days of prev month) entries if the month doesn't start on 0 (Monday)
+        //adding blank (soon days of prev month) entries if the month doesn't start on 1 (Monday)
         for (int i = 1; i < firstDayOfMonth; i++) {
             l.get(i).setText(" ");
         }

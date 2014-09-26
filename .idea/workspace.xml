@@ -5,8 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.log" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Extras.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Extras.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/timekeeper.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/timekeeper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/utilities.xml" afterPath="$PROJECT_DIR$/.idea/libraries/utilities.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timekeeperremake.iws" />
@@ -38,12 +36,12 @@
       <file leaf-file-name="Calender.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5303777" vertical-offset="34" max-vertical-offset="2312">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3858785" vertical-offset="1295" max-vertical-offset="2312">
+              <caret line="90" column="89" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5035#5036#0" expanded="true" />
-                <element signature="e#5067#5068#0" expanded="true" />
+                <element signature="e#5042#5043#0" expanded="true" />
+                <element signature="e#5074#5075#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +60,8 @@
       <file leaf-file-name="Calender.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -562,7 +560,11 @@
       <created>1411572945781</created>
       <updated>1411572945782</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="6PM (9/15/14)&#10;Fixed the month display (for sure this time!)&#10;It was accidentally reverted.&#10;Also, months no longer uses array, it uses the month value from the LocalDate Object.">
+      <created>1411693173013</created>
+      <updated>1411693173013</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -620,7 +622,8 @@
     <MESSAGE value="Test push+commit2" />
     <MESSAGE value="9/23/14 - Calender with Problems" />
     <MESSAGE value="9/24/14 School Progress&#10;Managed to get the current day marked, however, I noticed a new bug (didn't notice it before? I thought the calender was already fixed, twice...) in which every month would start a day early, and was able to fix it. However months that are supposed to start on Saturday started on Sunday, and the fix that worked for every other month, did not work for those months,instead, the date would overwrite the month label. Need to look into this." />
-    <option name="LAST_COMMIT_MESSAGE" value="9/24/14 School Progress&#10;Managed to get the current day marked, however, I noticed a new bug (didn't notice it before? I thought the calender was already fixed, twice...) in which every month would start a day early, and was able to fix it. However months that are supposed to start on Saturday started on Sunday, and the fix that worked for every other month, did not work for those months,instead, the date would overwrite the month label. Need to look into this." />
+    <MESSAGE value="6PM (9/15/14)&#10;Fixed the month display (for sure this time!)&#10;It was accidentally reverted.&#10;Also, months no longer uses array, it uses the month value from the LocalDate Object." />
+    <option name="LAST_COMMIT_MESSAGE" value="6PM (9/15/14)&#10;Fixed the month display (for sure this time!)&#10;It was accidentally reverted.&#10;Also, months no longer uses array, it uses the month value from the LocalDate Object." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -951,8 +954,8 @@
         <state vertical-scroll-proportion="0.2437186" vertical-offset="192" max-vertical-offset="629">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -999,8 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1015,12 +1018,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/extra/Calender/Calender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5303777" vertical-offset="34" max-vertical-offset="2312">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3858785" vertical-offset="1295" max-vertical-offset="2312">
+          <caret line="90" column="89" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5035#5036#0" expanded="true" />
-            <element signature="e#5067#5068#0" expanded="true" />
+            <element signature="e#5042#5043#0" expanded="true" />
+            <element signature="e#5074#5075#0" expanded="true" />
           </folding>
         </state>
       </provider>
