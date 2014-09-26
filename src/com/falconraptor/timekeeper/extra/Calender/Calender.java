@@ -20,16 +20,9 @@ public class Calender extends JFrame {
     //public editdays ed = new editdays();
     public JButton left = new JButton(""), right = new JButton("");
     String[] days = {"", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-    String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     int firstDayOfMonth, lastDayOfMonth, lengthOfMonth;
     LocalDate currentDate = LocalDate.now();
-    LocalDate workingDate = currentDate;
-/*  public int curDate = currentDate.getDayOfMonth();
-    public int curMonth = currentDate.getMonthValue();
-    public int curYear = currentDate.getYear(); */
-    //public==public==public==public==public==public==public==public==public==public==public==public==public==public==public
-    //Calendar c = Calendar.getInstance();
-    //public int place = c.get(5);
+    LocalDate workingDate = currentDate.withDayOfMonth(1);
 
     public Calender() {
         super("Calender");
@@ -43,7 +36,7 @@ public class Calender extends JFrame {
     private JPanel setgui() {
         Logger.logINFO("Starting Calendar...");
         p.add(new JPanel(new GridLayout(8, 7, 0, 0))); //creating the layout of calendar, currently blank
-        l.add(new JLabel(months[(currentDate.getMonth().getValue()) - 1] + " " + currentDate.getYear())); //getting the name of the month to add to the calendar
+        l.add(new JLabel(currentDate.getMonth() + " " + currentDate.getYear())); //getting the name of the month to add to the calendar
         p.get(0).add(left); //adding the left arrow
         for (int i = 0; i < 2; i++) p.get(0).add(new JLabel("", 0));// adding blank spaces
         p.get(0).add(l.get(0));//adding the month name
@@ -94,7 +87,7 @@ public class Calender extends JFrame {
     }
 
     private void setCalender() {
-        l.get(0).setText(months[(workingDate.getMonth().getValue()) - 1] + " " + workingDate.getYear());
+        l.get(0).setText(workingDate.getMonth() + " " + workingDate.getYear());
         //adding blank (soon days of prev month) entries if the month doesn't start on 0 (Monday)
         for (int i = 1; i < firstDayOfMonth; i++) {
             l.get(i).setText(" ");
@@ -103,23 +96,29 @@ public class Calender extends JFrame {
         for (int i = firstDayOfMonth; i <= lengthOfMonth + firstDayOfMonth; i++) {
             //CALENDAR DOES NOT WORK IF MONTH STARTS ON SATURDAY
             if (i - firstDayOfMonth + 1 == currentDate.getDayOfMonth() && workingDate.getMonthValue() == currentDate.getMonthValue() && workingDate.getYear() == currentDate.getYear()) {
-                l.get(i - 1).setForeground(Color.CYAN);
-                l.get(i - 1).setText("" + (i - firstDayOfMonth + 1));
+                l.get(i).setForeground(Color.CYAN);
+                l.get(i).setText("" + (i - firstDayOfMonth + 1));
             } else {
-                l.get(i - 1).setForeground(Color.BLACK);
-                l.get(i - 1).setText("" + (i - firstDayOfMonth + 1));
+                l.get(i).setForeground(Color.BLACK);
+                l.get(i).setText("" + (i - firstDayOfMonth + 1));
             }
         }
         //adding the blank entries after the month (will be next months days)
         for (int i = lengthOfMonth + firstDayOfMonth; i < 42; i++) {
-            l.get(i - 1).setText(" ");
+            l.get(i).setText(" ");
         }
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////pack();
+        //pack();
 
     }
 
+    private int fixday(int day) {
+        day++;
+        if (day == 8) day = 1;
+        return day;
+    }
+
     private void setDates() {
-        firstDayOfMonth = workingDate.getDayOfWeek().getValue();
+        firstDayOfMonth = fixday(workingDate.getDayOfWeek().getValue());
         lengthOfMonth = workingDate.lengthOfMonth();
         //workingDate = workingDate.withDayOfMonth(lengthOfMonth);
         lastDayOfMonth = workingDate.getDayOfWeek().getValue();
