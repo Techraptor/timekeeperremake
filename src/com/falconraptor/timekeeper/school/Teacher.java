@@ -29,11 +29,7 @@ public class Teacher {
     @Override
     public String toString() {
         return "Teacher{" +
-                "normal=" + normal +
-                ", wednesday=" + wednesday +
-                ", thursday=" + thursday +
-                ", assembly=" + assembly +
-                ", name=" + name +
+                "name=" + name +
                 ", classes=" + classes +
                 ", room='" + room + '\'' +
                 ", department='" + department + '\'' +
@@ -57,10 +53,10 @@ public class Teacher {
             assembly.setClass(i - 1, a.assembly.aClass[i - 1].getStart(), a.assembly.aClass[i - 1].getEnd());
             if (i % 2 == 0) {
                 thursday.addClass(i / 2 - 1, classes.get(i - 1));
-                thursday.setClass(i - 1, a.thursday.aClass[i - 1].getStart(), a.thursday.aClass[i - 1].getEnd());
+                thursday.setClass(i / 2 - 1, a.thursday.aClass[i / 2].getStart(), a.thursday.aClass[i / 2].getEnd());
             } else if (i % 2 == 1) {
                 wednesday.addClass(i / 2, classes.get(i - 1));
-                wednesday.setClass(i - 1, a.wednesday.aClass[i - 1].getStart(), a.wednesday.aClass[i - 1].getEnd());
+                wednesday.setClass(i / 2, a.wednesday.aClass[i / 2].getStart(), a.wednesday.aClass[i / 2].getEnd());
             }
         }
         normal.setLunch("normal", lunches[0]);

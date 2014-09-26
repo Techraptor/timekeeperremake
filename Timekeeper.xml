@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Timekeeper>
+    <Colors>
+        <Foreground Default="true">java.awt.Color[r=0,g=0,b=0]</Foreground>
+        <Background Default="true">java.awt.Color[r=255,g=255,b=255]</Background>
+    </Colors>
+    <Lunch Default="true">1</Lunch>
+    <School Default="true">ATECH</School>
+    <Schools/>
+</Timekeeper>
