@@ -10,17 +10,20 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Calender extends JFrame {
     public final static String log = References.log + ".extra.utilities.Calender.Calender.";
     public ArrayList<JPanel> p = new ArrayList<>(0);
     public ArrayList<JButton> b = new ArrayList<>(0);
     public ArrayList<JButton> d = new ArrayList<>(0);
+    public HashMap<JButton, ActionListener> da = new HashMap<JButton, ActionListener>();
     //public ArrayList<JLabel> l = new ArrayList<>(0);
     public ArrayList<JMenu> m = new ArrayList<>(0);
     public ArrayList<JMenuItem> mi = new ArrayList<>(0);
-    public ArrayList<ActionListener> a = new ArrayList<>(0);
+    //public ArrayList<ActionListener> a = new ArrayList<>(0);
     public JMenuBar menu = new JMenuBar();
+
     public JLabel[] ld = new JLabel[7];
     public boolean[] nm = new boolean[43];
     //public editdays ed = new editdays();
@@ -36,6 +39,16 @@ public class Calender extends JFrame {
         setVisible(false);
         setContentPane(setgui());
         pack();
+    }
+
+    public static void setUIFont (javax.swing.plaf.FontUIResource f){
+        java.util.Enumeration keys = UIManager.getDefaults().keys();
+        while (keys.hasMoreElements()) {
+            Object key = keys.nextElement();
+            Object value = UIManager.get(key);
+            if (value != null && value instanceof javax.swing.plaf.FontUIResource)
+                UIManager.put(key, f);
+        }
     }
 
     private JPanel setgui() {
@@ -65,7 +78,7 @@ public class Calender extends JFrame {
             p.add(new JPanel(new GridLayout(2, 1, 0, 0)));
             d.add(new JButton(""));
             d.get(i).setBorderPainted(false);
-            d.get(i).setContentAreaFilled(false);
+            //d.get(i).setContentAreaFilled(false);
 
             b.add(new JButton("Edit"));
             p.get(i + 1).add(d.get(i + 1));
@@ -77,26 +90,28 @@ public class Calender extends JFrame {
 
         //adding action for the button to go back a month
         left.addActionListener(e -> {
-            removeActionListeners();
+            //removeActionListeners();
             if (workingDate.getMonthValue() == 1) {
                 workingDate = workingDate.withYear(workingDate.getYear() - 1);
                 workingDate = workingDate.withMonth(12);
             } else {
                 workingDate = workingDate.withMonth(workingDate.getMonthValue() - 1);
             }
+            clearMap();
             setDates();
             setCalender();
 
             //this is a comment
         });
         right.addActionListener(e -> {
-            removeActionListeners();
+            //removeActionListeners();
             if (workingDate.getMonthValue() + 1 == 13) {
                 workingDate = workingDate.withMonth(1);
                 workingDate = workingDate.withYear(workingDate.getYear() + 1);
             } else {
                 workingDate = workingDate.withMonth(workingDate.getMonthValue() + 1);
             }
+            clearMap();
             setDates();
             setCalender();
         });
@@ -105,39 +120,49 @@ public class Calender extends JFrame {
     }
 
     private void setCalender() {
-
+        clearMap();
         d.get(0).setText(workingDate.getMonth() + " " + workingDate.getYear());
-        a.add(clicked(0, 0, 0));
-        d.get(0).addActionListener(a.get(0));
+        ///a.add(clicked(0, 0, 0));
+        //d.get(0).addActionListener(a.get(0));
         //adding blank (soon days of prev month) entries if the month doesn't start on 1 (Monday)
         for (int i = 1; i < firstDayOfMonth; i++) {
             d.get(i).setText(" ");
-            a.add(clicked(0, 0, 0));
-            d.get(i).addActionListener(a.get(i));
+            //a.add(clicked(0, 0, 0));
+            //d.get(i).addActionListener(a.get(i));
         }
         //adding the days of th month
         for (int i = firstDayOfMonth; i <= lengthOfMonth + firstDayOfMonth; i++) {
             if (i - firstDayOfMonth + 1 == currentDate.getDayOfMonth() && workingDate.getMonthValue() == currentDate.getMonthValue() && workingDate.getYear() == currentDate.getYear()) {
                 d.get(i).setForeground(Color.CYAN);
                 d.get(i).setText("" + (i - firstDayOfMonth + 1));
-                a.add(clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
-                d.get(i).addActionListener(a.get(i));
-
+                //a.add(clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
+                da.put(d.get(i), clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
+                d.get(i).addActionListener(da.get(d.get(i)));
+                //setMap(d.get(i),d.get(i).getActionListeners()[0]);
             } else {
                 d.get(i).setForeground(Color.BLACK);
                 d.get(i).setText("" + (i - firstDayOfMonth + 1));
-                a.add(clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
-                d.get(i).addActionListener(a.get(i));
+                //a.add(clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
+                da.put(d.get(i), clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
+                d.get(i).addActionListener(da.get(d.get(i)));
+                //setMap(d.get(i),d.get(i).getActionListeners()[0]);
             }
         }
         //adding the blank entries after the month (will be next months days)
         for (int i = lengthOfMonth + firstDayOfMonth; i < 42; i++) {
             d.get(i).setText(" ");
-            a.add(clicked(0, 0, 0));
-            d.get(i).addActionListener(a.get(i));
+            // a.add(clicked(0, 0, 0));
+            //d.get(i).addActionListener(a.get(i));
         }
         //pack();
 
+    }
+
+    private void clearMap() {
+        for (int i = 0; i < d.size(); i++) {
+            d.get(i).removeActionListener(da.get(d.get(i)));
+        }
+        da.clear();
     }
 
     private int fixday(int day) {
@@ -177,13 +202,10 @@ public class Calender extends JFrame {
         m.add(file);
     }
 
-
     private void setUtilitiesMenu() {
         JMenu utils = new JMenu("Utilities");
         JMenuItem goTo = new JMenuItem("Go To Date");
         //addActionListener
-
-
         utils.add(goTo);
         m.add(utils);
     }
@@ -191,10 +213,25 @@ public class Calender extends JFrame {
     private void setCustomizeMenu() {
         JMenu custom = new JMenu("Customize");
         JMenuItem bgColor = new JMenuItem("Set Calendar Color");
-        //addActionListener
+        bgColor = setMenuItem(bgColor, KeyEvent.VK_1, "Set Color", KeyEvent.VK_1, ActionEvent.CTRL_MASK);
+        bgColor.addActionListener(e -> {
+            JFrame guiFrame = new JFrame();
+            Color selectedColor = JColorChooser.showDialog(guiFrame, "Pick a Color"
+                    , Color.GREEN);
+            this.getContentPane().setBackground(selectedColor);
+            for (int i = 0; i < d.size(); i++) {
+                d.get(i).setBackground(selectedColor);
+                //b.get(i).setBackground(selectedColor);
+            }
+        });
+
         JMenuItem bgImage = new JMenuItem("Set Custom Calender Image");
         //addActionListener
         JMenuItem fontStyle = new JMenuItem("Set Font");
+        fontStyle = setMenuItem(fontStyle, KeyEvent.VK_3, "Set Font", KeyEvent.VK_3, ActionEvent.CTRL_MASK);
+        fontStyle.addActionListener(e -> {
+            setUIFont(new javax.swing.plaf.FontUIResource("Serif", Font.ITALIC, 12));
+        });
         //addActionListener
         JMenuItem fontColor = new JMenuItem("Set Font Color");
         //addActionListener
@@ -215,17 +252,9 @@ public class Calender extends JFrame {
 
     private ActionListener clicked(final int date, final int month, final int year) {
         try {
-            return new ActionListener() {
-                public void actionPerformed(ActionEvent e) {
-                    Logger.logINFO("" + month + "/" + date + "/" + year);
-                }
-            };
+            return e -> Logger.logINFO("" + month + "/" + date + "/" + year);
         } catch (Exception e) {
-            return new ActionListener() {
-                public void actionPerformed(ActionEvent e) {
-                    Logger.logERROR(log + "clicked]" + e);
-                }
-            };
+            return e1 -> Logger.logERROR(log + "clicked]" + e1);
         }
     }
 
@@ -245,7 +274,8 @@ public class Calender extends JFrame {
 
     private void removeActionListeners() {
         for (int i = 0; i < 42; i++) {
-            d.get(i).removeActionListener(a.get(i));
+            Logger.logINFO(d.get(i).getActionListeners()[0].toString());
+            // d.get(i).removeActionListener();
         }
     }
 
