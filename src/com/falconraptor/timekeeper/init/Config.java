@@ -19,24 +19,28 @@ public class Config {
         Settings settings = References.settings;
         Logger.logINFO("Loading Config");
         Document doc = xml.readXMLDoc("Timekeeper.xml");
+        References.loading.addProgress();
         Node docnode = doc.getDocumentElement();
         Node colors = docnode.getFirstChild().getNextSibling();
         Node foreground = colors.getFirstChild().getNextSibling();
         Node background = foreground.getNextSibling().getNextSibling();
         Node lunch = colors.getNextSibling().getNextSibling();
         Node school = lunch.getNextSibling().getNextSibling();
+        References.loading.addProgress();
         Node defaultatt = foreground.getAttributes().getNamedItem("Default");
         if (defaultatt.getNodeValue().equals("true")) settings.foreground = settings.defaultForeground;
         else {
             int[] color = Colors.checkerrors(foreground.getTextContent());
             settings.foreground = new Color(color[0], color[1], color[2]);
         }
+        References.loading.addProgress();
         defaultatt = background.getAttributes().getNamedItem("Default");
         if (defaultatt.getNodeValue().equals("true")) settings.background = settings.defaultBackground;
         else {
             int[] color = Colors.checkerrors(foreground.getTextContent());
             settings.background = new Color(color[0], color[1], color[2]);
         }
+        References.loading.addProgress();
         defaultatt = lunch.getAttributes().getNamedItem("Default");
         if (defaultatt.getNodeValue().equals("true")) settings.lunch = settings.defaultLunch;
         else {
@@ -47,15 +51,16 @@ public class Config {
                 Logger.logERROR(log + "loadConfig] " + e);
             }
         }
+        References.loading.addProgress();
         defaultatt = school.getAttributes().getNamedItem("Default");
         if (defaultatt.getNodeValue().equals("true")) {
             settings.school = settings.defaultSchool;
             References.settings.atech = new Atech();
             References.settings.atech.loadAtech();
         } else settings.school = school.getTextContent();
+        References.loading.addProgress();
         References.settings = settings;
         References.xml = xml;
-
     }
 
     public void saveConfig() {
