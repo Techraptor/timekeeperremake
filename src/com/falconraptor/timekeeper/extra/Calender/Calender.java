@@ -28,10 +28,13 @@ public class Calender extends JFrame {
     public boolean[] nm = new boolean[43];
     //public editdays ed = new editdays();
     public JButton left = new JButton(""), right = new JButton(""), selectDate = new JButton("Go to");
-    int firstDayOfMonth, lastDayOfMonth, lengthOfMonth;
+    int firstDayOfMonth, lastDayOfMonth, lengthOfMonth, lastDayOfLastMonth;
     LocalDate currentDate = LocalDate.now();
     LocalDate workingDate = currentDate.withDayOfMonth(1);
+    LocalDate selectedDate = LocalDate.now().withYear(1900).withDayOfMonth(1).withMonth(1);
+    Font font = new Font("Tahoma", Font.PLAIN, 12);
 
+    //int int = new int int = new int;
     public Calender() {
         super("Calender");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -69,16 +72,13 @@ public class Calender extends JFrame {
         for (int i = 0; i < 2; i++) p.get(0).add(new JLabel("", 0));//adding blank spaces
         p.get(0).add(right);//adding the right arrow
         //adding the names of the days to the calendar
-        for (int i = 1; i < 8; i++) {
-            ld[i - 1] = new JLabel(getDateLabel(i), 0);
-            p.get(0).add(ld[i - 1]);
-        }
+        setDateLabels();
         //adding the editable labels for the dates
         for (int i = 0; i < 42; i++) {
             p.add(new JPanel(new GridLayout(2, 1, 0, 0)));
             d.add(new JButton(""));
             d.get(i).setBorderPainted(false);
-            //d.get(i).setContentAreaFilled(false);
+            d.get(i).setContentAreaFilled(false);
 
             b.add(new JButton("Edit"));
             p.get(i + 1).add(d.get(i + 1));
@@ -119,21 +119,55 @@ public class Calender extends JFrame {
         return p.get(0);
     }
 
+    private void setDateLabels() {
+        for (int i = 1; i < 8; i++) {
+            ld[i - 1] = new JLabel(getDateLabel(i), 0);
+            ld[i - 1].setFont(getFont());
+            p.get(0).add(ld[i - 1]);
+        }
+    }
+
+    private void setDateLabelFont() {
+        for (int i = 1; i < 8; i++) {
+            //ld[i - 1] = new JLabel(getDateLabel(i), 0);
+            ld[i - 1].setFont(getFont());
+            //p.get(0).add(ld[i - 1]);
+        }
+    }
     private void setCalender() {
         clearMap();
+        d.get(0).setFont(getFont());
         d.get(0).setText(workingDate.getMonth() + " " + workingDate.getYear());
         ///a.add(clicked(0, 0, 0));
         //d.get(0).addActionListener(a.get(0));
         //adding blank (soon days of prev month) entries if the month doesn't start on 1 (Monday)
-        for (int i = 1; i < firstDayOfMonth; i++) {
-            d.get(i).setText(" ");
+        int k = 0;
+        for (int i = firstDayOfMonth; i >= 1; i--) {
+            d.get(i).setForeground(Color.GRAY);
+            LocalDate a;
+            if (workingDate.getMonthValue() == 1) {
+                a = workingDate.withMonth(12);
+            } else {
+                a = workingDate.withMonth(workingDate.getMonthValue() - 1);
+            }
+            a = a.withDayOfMonth(a.lengthOfMonth());
+            d.get(i).setFont(getFont());
+            d.get(i).setText(" " + (a.lengthOfMonth() + 1 - k));
+            k++;
             //a.add(clicked(0, 0, 0));
             //d.get(i).addActionListener(a.get(i));
         }
         //adding the days of th month
         for (int i = firstDayOfMonth; i <= lengthOfMonth + firstDayOfMonth; i++) {
-            if (i - firstDayOfMonth + 1 == currentDate.getDayOfMonth() && workingDate.getMonthValue() == currentDate.getMonthValue() && workingDate.getYear() == currentDate.getYear()) {
+            if (i - firstDayOfMonth + 1 == selectedDate.getDayOfMonth() && workingDate.getMonthValue() == selectedDate.getMonthValue() && workingDate.getYear() == selectedDate.getYear()) {
+                d.get(i).setForeground(Color.RED);
+                d.get(i).setFont(getFont());
+                d.get(i).setText("" + (i - firstDayOfMonth + 1));
+                da.put(d.get(i), clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
+                d.get(i).addActionListener(da.get(d.get(i)));
+            } else if (i - firstDayOfMonth + 1 == currentDate.getDayOfMonth() && workingDate.getMonthValue() == currentDate.getMonthValue() && workingDate.getYear() == currentDate.getYear()) {
                 d.get(i).setForeground(Color.CYAN);
+                d.get(i).setFont(getFont());
                 d.get(i).setText("" + (i - firstDayOfMonth + 1));
                 //a.add(clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
                 da.put(d.get(i), clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
@@ -141,6 +175,7 @@ public class Calender extends JFrame {
                 //setMap(d.get(i),d.get(i).getActionListeners()[0]);
             } else {
                 d.get(i).setForeground(Color.BLACK);
+                d.get(i).setFont(getFont());
                 d.get(i).setText("" + (i - firstDayOfMonth + 1));
                 //a.add(clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
                 da.put(d.get(i), clicked(i - firstDayOfMonth + 1, workingDate.getMonthValue(), workingDate.getYear()));
@@ -149,12 +184,14 @@ public class Calender extends JFrame {
             }
         }
         //adding the blank entries after the month (will be next months days)
+        int j = 1;
         for (int i = lengthOfMonth + firstDayOfMonth; i < 42; i++) {
-            d.get(i).setText(" ");
-            // a.add(clicked(0, 0, 0));
-            //d.get(i).addActionListener(a.get(i));
+            d.get(i).setForeground(Color.GRAY);
+            d.get(i).setFont(getFont());
+            d.get(i).setText(" " + (j));
+            j++;
         }
-        //pack();
+        pack();
 
     }
 
@@ -175,8 +212,8 @@ public class Calender extends JFrame {
         firstDayOfMonth = fixday(workingDate.getDayOfWeek().getValue());
         lengthOfMonth = workingDate.lengthOfMonth();
         //workingDate = workingDate.withDayOfMonth(lengthOfMonth);
-        lastDayOfMonth = workingDate.getDayOfWeek().getValue();
-
+        //lastDayOfMonth = workingDate.getDayOfWeek().getValue();
+        ///lastDayOfLastMonth = firstDayOfMonth-1;
     }
 
     private void setFileMenu() {
@@ -193,18 +230,27 @@ public class Calender extends JFrame {
             Logger.logINFO("Exiting Calendar");
             dispose();
         });
-        file.add(open);
-        file.add(save);
-        file.addSeparator();
-        file.add(reset);
-        file.addSeparator();
-        file.add(exit);
+        //file.add(open);
+        //file.add(save);
+        //file.addSeparator();
+        //file.add(reset);
+        //file.addSeparator();
+        //file.add(exit);
         m.add(file);
     }
 
     private void setUtilitiesMenu() {
         JMenu utils = new JMenu("Utilities");
         JMenuItem goTo = new JMenuItem("Go To Date");
+        goTo = setMenuItem(goTo, KeyEvent.VK_G, "Go To Date", KeyEvent.VK_G, ActionEvent.CTRL_MASK);
+        goTo.addActionListener(e -> {
+            JFrame gtd = new JFrame("Go to Date");
+            gtd.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+            gtd.setLocationRelativeTo(null);
+            gtd.setVisible(true);
+            gtd.setContentPane(dateGUI());
+            gtd.pack();
+        });
         //addActionListener
         utils.add(goTo);
         m.add(utils);
@@ -230,19 +276,24 @@ public class Calender extends JFrame {
         JMenuItem fontStyle = new JMenuItem("Set Font");
         fontStyle = setMenuItem(fontStyle, KeyEvent.VK_3, "Set Font", KeyEvent.VK_3, ActionEvent.CTRL_MASK);
         fontStyle.addActionListener(e -> {
-            setUIFont(new javax.swing.plaf.FontUIResource("Serif", Font.ITALIC, 12));
+            JFrame sf = new JFrame("Set Font...");
+            sf.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+            sf.setLocationRelativeTo(null);
+            sf.setVisible(true);
+            sf.setContentPane(fontGUI());
+            sf.pack();
         });
         //addActionListener
         JMenuItem fontColor = new JMenuItem("Set Font Color");
         //addActionListener
         JMenuItem fontSize = new JMenuItem("Set Font Size");
         //addActionListener
-        custom.add(bgColor);
-        custom.add(bgImage);
-        custom.addSeparator();
+        //custom.add(bgColor);
+        //custom.add(bgImage);
+        //custom.addSeparator();
         custom.add(fontStyle);
-        custom.add(fontColor);
-        custom.add(fontSize);
+        //custom.add(fontColor);
+        //custom.add(fontSize);
         m.add(custom);
     }
 
@@ -272,6 +323,92 @@ public class Calender extends JFrame {
         return i;
     }
 
+    private JPanel dateGUI() {
+        JPanel panel = new JPanel(new GridLayout(4, 2, 0, 0));
+        Integer[] months = new Integer[]{
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+        };
+        Integer[] days = new Integer[31];
+        for (int i = 0; i < 31; i++) {
+            days[i] = new Integer(i + 1);
+        }
+        Integer[] years = new Integer[201];
+        for (int i = 0; i < 201; i++) {
+            years[i] = new Integer(i + 1900);
+        }
+        JComboBox month = new JComboBox(months);
+        JComboBox day = new JComboBox(days);
+        JComboBox year = new JComboBox(years);
+        month.setEditable(true);
+        day.setEditable(true);
+        year.setEditable(true);
+        panel.add(new JLabel("Month"));
+        panel.add(month);
+        panel.add(new JLabel("Day"));
+        panel.add(day);
+        panel.add(new JLabel("Year"));
+        panel.add(year);
+        JButton go = new JButton("Go");
+        go.addActionListener(e1 -> {
+            try {
+                selectedDate = selectedDate.withMonth((int) month.getSelectedItem());
+                selectedDate = selectedDate.withDayOfMonth((int) day.getSelectedItem());
+                selectedDate = selectedDate.withYear((int) year.getSelectedItem());
+                Logger.logINFO("Selected Date: " + selectedDate.getMonthValue() + " " + selectedDate.getDayOfMonth() + " " + selectedDate.getYear());
+                workingDate = selectedDate;
+                clearMap();
+                setDates();
+                setCalender();
+            } catch (Exception e) {
+                Logger.logINFO("Year: " + ((int) year.getSelectedIndex() + 1900));
+                Logger.logINFO("Month: " + ((int) month.getSelectedIndex() + 1));
+                Logger.logINFO("Day: " + ((int) day.getSelectedIndex() + 1));
+                Logger.logERROR(e);
+            }
+        });
+        panel.add(go);
+        return panel;
+    }
+
+    private JPanel fontGUI() {
+        JPanel panel = new JPanel(new GridLayout(4, 2, 0, 0));
+        String[] fonts = {
+                "Arial", "Times New Roman", "Tahoma", "Comic Sans MS", "Calibri", "Rockwell Extra Bold",
+        };
+        String[] styles = new String[]{
+                "PLAIN", "ITALIC", "BOLD"
+        };
+        Integer[] sizes = new Integer[]{
+                8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 22, 24, 26, 28, 32, 36, 40, 44, 48, 54, 60, 66, 72, 80, 88, 96, 1000
+        };
+        JComboBox font = new JComboBox(fonts);
+        JComboBox style = new JComboBox(styles);
+        JComboBox size = new JComboBox(sizes);
+        font.setEditable(false);
+        style.setEditable(false);
+        size.setEditable(true);
+        panel.add(new JLabel("Font"));
+        panel.add(font);
+        panel.add(new JLabel("Style"));
+        panel.add(style);
+        panel.add(new JLabel("Size"));
+        panel.add(size);
+        JButton go = new JButton("Set");
+        go.addActionListener(e -> {
+            if (style.getSelectedIndex() == 0) {
+                setFont(new Font((String) font.getItemAt(font.getSelectedIndex()), Font.PLAIN, (int) size.getSelectedItem()));
+            } else if (style.getSelectedIndex() == 1) {
+                setFont(new Font((String) font.getItemAt(font.getSelectedIndex()), Font.ITALIC, (int) size.getSelectedItem()));
+            } else if (style.getSelectedIndex() == 2) {
+                setFont(new Font((String) font.getItemAt(font.getSelectedIndex()), Font.BOLD, (int) size.getSelectedItem()));
+            }
+            setDateLabelFont();
+            setDates();
+            setCalender();
+        });
+        panel.add(go);
+        return panel;
+    }
     private void removeActionListeners() {
         for (int i = 0; i < 42; i++) {
             Logger.logINFO(d.get(i).getActionListeners()[0].toString());
@@ -279,4 +416,11 @@ public class Calender extends JFrame {
         }
     }
 
+    public Font getFont() {
+        return font;
+    }
+
+    public void setFont(Font f) {
+        font = f;
+    }
 }
