@@ -1,5 +1,6 @@
 package com.falconraptor.timekeeper.references;
 
+import com.darkleach7.extra.Extras;
 import com.falconraptor.timekeeper.Timekeeper;
 import com.falconraptor.timekeeper.guis.Loading;
 import com.falconraptor.timekeeper.init.Config;
@@ -25,4 +26,5 @@ public class References {
     public static GUI gui;
     public static com.falconraptor.timekeeper.guis.Timekeeper timekeepergui;
     public static Loading loading;
+    public static Extras extras;
 }

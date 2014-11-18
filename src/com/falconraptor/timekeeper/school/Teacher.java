@@ -22,7 +22,7 @@ public class Teacher {
     private String website;
     private int[] lunches;
 
-    public Teacher(String first,String last,String title){
+    public Teacher(String first, String last, String title) {
         name = new Name(first, last, title);
     }
 

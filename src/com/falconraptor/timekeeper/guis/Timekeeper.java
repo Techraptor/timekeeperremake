@@ -1,5 +1,6 @@
 package com.falconraptor.timekeeper.guis;
 
+import com.darkleach7.extra.Extras;
 import com.falconraptor.timekeeper.references.References;
 
 import javax.swing.*;
@@ -8,6 +9,7 @@ public class Timekeeper extends JFrame {
     private JPanel panel1;
     private JLabel date;
     private JLabel time;
+    private JButton extras;
 
     public Timekeeper() {
         super("Timekeeper");
@@ -15,6 +17,10 @@ public class Timekeeper extends JFrame {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         pack();
+        extras.addActionListener(e -> {
+            References.extras = new Extras();
+            References.extras.setVisible(true);
+        });
     }
 
     @Override

@@ -14,6 +14,7 @@ import java.io.File;
 
 public class Config {
     private final String log = References.log + "init.Config.";
+
     public void loadConfig() {
         XML xml = References.xml;
         Settings settings = References.settings;
