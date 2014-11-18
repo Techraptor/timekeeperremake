@@ -43,7 +43,7 @@ public class Class {
     }
 
     public void calcLength() {
-
+        length = end.convert() - start.convert();
     }
 
     @Override

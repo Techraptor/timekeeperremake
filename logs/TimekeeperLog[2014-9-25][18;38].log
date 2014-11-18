@@ -1,0 +1,148 @@
+[2014-9-25] [18:36:53] [INFO] Log level set at: 1
+[2014-9-25] [18:36:53] [INFO] Console started
+[2014-9-25] [18:36:53] [INFO] Shut Down Hook Attached.
+[2014-9-25] [18:36:53] [INFO] Loading Config
+[2014-9-25] [18:36:53] [INFO] Reading XML File: Timekeeper.xml
+[2014-9-25] [18:36:53] [INFO] Done Reading XML File: Timekeeper.xml
+[2014-9-25] [18:36:53] [INFO] Loading ATECH
+[2014-9-25] [18:36:53] [ALL] Reading XML File: resources/schools/ATECH2015.xml
+[2014-9-25] [18:36:53] [INFO] Done Reading XML File: resources/schools/ATECH2015.xml
+[2014-9-25] [18:36:53] [INFO] Loading ATECH Schedule
+[2014-9-25] [18:36:54] [INFO] Loading ATECH Normal Schedule
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='1', start=Time{hour=7, minute=15}, end=Time{hour=7, minute=57}, lunch=0, length=42} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='An', start=Time{hour=8, minute=1}, end=Time{hour=8, minute=6}, lunch=0, length=5} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='2', start=Time{hour=8, minute=6}, end=Time{hour=8, minute=48}, lunch=0, length=42} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='3', start=Time{hour=8, minute=52}, end=Time{hour=9, minute=38}, lunch=0, length=46} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='4', start=Time{hour=9, minute=38}, end=Time{hour=10, minute=20}, lunch=0, length=42} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='5', start=Time{hour=10, minute=24}, end=Time{hour=11, minute=6}, lunch=0, length=42} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='6', start=Time{hour=11, minute=10}, end=Time{hour=11, minute=52}, lunch=0, length=0} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='7', start=Time{hour=12, minute=26}, end=Time{hour=1, minute=8}, lunch=0, length=42} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='8', start=Time{hour=1, minute=12}, end=Time{hour=1, minute=54}, lunch=0, length=42} Loaded
+[2014-9-25] [18:36:54] [ALL] Normal Class: Class{name='As', start=Time{hour=1, minute=54}, end=Time{hour=2, minute=15}, lunch=0, length=21} Loaded
+[2014-9-25] [18:36:54] [INFO] Done loading ATECH Normal Schedule
+[2014-9-25] [18:36:54] [INFO] Loading ATECH Wednesday Schedule
+[2014-9-25] [18:36:54] [ALL] Wednesday Class: Class{name='1', start=Time{hour=7, minute=15}, end=Time{hour=8, minute=40}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [ALL] Wednesday Class: Class{name='An', start=Time{hour=8, minute=40}, end=Time{hour=8, minute=45}, lunch=0, length=5} Loaded
+[2014-9-25] [18:36:54] [ALL] Wednesday Class: Class{name='3', start=Time{hour=8, minute=49}, end=Time{hour=10, minute=14}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [ALL] Wednesday Class: Class{name='5', start=Time{hour=10, minute=48}, end=Time{hour=12, minute=13}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [ALL] Wednesday Class: Class{name='7', start=Time{hour=12, minute=17}, end=Time{hour=1, minute=42}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [INFO] Done loading ATECH Wednesday Schedule
+[2014-9-25] [18:36:54] [INFO] Loading ATECH Thursday Schedule
+[2014-9-25] [18:36:54] [ALL] Thursday Class: Class{name='2', start=Time{hour=7, minute=15}, end=Time{hour=8, minute=40}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [ALL] Thursday Class: Class{name='An', start=Time{hour=8, minute=40}, end=Time{hour=8, minute=45}, lunch=0, length=5} Loaded
+[2014-9-25] [18:36:54] [ALL] Thursday Class: Class{name='4', start=Time{hour=8, minute=49}, end=Time{hour=10, minute=14}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [ALL] Thursday Class: Class{name='6', start=Time{hour=10, minute=18}, end=Time{hour=11, minute=43}, lunch=0, length=0} Loaded
+[2014-9-25] [18:36:54] [ALL] Thursday Class: Class{name='8', start=Time{hour=12, minute=17}, end=Time{hour=1, minute=42}, lunch=0, length=85} Loaded
+[2014-9-25] [18:36:54] [INFO] Done loading ATECH Thursday Schedule
+[2014-9-25] [18:36:54] [INFO] Loading ATECH Assembly Schedule
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='1', start=Time{hour=7, minute=15}, end=Time{hour=7, minute=50}, lunch=0, length=35} Loaded
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='2', start=Time{hour=7, minute=54}, end=Time{hour=8, minute=29}, lunch=0, length=35} Loaded
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='3', start=Time{hour=8, minute=33}, end=Time{hour=9, minute=8}, lunch=0, length=35} Loaded
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='4', start=Time{hour=9, minute=12}, end=Time{hour=9, minute=47}, lunch=0, length=35} Loaded
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='5', start=Time{hour=9, minute=51}, end=Time{hour=10, minute=26}, lunch=0, length=35} Loaded
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='6', start=Time{hour=10, minute=30}, end=Time{hour=11, minute=5}, lunch=0, length=0} Loaded
+[2014-9-25] [18:36:54] [ALL] Assembly Class: Class{name='7', start=Time{hour=11, minute=39}, end=Time{hour=12, minute=14}, lunch=0, length=35} Loaded
+[2014-9-25] [18:36:55] [ALL] Assembly Class: Class{name='8', start=Time{hour=12, minute=18}, end=Time{hour=1, minute=54}, lunch=0, length=96} Loaded
+[2014-9-25] [18:36:55] [INFO] Done loading ATECH Assembly Schedule
+[2014-9-25] [18:36:55] [INFO] Loading ATECH Holidays
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Start Summer', day=6, month=4} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='End Summer', day=8, month=24} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Labor Day', day=9, month=1} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Staff Development', day=9, month=2} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Nevada Day', day=10, month=31} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Veterans Day', day=11, month=10} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Veterans Day', day=11, month=11} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Thanksgiving', day=11, month=27} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Thanksgiving', day=11, month=28} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Martin Luther King, Jr. Day', day=1, month=19} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Presidents' Day', day=2, month=16} Loaded
+[2014-9-25] [18:36:55] [ALL] Holiday: Holidays{name='Memorial Day', day=5, month=25} Loaded
+[2014-9-25] [18:36:55] [INFO] Loading ATECH Teachers
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Paul', last='Bassett', middle='null', title='Mr.'}, classes=[PE 1, PE 1, PE 1, PE 1, PREP, PE 1, PE 1, PREP], room='Port', department='PE', extension=4046, email='pbassett', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Danielle', last='Belin', middle='null', title=''}, classes=[Biology, PREP, Biology, Biology H, Biology H, AP Biology, PREP, Biology H], room='404', department='S', extension=3403, email='dmbelin', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Lara', last='Bouchard', middle='null', title=''}, classes=[English 9 H, English 9 H, English 9 CC, Public Speaking, PREP, Public Speaking, Public Speaking, Public Speaking], room='616', department='E', extension=3616, email='lsboucha', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Dennis', last='Brown', middle='null', title=''}, classes=[Animation 1/2, Animation 1, Digital Game Development 1, Civil Engineering, Digital Game Development 1, Animation 1, Digital Game Development 2, PREP], room='803', department='IT', extension=3803, email='drbrow1', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Lloyd', last='Bunn', middle='null', title=''}, classes=[Chemistry, Physics, Chemistry, Chemistry, Physics, Chemistry, PREP, PREP], room='314', department='S', extension=3314, email='lebunn', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Lee', last='Carlton', middle='null', title=''}, classes=[PREP, Spanish 1, Spanish 1, Spanish 1, Spanish 2 H, Spanish 2 H, Spanish 2 H, PREP], room='314', department='Sp', extension=3603, email='lcarlton', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Kelly', last='Charles', middle='null', title='Mr.'}, classes=[PREP, Graphics Design 1, Graphics Design 2, Graphics Design 1, Graphics Design 1, Publication 1/2, Graphics Design 1, PREP], room='407', department='G', extension=3407, email='kcharles1', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Becky', last='College', middle='null', title=''}, classes=[PREP, Geoscience, Geoscience CC, Chemistry H, Chemistry H, Geoscience, Chemistry H, PREP], room='403', department='S', extension=3403, email='BCC436', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Vali', last='Crawford', middle='null', title=''}, classes=[English 12, Journalism Found/Journalism 2, English 9 H, English 12, PREP, PREP, English 9 H, English 12], room='609', department='E', extension=3609, email='vcrawford', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Geoffrey', last='DeMaio', middle='null', title=''}, classes=[Guidance/Virtual Lab, Business Software App, PREP, Business Software App, Business Software App, Business Software App, PREP, Guidance/Virtual Lab], room='313', department='B', extension=3805, email='ggdemaio', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='James', last='Dickson', middle='null', title=''}, classes=[PREP, Physics H, Intro to Robotics, PREP, Physics H, Intro to Robotics, Physics H, Physics H], room='325', department='S', extension=3325, email='jhdickson', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Maureen', last='Doyle', middle='null', title=''}, classes=[PREP, PREP, Civil Rights and Liberty, Civil Rights and Liberty, Psychology 1, Crime and Justice, Crime and Justice, Psychology 1], room='308', department='SS', extension=3308, email='mpdoyle1', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='David', last='Eason', middle='null', title='Mr.'}, classes=[Fund Law and Research, Trial Advocacy, PREP, Criminal Justice 1/Project Based Learning, Fund Law and Research, PREP, Criminal Justice 1, Trial Advocacy], room='307', department='SS', extension=3307, email='deason', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Bruce', last='Ellithorpe', middle='null', title='Mr.'}, classes=[Computer Science 2 H, Computer Science 3 H, Business Management 1, Computer Science 3 H, Computer Science 3 L, Computer Science 3 L, PREP, Business Management 1], room='601', department='CS', extension=3601, email='bellithorpe', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Daniel', last='Gakuru', middle='null', title='Mr.'}, classes=[Algebra 2 H, PREP, Geometry, Algebra 2 H, Geometry CC, Algebra 2 H, Geometry, Geometry], room='703', department='M', extension=3703, email='dkgakuru', website='', lunches=[2, 2, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Lucas', last='GearHart', middle='null', title='Mr.'}, classes=[Graphic Design 3, PREP, Graphic Design 2, Graphic Design AS, Graphic Design AS, Graphic Design 3, Graphic Design 3 L, Graphic Design 3 L], room='401', department='G', extension=3407, email='lsgearhart', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Daphne', last='Grabovoi', middle='null', title=''}, classes=[Video Production 1/2, Engilsh 9, PREP, English 9, AP English Language/Composition, AP English Language/Composition, AP English Language/Composition, PREP], room='326', department='E', extension=3609, email='DGrabov', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Kellie', last='Guild', middle='null', title=''}, classes=[AP English Language/Composition, PREP, AP English Language/Composition, English 11, English 11 H, PREP, AP English Language/Composition, English 11H], room='321', department='E', extension=3321, email='kguild', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Doug', last='Hall', middle='null', title='Mr.'}, classes=[PREP, Precalculus BC H, Algebra 2 H, AP Calculus BC, Algebra 2 H, PREP, Algebra 2 H, Precalculus BC H], room='715', department='M', extension=3715, email='doughall', website='', lunches=[2, 2, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Bonnie', last='Harmon', middle='null', title=''}, classes=[, , , , Entrepreneur 1, Entrepreneur 1, , ], room='800', department='B', extension=0, email='', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='David', last='Hatch', middle='null', title='Mr.'}, classes=[IT Essentials 2, PREP, IT Network 1 (Part 1), IT Network 1 (Part 2), IT Essentials 1, IT Network 3 H (Part 1), IT Network 3 H (Part 2), PREP], room='301', department='NT', extension=4037, email='dhatch', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Robert', last='Henderson', middle='null', title='Mr.'}, classes=[World History H, World History CC, World History H, World History H, World History, History of Pop Music, PREP, History of Pop Music], room='618', department='SS', extension=3618, email='rwhenderson', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Stephanie', last='Hill', middle='null', title=''}, classes=[Spanish 2 H, Spanish 2 H, Spanish 2 H, PREP, English 10 H, English 10 H, PREP, English 10 H], room='615', department='E Sp', extension=3615, email='shillvegas', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Jeff', last='Hinton', middle='null', title='Mr.'}, classes=[US Government, PREP, US Government, US History H, US Government, US History H, US History H, PREP], room='626', department='SS', extension=3626, email='jahinton', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Julie', last='Jack', middle='null', title=''}, classes=[Orchestra Ensemble, Music Appreciation, Music Appreciation, PREP, Advanced Orchestra, Band HS Advanced, Music Appreciation, Band HS Advanced], room='Port', department='A', extension=5109, email='jjack', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Dave', last='Johannessohn', middle='null', title='Mr.'}, classes=[Architecture CADD 1, PREP, CADD 1, Architecture CADD 1, Architecture CADD 1 L, CADD 1, Architecture CADD 1 L, PREP], room='312', department='AD', extension=3312, email='dljohnannessohn', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Kenya', last='Johnson', middle='null', title=''}, classes=[PE 1/2, PREP, PREP, PE 1/2, PE 1/2, PE 1/2, PE 1/2, PE 1/2], room='Gym', department='PE', extension=4054, email='kjohnson', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Rich', last='Knoeppel', middle='null', title=''}, classes=[Architecture CADD 2, Architecture CADD 3, Architecture CADD 3, Architecture CADD 2, Architecture CADD 2 L/3 L, Architecture CADD 2 L/3 L, Architecture CADD 2 L/3 L, PREP], room='414', department='AD', extension=4036, email='rknoeppel', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Nancy', last='Lee', middle='null', title=''}, classes=[Computer Science 1, Web Design Development 3, Web Design Development 1, Web Design Development 2, PREP, Computer Science 1, Web Design Development 1, Web Design Development 1], room='802', department='CS', extension=3802, email='nlee1', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Taylor', last='Lee', middle='null', title=''}, classes=[US History H, PREP, US History H, AP Psychology, AP Psychology, AP Psychology, PREP, AP Psychology], room='625', department='SS', extension=3625, email='tcyi', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='William', last='Loose', middle='null', title=''}, classes=[Topics in Modern MAth, Precalculus AB H, Topics in Modern Math, PREP, AP Statistics, PREP, Precalculus AB H, Topics in Modern Math], room='708', department='M', extension=3708, email='wtloose', website='', lunches=[2, 2, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Roger', last='Mayo', middle='null', title='Mr.'}, classes=[Computer Science AS, Computer Science 2 H, Digital Game Development 1, Computer Science AS, Computer Science 1, PREP, Computer Science 1, Computer Science 2 H], room='322', department='CS', extension=3322, email='rlamyo', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:55] [ALL] Teacher: Teacher{name=Name{first='Suzanne', last='Mccenachan', middle='null', title=''}, classes=[PREP, Study Skills APP, English 9 CC Grabovoi, English 10 CC Shriner, Geometry CC Gakuru, PREP, Algebra CC Slobodnick, Math APP], room='706', department='Sped', extension=3603, email='smcclenachan', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Kin', last='McNair-Styles', middle='null', title=''}, classes=[Accounting and Finance 1, Accounting and Finance 1, Math of Personal Finance, Accounting and Finance 1, PREP, PREP, Math of Personal Finance, Algebra 2], room='808', department='BM', extension=3808, email='KRStyles', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Jessica', last='Medina', middle='null', title=''}, classes=[Biology H, Biology H, Biology H, PREP, Biology CC, Biology H, Biology, PREP], room='406', department='S', extension=3406, email='jjmedina', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Scott', last='Meikle', middle='null', title='Mr.'}, classes=[US Government H, AP US Government/Politics, AP Microeconomics, US Government H, US Government H, US Government H, AP US Government/Politics, PREP], room='624', department='SS', extension=3624, email='smeikle', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Victoria', last='Norby', middle='null', title=''}, classes=[English 10 H, English 10 H, English 10 H, PREP, English 11, English 11, PREP, English 10 H], room='610', department='E', extension=3610, email='vnorby', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Caroline', last='Pankonen', middle='null', title=''}, classes=[AP World History, Economics, PREP, PREP, AP World History, World History, AP World History, AP World History], room='627', department='SS', extension=3627, email='Ctpankonen', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Mike', last='Patterson', middle='null', title='Mr.'}, classes=[Geometry H, Algebra 2, Geometry H, Algebra 2, Algebra 2, Geometry H, Geometry H, PREP], room='804', department='M', extension=3804, email='mnpatt', website='', lunches=[2, 2, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='David', last='Peltz', middle='null', title='Mr.'}, classes=[Chemistry H, AP Chemistry, AP Chemistry, Physics H, PREP, Physics H, PREP, Chemistry H], room='315', department='S', extension=3315, email='DJP452', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Betsy', last='Reed', middle='null', title=''}, classes=[PREP, World H CC Henderson, Geoscience CC Colledge, Study Skills APP, Biology CC Medina, PREP, Study Skills APP, US History Zoitopolous], room='702', department='Sped', extension=4032, email='eareed', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Amy', last='Ruggles', middle='null', title=''}, classes=[PREP, AP Spanish Language Culture, PREP, Spanish 1, Spanish 1, AP Spanish Language Culture, Spanish 1, Spanish 2 H], room='605', department='Sp', extension=3605, email='aaruggles', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Paul', last='Schaper', middle='null', title='Mr.'}, classes=[PREP, PE 2, Lifetime Sports Recreation, PE 2, PREP, PE 2, PE 2, PE 2], room='Gym', department='PE', extension=4043, email='pschaper', website='', lunches=[1, 1, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Mary', last='Shane', middle='null', title=''}, classes=[AP Environmental Science, Chemistry H, AP Environmental Science, Geoscience H, PREP, Chemistry H, Geoscience H, PREP], room='324', department='S', extension=3324, email='shanem', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Natasha', last='Shriner', middle='null', title=''}, classes=[English 12 H, English 12 H, PREP, English 10 CC, English 12 H, PREP, English 10, English 12 H], room='707', department='E', extension=3707, email='nshriner', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Ricci', last='Slobodnik', middle='null', title=''}, classes=[Precalculus AB H, Precalculus AB H, Algebra 1, PREP, Precalculus AB H, Precalculus AB H, Algebra 1 CC, Algebra 1], room='705', department='M', extension=3706, email='rslobodnik', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Courtney', last='Stern', middle='null', title=''}, classes=[English 11, English 11 H, English 9 H, English 9 H, PREP, English 9 H, PREP, English 9 H], room='606', department='E', extension=3606, email='cstern', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Sherry', last='Stidhum', middle='null', title=''}, classes=[Business Management 2, Principles in Business Management, PREP, Business Management AS, Business Management 2, PREP, Principles in Business Management, Principles in Business Management], room='800', department='B', extension=4048, email='sstidhum', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Scott', last='Stridde', middle='null', title='Mr.'}, classes=[Health Education, Health Education, PREP, Health Education, PE 1, Lifetime Sports Recreation, PREP, PE 1], room='902', department='S', extension=3902, email='sstridd', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Kristen', last='Taylor', middle='null', title=''}, classes=[AP Calculus AB, AP Calculus AB, PREP, AP Calculus AB, Geometry H, PREP, AP Calculus AB, Geometry H], room='710', department='M', extension=3710, email='ktaylor', website='', lunches=[2, 2, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Scott', last='Underwood', middle='null', title='Mr.'}, classes=[PREP, PLTW Engineering Design and Development, PLTW Principles of Engineering, PLTW Engineering Design and Development, PLTW Principles of Engineering, PLTW Engineering Design and Development, Cicle Engineering, PLTW Engineering Design], room='305', department='ET', extension=3305, email='sunderwood', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Ana', last='Urena', middle='null', title=''}, classes=[Spanish 1, Spanish Speakers 2 H, PREP, Spanish Speakers 2 H, PREP, Spanish 1, Spanish 3 H, Spanish 3 H], room='604', department='SP', extension=3604, email='alurena', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Gina', last='Vallari', middle='null', title=''}, classes=[AP Physics 1: Algebra Based, AP Physics C: Mechanics, AP Physics 1: Algebra Based, AP Physics 1: Algebra Based, AP Physics C: Mechanics, Principles of Leadership, PREP, PREP], room='701', department='S', extension=3701, email='gmvallari', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Dee', last='Woodbury', middle='null', title=''}, classes=[Drawing 1/2, Drawing 1/2, PREP, PREP, Art 1, Art 1, Art 1, Art 1], room='409', department='G', extension=3325, email='deewoodbury', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Paula', last='Woods', middle='null', title=''}, classes=[AP Human Geography, AP US History, US History, AP Human Geography, PREP, PREP, AP Human Geography, AP US History], room='623', department='SS', extension=3623, email='PDW269', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Mary', last='Ziegler', middle='null', title=''}, classes=[English 10 H, English 10 H, AP English Literature and Composition, English 10 H, AP English Literature and Composition, PREP, PREP, AP English Literature and Composition], room='607', department='E', extension=4002, email='zieglml', website='', lunches=[1, 1, 1]} Loaded
+[2014-9-25] [18:36:56] [ALL] Teacher: Teacher{name=Name{first='Dimitrius', last='Zoitopoulous', middle='null', title='Mr.'}, classes=[Survey Social Studies, Survey Social Studies, PREP, Survey Social Studies, PREP, World History, US History, US History CC], room='805', department='SS', extension=3313, email='dzoitopoulos', website='', lunches=[2, 2, 2]} Loaded
+[2014-9-25] [18:38:4] [INFO] Shutting Down
+[2014-9-25] [18:38:4] [INFO] Saving Config
+[2014-9-25] [18:38:4] [INFO] New File Set
+[2014-9-25] [18:38:4] [INFO] Added Element: Timekeeper
+[2014-9-25] [18:38:4] [ALL] Added [Timekeeper: null] to Document
+[2014-9-25] [18:38:4] [INFO] Added Element: Colors
+[2014-9-25] [18:38:4] [ALL] Added Colors to Timekeeper
+[2014-9-25] [18:38:4] [INFO] Added Element: Foreground
+[2014-9-25] [18:38:4] [ALL] Added Foreground to Colors
+[2014-9-25] [18:38:4] [ALL] Added String java.awt.Color[r=0,g=0,b=0] to Foreground
+[2014-9-25] [18:38:4] [ALL] Added Attribute Default with value of true to element Foreground
+[2014-9-25] [18:38:4] [INFO] Added Element: Background
+[2014-9-25] [18:38:4] [ALL] Added Background to Colors
+[2014-9-25] [18:38:4] [ALL] Added String java.awt.Color[r=255,g=255,b=255] to Background
+[2014-9-25] [18:38:4] [ALL] Added Attribute Default with value of true to element Background
+[2014-9-25] [18:38:4] [INFO] Added Element: Lunch
+[2014-9-25] [18:38:4] [ALL] Added Lunch to Timekeeper
+[2014-9-25] [18:38:4] [ALL] Added String 1 to Lunch
+[2014-9-25] [18:38:4] [ALL] Added Attribute Default with value of true to element Lunch
+[2014-9-25] [18:38:4] [INFO] Added Element: School
+[2014-9-25] [18:38:4] [ALL] Added School to Timekeeper
+[2014-9-25] [18:38:4] [ALL] Added String ATECH to School
+[2014-9-25] [18:38:4] [ALL] Added Attribute Default with value of true to element School
+[2014-9-25] [18:38:4] [INFO] Added Element: Schools
+[2014-9-25] [18:38:4] [ALL] Added Schools to Timekeeper
+[2014-9-25] [18:38:4] [INFO] XML File: Timekeeper.xml saved
+[2014-9-25] [18:38:4] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Recreated
+[2014-9-25] [18:38:4] [DEBUG] [com.falconraptor.utilities.files.Write.close] File Saved
+[2014-9-25] [18:38:4] [INFO] File Organized
+[2014-9-25] [18:38:4] [INFO] Config Saved
+[2014-9-25] [18:38:4] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Created

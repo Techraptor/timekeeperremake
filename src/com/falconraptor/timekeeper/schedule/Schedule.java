@@ -1,5 +1,6 @@
 package com.falconraptor.timekeeper.schedule;
 
+import com.falconraptor.timekeeper.references.References;
 import com.falconraptor.timekeeper.school.Class;
 import com.falconraptor.utilities.logger.Logger;
 
@@ -13,8 +14,8 @@ public class Schedule {
         aClass = new Class[classes];
     }
 
-    public void setLunch(int i) {
-
+    public void calcLengths() {
+        for (Class c : aClass) if (c != null) c.calcLength();
     }
 
     @Override
@@ -44,5 +45,21 @@ public class Schedule {
         }
         aClass[index].setStart(start);
         aClass[index].setEnd(end);
+    }
+
+    public void setLunch(String schedule, int l) {
+        if (schedule.equals("normal")) {
+            if (l == 1) lunch = References.settings.atech.normalfirst;
+            else if (l == 2) lunch = References.settings.atech.normalsecond;
+        } else if (schedule.equals("wednesday")) {
+            if (l == 1) lunch = References.settings.atech.normalfirst;
+            else if (l == 2) lunch = References.settings.atech.normalsecond;
+        } else if (schedule.equals("thursday")) {
+            if (l == 1) lunch = References.settings.atech.normalfirst;
+            else if (l == 2) lunch = References.settings.atech.normalsecond;
+        } else if (schedule.equals("assembly")) {
+            if (l == 1) lunch = References.settings.atech.normalfirst;
+            else if (l == 2) lunch = References.settings.atech.normalsecond;
+        }
     }
 }

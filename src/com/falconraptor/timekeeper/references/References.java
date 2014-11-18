@@ -1,7 +1,10 @@
 package com.falconraptor.timekeeper.references;
 
+import com.darkleach7.extra.Extras;
 import com.falconraptor.timekeeper.Timekeeper;
+import com.falconraptor.timekeeper.guis.Loading;
 import com.falconraptor.timekeeper.init.Config;
+import com.falconraptor.timekeeper.init.GUI;
 import com.falconraptor.timekeeper.init.Init;
 import com.falconraptor.timekeeper.settings.Colors;
 import com.falconraptor.timekeeper.settings.Settings;
@@ -20,4 +23,8 @@ public class References {
     public static XML xml;
     public static Shutdown shutdown = new Shutdown();
     public static Timekeeper timekeeper;
+    public static GUI gui;
+    public static com.falconraptor.timekeeper.guis.Timekeeper timekeepergui;
+    public static Loading loading;
+    public static Extras extras;
 }
