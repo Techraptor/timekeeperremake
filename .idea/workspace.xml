@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7fcb138-651d-4d17-9ba9-e28105c4f6f8" name="Default" comment="fixed shutdown hook">
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\logs\TimekeeperLog[2014-9-25][13;53].log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\logs\TimekeeperLog[2014-9-25][18;32].log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\logs\TimekeeperLog[2014-9-25][18;33].log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\logs\TimekeeperLog[2014-9-25][18;38].log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\logs\TimekeeperLog[2014-9-25][8;13].log" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\logs\TimekeeperLog[2014-9-25][8;32].log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+    <list default="true" id="d7fcb138-651d-4d17-9ba9-e28105c4f6f8" name="Default" comment="fixed shutdown hook/ made sure it uploaded">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timekeeperremake.iws" />
@@ -992,7 +985,7 @@
       <workItem from="1418675226609" duration="4496000" />
       <workItem from="1418704988089" duration="4128000" />
       <workItem from="1418746468942" duration="304000" />
-      <workItem from="1418746857540" duration="352000" />
+      <workItem from="1418746857540" duration="525000" />
     </task>
     <task id="LOCAL-00001" summary="need help with the shutdown hook">
       <created>1410189999100</created>
@@ -1078,11 +1071,17 @@
       <option name="project" value="LOCAL" />
       <updated>1418742411683</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed shutdown hook/ made sure it uploaded">
+      <created>1418747242958</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1418747242958</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9280000" />
+    <option name="totallyTimeSpent" value="9453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1139,7 +1138,8 @@
     <MESSAGE value="starting guis" />
     <MESSAGE value="merged with darkleach" />
     <MESSAGE value="fixed shutdown hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed shutdown hook" />
+    <MESSAGE value="fixed shutdown hook/ made sure it uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed shutdown hook/ made sure it uploaded" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

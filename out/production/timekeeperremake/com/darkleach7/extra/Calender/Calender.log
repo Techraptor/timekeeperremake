@@ -1,0 +1,21 @@
+Initial Calendar revision (9/19/14)
+    Current Calendar features
+        Basic calendar function,
+        Currently shows current month, through the Java 1.8 java.time API
+
+    Learned function through experimentation and reading of the java.time API
+    *Currently planned features
+        Ability to change month through buttons
+        Highlighting the current date
+        Ability to add events and checklists to the calendar.
+
+9/23/14
+    Change month through buttons was successful but ended up opening up a bug that was unseen. I worked with Dustin to
+    help fix this bug (1 Hour) and some slight cleanup of the code took place. The major bug was only a line that needed
+    deleting.
+
+9/24/14
+    added highlighting of current day,
+    new bug: Calendar does not work properly if a month starts on a Saturday
+
+9/25/14
