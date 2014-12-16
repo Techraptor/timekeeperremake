@@ -1,74 +1,74 @@
 package com.falconraptor.timekeeper.schedule;
 
 public class Lunch {
-    private Time start;
-    private Time end;
-    private int lunch;
-    private int length;
+	private Time start;
+	private Time end;
+	private int lunch;
+	private int length;
 
-    public Lunch(int l, Time s, Time e) {
-        lunch = l;
-        start = s;
-        end = e;
-    }
+	public Lunch (int l, Time s, Time e) {
+		lunch = l;
+		start = s;
+		end = e;
+	}
 
-    public Lunch(int l, int sh, int sm, int eh, int em) {
-        lunch = l;
-        start = new Time(sh, sm);
-        end = new Time(eh, em);
-    }
+	public Lunch (int l, int sh, int sm, int eh, int em) {
+		lunch = l;
+		start = new Time(sh, sm);
+		end = new Time(eh, em);
+	}
 
-    @Override
-    public String toString() {
-        return "Lunch{" +
-                "start=" + start +
-                ", end=" + end +
-                ", lunch=" + lunch +
-                ", length=" + length +
-                '}';
-    }
+	@Override
+	public String toString () {
+		return "Lunch{" +
+			  "start=" + start +
+			  ", end=" + end +
+			  ", lunch=" + lunch +
+			  ", length=" + length +
+			  '}';
+	}
 
-    public int getLength() {
-        return length;
-    }
+	public int getLength () {
+		return length;
+	}
 
-    public void setLength(int length) {
-        this.length = length;
-    }
+	public void setLength (int length) {
+		this.length = length;
+	}
 
-    public void setStart(int hour, int minute) {
-        start = new Time(hour, minute);
-    }
+	public void setStart (int hour, int minute) {
+		start = new Time(hour, minute);
+	}
 
-    public void setEnd(int hour, int minute) {
-        end = new Time(hour, minute);
-    }
+	public void setEnd (int hour, int minute) {
+		end = new Time(hour, minute);
+	}
 
-    public Time getStart() {
-        return start;
-    }
+	public int getLunch () {
+		return lunch;
+	}
 
-    public void setStart(Time s) {
-        start = s;
-    }
+	public void setLunch (int l) {
+		lunch = l;
+	}
 
-    public Time getEnd() {
-        return end;
-    }
+	public void calcLength () {
+		length = (getEnd().getHour() - getStart().getHour()) * 60 + getEnd().getMinute() - getStart().getMinute();
+	}
 
-    public void setEnd(Time s) {
-        end = s;
-    }
+	public Time getStart () {
+		return start;
+	}
 
-    public int getLunch() {
-        return lunch;
-    }
+	public void setStart (Time s) {
+		start = s;
+	}
 
-    public void setLunch(int l) {
-        lunch = l;
-    }
+	public Time getEnd () {
+		return end;
+	}
 
-    public void calcLength() {
-
-    }
+	public void setEnd (Time s) {
+		end = s;
+	}
 }

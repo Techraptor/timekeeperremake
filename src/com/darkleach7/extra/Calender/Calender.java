@@ -1,16 +1,13 @@
 package com.darkleach7.extra.Calender;
 
-import com.falconraptor.timekeeper.references.References;
-import com.falconraptor.utilities.logger.Logger;
+import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.utilities.logger.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.awt.event.*;
+import java.time.*;
+import java.util.*;
 
 public class Calender extends JFrame {
     public final static String log = References.log + ".extra.utilities.Calender.Calender.";
@@ -313,7 +310,7 @@ public class Calender extends JFrame {
     private String getDateLabel(int day) {
         LocalDate date = currentDate.withYear(2014).withMonth(9).withDayOfMonth(7);
         date = date.withDayOfMonth(date.getDayOfMonth() + day - 1);
-        return new String("" + date.getDayOfWeek());
+        return "" + date.getDayOfWeek();
     }
 
     private JMenuItem setMenuItem(JMenuItem j, int mn, String tt, int mn2, int ae) {

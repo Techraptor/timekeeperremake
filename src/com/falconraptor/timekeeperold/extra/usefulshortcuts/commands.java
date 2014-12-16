@@ -1,25 +1,25 @@
 package com.falconraptor.timekeeperold.extra.usefulshortcuts;
 
 public abstract class commands implements faced {
-    String url, command;
+	String url, command;
 
-    public void seturl(String u) {
-        url = u;
-    }
+	public void seturl (String u) {
+		url = u;
+	}
 
-    public void setcommand(String c) {
-        command = c;
-    }
+	public void setcommand (String c) {
+		command = c;
+	}
 
-    public String geturl() {
-        return url;
-    }
+	public String geturl () {
+		return url;
+	}
 
-    public String getcommand() {
-        return command;
-    }
+	public String getcommand () {
+		return command;
+	}
 
-    public String toString() {
-        return "URL: " + url + ", Command: " + command;
-    }
+	public String toString () {
+		return "URL: " + url + ", Command: " + command;
+	}
 }
