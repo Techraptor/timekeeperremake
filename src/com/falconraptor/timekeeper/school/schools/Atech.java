@@ -22,13 +22,21 @@ public class Atech extends School {
 	public Lunch thursdaysecond;
 	public Lunch assemblyfirst;
 	public Lunch assemblysecond;
-	private ArrayList<Holidays> holidays = new ArrayList<>(0);
-	private ArrayList<Teacher> teachers = new ArrayList<>(0);
+	public ArrayList<Holidays> holidays = new ArrayList<>(0);
+	public ArrayList<Teacher> teachers = new ArrayList<>(0);
 	private String schoolPhone;
 	private String ccsdEmail;
 
 	public Atech () {
 		super("Atech", 8);
+	}
+
+	public String getCcsdEmail () {
+		return ccsdEmail;
+	}
+
+	public String getSchoolPhone () {
+		return schoolPhone;
 	}
 
 	public void loadAtech () {
