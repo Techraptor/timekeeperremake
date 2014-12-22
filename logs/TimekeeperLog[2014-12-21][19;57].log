@@ -1,0 +1,35 @@
+[2014-12-21] [19:57:40] [INFO] Log level set at: 1
+[2014-12-21] [19:57:40] [INFO] Loading classes
+[2014-12-21] [19:57:40] [INFO] Shut Down Hook Attached.
+[2014-12-21] [19:57:40] [ERROR] java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+[2014-12-21] [19:57:55] [INFO] Shutting Down
+[2014-12-21] [19:57:55] [INFO] Saving Config
+[2014-12-21] [19:57:55] [INFO] New File Set
+[2014-12-21] [19:57:55] [INFO] Added Element: Timekeeper
+[2014-12-21] [19:57:55] [ALL] Added [Timekeeper: null] to Document
+[2014-12-21] [19:57:55] [INFO] Added Element: Colors
+[2014-12-21] [19:57:55] [ALL] Added Colors to Timekeeper
+[2014-12-21] [19:57:55] [INFO] Added Element: Foreground
+[2014-12-21] [19:57:55] [ALL] Added Foreground to Colors
+[2014-12-21] [19:57:55] [ALL] Added String java.awt.Color[r=0,g=0,b=0] to Foreground
+[2014-12-21] [19:57:55] [ALL] Added Attribute Default with value of true to element Foreground
+[2014-12-21] [19:57:55] [INFO] Added Element: Background
+[2014-12-21] [19:57:55] [ALL] Added Background to Colors
+[2014-12-21] [19:57:55] [ALL] Added String java.awt.Color[r=255,g=255,b=255] to Background
+[2014-12-21] [19:57:55] [ALL] Added Attribute Default with value of true to element Background
+[2014-12-21] [19:57:55] [INFO] Added Element: Lunch
+[2014-12-21] [19:57:55] [ALL] Added Lunch to Timekeeper
+[2014-12-21] [19:57:55] [ALL] Added String 1 to Lunch
+[2014-12-21] [19:57:55] [ALL] Added Attribute Default with value of true to element Lunch
+[2014-12-21] [19:57:55] [INFO] Added Element: School
+[2014-12-21] [19:57:55] [ALL] Added School to Timekeeper
+[2014-12-21] [19:57:55] [ALL] Added String ATECH to School
+[2014-12-21] [19:57:55] [ALL] Added Attribute Default with value of true to element School
+[2014-12-21] [19:57:55] [INFO] Added Element: Schools
+[2014-12-21] [19:57:55] [ALL] Added Schools to Timekeeper
+[2014-12-21] [19:57:55] [INFO] XML File: Timekeeper.xml saved
+[2014-12-21] [19:57:55] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Recreated
+[2014-12-21] [19:57:55] [DEBUG] [com.falconraptor.utilities.files.Write.close] File Saved
+[2014-12-21] [19:57:55] [INFO] File Organized
+[2014-12-21] [19:57:55] [INFO] Config Saved
+[2014-12-21] [19:57:55] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Created

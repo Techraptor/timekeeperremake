@@ -12,11 +12,6 @@
             <Day>24</Day>
         </Holiday>
         <Holiday>
-            <Name>Labor Day</Name>
-            <Month>9</Month>
-            <Day>1</Day>
-        </Holiday>
-        <Holiday>
             <Name>Staff Development</Name>
             <Month>9</Month>
             <Day>2</Day>
@@ -27,39 +22,9 @@
             <Day>31</Day>
         </Holiday>
         <Holiday>
-            <Name>Veterans Day</Name>
-            <Month>11</Month>
-            <Day>10</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Veterans Day</Name>
-            <Month>11</Month>
-            <Day>11</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Thanksgiving</Name>
-            <Month>11</Month>
-            <Day>27</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Thanksgiving</Name>
-            <Month>11</Month>
-            <Day>28</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Martin Luther King, Jr. Day</Name>
-            <Month>1</Month>
-            <Day>19</Day>
-        </Holiday>
-        <Holiday>
             <Name>Presidents' Day</Name>
             <Month>2</Month>
             <Day>16</Day>
-        </Holiday>
-        <Holiday>
-            <Name>Memorial Day</Name>
-            <Month>5</Month>
-            <Day>25</Day>
         </Holiday>
     </Holidays>
     <Schedule>

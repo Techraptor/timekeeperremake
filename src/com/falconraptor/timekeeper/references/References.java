@@ -4,6 +4,7 @@ import com.darkleach7.extra.*;
 import com.falconraptor.timekeeper.Timekeeper;
 import com.falconraptor.timekeeper.guis.*;
 import com.falconraptor.timekeeper.init.*;
+import com.falconraptor.timekeeper.licensing.*;
 import com.falconraptor.timekeeper.settings.Colors;
 import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.Shutdown;
@@ -27,7 +28,11 @@ public class References {
 	public static com.falconraptor.timekeeper.guis.Timekeeper timekeepergui;
 	public static Loading loading;
 	public static Extras extras;
+	public static ConnectionToDatabase connectionToDatabase;
+	public static Create create;
+	public static Login login;
 	public static ArrayList<Thread> threads = new ArrayList<>(0);
+	public static Users users=new Users();
 
 	public static WindowListener shutdownProgram () {
 		return new WindowListener() {

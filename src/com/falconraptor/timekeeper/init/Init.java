@@ -2,6 +2,7 @@ package com.falconraptor.timekeeper.init;
 
 import com.falconraptor.timekeeper.Timekeeper;
 import com.falconraptor.timekeeper.guis.*;
+import com.falconraptor.timekeeper.licensing.*;
 import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.files.*;
 import com.falconraptor.utilities.logger.*;
@@ -19,6 +20,7 @@ public class Init {
 		gui = new GUI();
 		timekeepergui = new com.falconraptor.timekeeper.guis.Timekeeper();
 		loading = new Loading();
+		connectionToDatabase=new ConnectionToDatabase();
 	}
 
 	public void start () {
@@ -26,6 +28,7 @@ public class Init {
 		Logger.logINFO("Loading config files");
 		config.loadConfig();
 		config.loadUSHolidays();
+		connectionToDatabase.connect();
 		Logger.logINFO("Starting GUIs");
 		gui.start();
 	}
