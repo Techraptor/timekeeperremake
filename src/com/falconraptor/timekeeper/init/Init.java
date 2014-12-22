@@ -2,30 +2,31 @@ package com.falconraptor.timekeeper.init;
 
 import com.falconraptor.timekeeper.Timekeeper;
 import com.falconraptor.timekeeper.guis.*;
-import com.falconraptor.timekeeper.references.*;
 import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.files.*;
 import com.falconraptor.utilities.logger.*;
 
+import static com.falconraptor.timekeeper.references.References.*;
+
 public class Init {
 	public Init () {
 		Logger.logINFO("Loading classes");
-		References.colors = new Colors();
-		References.xml = new XML();
-		References.settings = new Settings();
-		References.config = new Config();
-		References.timekeeper = new Timekeeper();
-		References.gui = new GUI();
-		References.timekeepergui = new com.falconraptor.timekeeper.guis.Timekeeper();
-		References.loading = new Loading();
+		colors = new Colors();
+		xml = new XML();
+		settings = new Settings();
+		config = new Config();
+		timekeeper = new Timekeeper();
+		gui = new GUI();
+		timekeepergui = new com.falconraptor.timekeeper.guis.Timekeeper();
+		loading = new Loading();
 	}
 
 	public void start () {
-		References.loading.setVisible(true);
+		loading.setVisible(true);
 		Logger.logINFO("Loading config files");
-		References.config.loadConfig();
-		References.config.load();
+		config.loadConfig();
+		config.loadUSHolidays();
 		Logger.logINFO("Starting GUIs");
-		References.gui.start();
+		gui.start();
 	}
 }

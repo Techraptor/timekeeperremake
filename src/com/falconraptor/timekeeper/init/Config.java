@@ -1,6 +1,7 @@
 package com.falconraptor.timekeeper.init;
 
 import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.schedule.*;
 import com.falconraptor.timekeeper.school.schools.*;
 import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.Colors;
@@ -126,7 +127,23 @@ public class Config {
 
 	}
 
-	public void load () {
-
+	public void loadUSHolidays () {
+		XML xml = References.xml;
+		String filename = "USHolidays.xml";
+		Document doc = xml.readXMLDocFromJar("resources/" + filename);
+		References.loading.addProgress();
+		Node docnode = doc.getDocumentElement();
+		Logger.logINFO("Loading US Holidays");
+		Node loop = docnode.getFirstChild().getNextSibling();
+		while (loop != null) {
+			String name = loop.getFirstChild().getNextSibling().getTextContent();
+			int day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling()
+										  .getTextContent());
+			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
+			loop = loop.getNextSibling().getNextSibling();
+			References.settings.usHolidays.add(new Holidays(name, day, month));
+			Logger.logALL("Holiday: " + References.settings.usHolidays.get(References.settings.usHolidays.size() - 1) + " Loaded");
+			References.loading.addProgress();
+		}
 	}
 }

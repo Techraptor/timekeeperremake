@@ -213,8 +213,9 @@ public class Atech extends School {
 		Node loop = h.getFirstChild().getNextSibling();
 		while (loop != null) {
 			String name = loop.getFirstChild().getNextSibling().getTextContent();
-			int day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent());
-			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
+			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling()
+										    .getTextContent());
+			int day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
 			loop = loop.getNextSibling().getNextSibling();
 			holidays.add(new Holidays(name, day, month));
 			Logger.logALL("Holiday: " + holidays.get(holidays.size() - 1) + " Loaded");

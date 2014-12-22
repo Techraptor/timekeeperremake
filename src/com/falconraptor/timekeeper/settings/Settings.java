@@ -1,10 +1,12 @@
 package com.falconraptor.timekeeper.settings;
 
 import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.schedule.*;
 import com.falconraptor.timekeeper.school.*;
 import com.falconraptor.timekeeper.school.schools.*;
 
 import java.awt.*;
+import java.util.*;
 
 public class Settings {
 	public static String[] schoolsList = {"ATECH"};
@@ -18,4 +20,5 @@ public class Settings {
 	public int lunch = defaultLunch;
 	public String school = defaultSchool;
 	public Atech atech;
+	public ArrayList<Holidays> usHolidays = new ArrayList<>(0);
 }

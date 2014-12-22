@@ -1,0 +1,47 @@
+<USHolidays>
+	<Holiday>
+		<Name>New Year's Day</Name>
+		<Day>1</Day>
+		<Month>1</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Martin Luther King, Jr. Day</Name>
+		<Day></Day>
+		<Month>1</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Washington's Birthday</Name>
+		<Day></Day>
+		<Month>2</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Memorial Day</Name>
+		<Day></Day>
+		<Month>5</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Independence Day</Name>
+		<Day>4</Day>
+		<Month>7</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Labor Day</Name>
+		<Day></Day>
+		<Month>9</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Veterans Day</Name>
+		<Day>11</Day>
+		<Month>11</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Thanksgiving</Name>
+		<Day></Day>
+		<Month>11</Month>
+	</Holiday>
+	<Holiday>
+		<Name>Christmas Day</Name>
+		<Day>25</Day>
+		<Month>12</Month>
+	</Holiday>
+</USHolidays>
