@@ -28,7 +28,7 @@ public class Init {
 		Logger.logINFO("Loading config files");
 		config.loadConfig();
 		config.loadUSHolidays();
-		connectionToDatabase.connect();
+		//connectionToDatabase.connect();
 		Logger.logINFO("Starting GUIs");
 		gui.start();
 	}

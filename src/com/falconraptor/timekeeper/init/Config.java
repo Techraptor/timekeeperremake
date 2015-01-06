@@ -137,8 +137,14 @@ public class Config {
 		Node loop = docnode.getFirstChild().getNextSibling();
 		while (loop != null) {
 			String name = loop.getFirstChild().getNextSibling().getTextContent();
-			int day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling()
-										  .getTextContent());
+			int day = 0;
+			try {
+				day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling()
+										   .getTextContent());
+			} catch (Exception e) {
+				Logger.logERROR
+							  (log + "loadUSHolidays] " + e);
+			}
 			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
 			loop = loop.getNextSibling().getNextSibling();
 			References.settings.usHolidays.add(new Holidays(name, day, month));
