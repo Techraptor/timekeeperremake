@@ -2,7 +2,6 @@ package com.falconraptor.timekeeper.init;
 
 import com.falconraptor.timekeeper.references.*;
 import com.falconraptor.timekeeper.schedule.*;
-import com.falconraptor.timekeeper.school.schools.*;
 import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.Colors;
 import com.falconraptor.utilities.files.*;
@@ -11,6 +10,7 @@ import org.w3c.dom.*;
 
 import java.awt.*;
 import java.io.*;
+import java.util.*;
 
 import static com.falconraptor.timekeeper.references.References.*;
 
@@ -72,7 +72,6 @@ public class Config {
 		defaultatt = school.getAttributes().getNamedItem("Default");
 		if (defaultatt.getNodeValue().equals("true")) {
 			settings.school = settings.defaultSchool;
-			References.settings.atech = new Atech();
 			References.settings.atech.loadAtech();
 		} else settings.school = school.getTextContent();
 		loading.addProgress();
@@ -95,26 +94,22 @@ public class Config {
 		xml.appendElement(1, 2);
 		xml.addTextToElement(2, settings.foreground.toString());
 		String defualt;
-		if (settings.foreground == settings.defaultForeground) defualt = "true";
-		else defualt = "false";
+		defualt = (settings.foreground == settings.defaultForeground) + "";
 		xml.setAttribute(2, "Default", defualt);
 		xml.addElement("Background");
 		xml.appendElement(1, 3);
 		xml.addTextToElement(3, settings.background.toString());
-		if (settings.background == settings.defaultBackground) defualt = "true";
-		else defualt = "false";
+		defualt = (settings.background == settings.defaultBackground) + "";
 		xml.setAttribute(3, "Default", defualt);
 		xml.addElement("Lunch");
 		xml.appendElement(0, 4);
 		xml.addTextToElement(4, settings.lunch + "");
-		if (settings.lunch == settings.defaultLunch) defualt = "true";
-		else defualt = "false";
+		defualt = (settings.lunch == settings.defaultLunch) + "";
 		xml.setAttribute(4, "Default", defualt);
 		xml.addElement("School");
 		xml.appendElement(0, 5);
 		xml.addTextToElement(5, settings.school);
-		if (settings.school == settings.defaultSchool) defualt = "true";
-		else defualt = "false";
+		defualt = Objects.equals(settings.school, settings.defaultSchool) + "";
 		xml.setAttribute(5, "Default", defualt);
 		xml.addElement("Schools");
 		xml.appendElement(0, 6);
@@ -139,11 +134,9 @@ public class Config {
 			String name = loop.getFirstChild().getNextSibling().getTextContent();
 			int day = 0;
 			try {
-				day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling()
-										   .getTextContent());
+				day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent());
 			} catch (Exception e) {
-				Logger.logERROR
-							  (log + "loadUSHolidays] " + e);
+				Logger.logERROR(log + "loadUSHolidays] " + e);
 			}
 			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
 			loop = loop.getNextSibling().getNextSibling();

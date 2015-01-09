@@ -10,22 +10,11 @@ import org.w3c.dom.*;
 import java.util.*;
 
 public class Atech extends School {
-	public Schedule normal = new Schedule(15);
-	public Schedule wednesday = new Schedule(10);
-	public Schedule thursday = new Schedule(10);
-	public Schedule assembly = new Schedule(15);
-	public Lunch normalfirst;
-	public Lunch normalsecond;
-	public Lunch wednesdayfirst;
-	public Lunch wednesdaysecond;
-	public Lunch thursdayfirst;
-	public Lunch thursdaysecond;
-	public Lunch assemblyfirst;
-	public Lunch assemblysecond;
+	public Schedule normal = new Schedule(15), wednesday = new Schedule(10), thursday = new Schedule(10), assembly = new Schedule(15);
+	public Lunch normalfirst, normalsecond, wednesdayfirst, wednesdaysecond, thursdayfirst, thursdaysecond, assemblyfirst, assemblysecond;
 	public ArrayList<Holidays> holidays = new ArrayList<>(0);
 	public ArrayList<Teacher> teachers = new ArrayList<>(0);
-	private String schoolPhone;
-	private String ccsdEmail;
+	private String schoolPhone, ccsdEmail;
 
 	public Atech () {
 		super("Atech", 8);
@@ -213,8 +202,7 @@ public class Atech extends School {
 		Node loop = h.getFirstChild().getNextSibling();
 		while (loop != null) {
 			String name = loop.getFirstChild().getNextSibling().getTextContent();
-			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling()
-										    .getTextContent());
+			int month = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent());
 			int day = Integer.parseInt(loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent());
 			loop = loop.getNextSibling().getNextSibling();
 			holidays.add(new Holidays(name, day, month));
@@ -252,11 +240,10 @@ public class Atech extends School {
 			Node lunch = n.getNextSibling().getNextSibling().getFirstChild().getNextSibling();
 			References.loading.addProgress();
 			int[] lunches = new int[3];
-			lunches[0] = Integer.parseInt(lunch.getTextContent());
-			lunch = lunch.getNextSibling().getNextSibling();
-			lunches[1] = Integer.parseInt(lunch.getTextContent());
-			lunch = lunch.getNextSibling().getNextSibling();
-			lunches[2] = Integer.parseInt(lunch.getTextContent());
+			for (int i = 0; i < 3; i++) {
+				lunches[i] = Integer.parseInt(lunch.getTextContent());
+				lunch = lunch.getNextSibling().getNextSibling();
+			}
 			temp.setLunches(lunches);
 			Node classes = n.getNextSibling().getNextSibling().getNextSibling().getNextSibling().getFirstChild().getNextSibling();
 			References.loading.addProgress();

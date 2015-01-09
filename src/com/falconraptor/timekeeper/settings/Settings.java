@@ -19,6 +19,6 @@ public class Settings {
 	public Color background = defaultBackground;
 	public int lunch = defaultLunch;
 	public String school = defaultSchool;
-	public Atech atech;
+	public Atech atech = new Atech();
 	public ArrayList<Holidays> usHolidays = new ArrayList<>(0);
 }

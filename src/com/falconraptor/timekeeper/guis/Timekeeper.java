@@ -13,6 +13,9 @@ public class Timekeeper extends JFrame {
 	private JLabel date;
 	private JLabel time;
 	private JButton extras;
+	private JButton options;
+	private JLabel left;
+	private JLabel leftTime;
 
 	public Timekeeper () {
 		super("Timekeeper");
@@ -24,8 +27,6 @@ public class Timekeeper extends JFrame {
 			References.extras.setVisible(true);
 		});
 		addWindowListener(References.shutdownProgram());
-		//Timer timer=new Timer();
-		//timer.schedule(new ChangeTime(),0,1000);
 		References.threads.add(new Thread(threadForTime()));
 		References.threads.get(References.threads.size() - 1).setName("DateTime");
 		References.threads.get(References.threads.size() - 1).run();
