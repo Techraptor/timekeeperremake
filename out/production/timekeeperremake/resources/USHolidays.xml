@@ -10,6 +10,11 @@
 		<Month>1</Month>
 	</Holiday>
 	<Holiday>
+		<Name>Presidents' Day</Name>
+		<Month>2</Month>
+		<Day>16</Day>
+	</Holiday>
+	<Holiday>
 		<Name>Washington's Birthday</Name>
 		<Day></Day>
 		<Month>2</Month>

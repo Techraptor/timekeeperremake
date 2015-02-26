@@ -1,12 +1,14 @@
 package com.falconraptor.timekeeper.schedule;
 
+import java.time.*;
+
 public class Lunch {
-	private Time start;
-	private Time end;
+	private LocalTime start;
+	private LocalTime end;
 	private int lunch;
 	private int length;
 
-	public Lunch (int l, Time s, Time e) {
+	public Lunch (int l, LocalTime s, LocalTime e) {
 		lunch = l;
 		start = s;
 		end = e;
@@ -14,8 +16,8 @@ public class Lunch {
 
 	public Lunch (int l, int sh, int sm, int eh, int em) {
 		lunch = l;
-		start = new Time(sh, sm);
-		end = new Time(eh, em);
+		start = LocalTime.of(sh, sm);
+		end = LocalTime.of(eh, em);
 	}
 
 	@Override
@@ -37,11 +39,11 @@ public class Lunch {
 	}
 
 	public void setStart (int hour, int minute) {
-		start = new Time(hour, minute);
+		start = LocalTime.of(hour, minute);
 	}
 
 	public void setEnd (int hour, int minute) {
-		end = new Time(hour, minute);
+		end = LocalTime.of(hour, minute);
 	}
 
 	public int getLunch () {
@@ -56,19 +58,19 @@ public class Lunch {
 		length = (getEnd().getHour() - getStart().getHour()) * 60 + getEnd().getMinute() - getStart().getMinute();
 	}
 
-	public Time getStart () {
+	public LocalTime getStart () {
 		return start;
 	}
 
-	public void setStart (Time s) {
+	public void setStart (LocalTime s) {
 		start = s;
 	}
 
-	public Time getEnd () {
+	public LocalTime getEnd () {
 		return end;
 	}
 
-	public void setEnd (Time s) {
+	public void setEnd (LocalTime s) {
 		end = s;
 	}
 }

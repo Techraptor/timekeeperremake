@@ -34,6 +34,15 @@ public class References {
 	public static ArrayList<Thread> threads = new ArrayList<>(0);
 	public static Users users=new Users();
 
+	public static int[] sti (String[] nums) {
+		int[] stuff = new int[nums.length];
+		for (int i = 0; i < nums.length; i++)
+			try {
+				stuff[i] = Integer.parseInt(nums[i]);
+			} catch (Exception ignored) {
+			}
+		return stuff;
+	}
 	public static WindowListener shutdownProgram () {
 		return new WindowListener() {
 			@Override

@@ -7,7 +7,10 @@ import com.falconraptor.utilities.files.*;
 import com.falconraptor.utilities.logger.*;
 import org.w3c.dom.*;
 
+import java.time.*;
 import java.util.*;
+
+import static com.falconraptor.timekeeper.references.References.*;
 
 public class Atech extends School {
 	public Schedule normal = new Schedule(15), wednesday = new Schedule(10), thursday = new Schedule(10), assembly = new Schedule(15);
@@ -31,34 +34,33 @@ public class Atech extends School {
 	public void loadAtech () {
 		XML xml = References.xml;
 		Logger.logINFO("Loading ATECH");
-		String filename = "ATECH2015.xml";
-		Document doc = xml.readXMLDocFromJar("resources/schools/" + filename);
-		References.loading.addProgress();
+		Document doc = xml.readXMLDocFromJar("resources/schools/ATECH2015.xml");
+		loading.addProgress();
 		Node docnode = doc.getDocumentElement();
 		loadAtechSchedule(docnode.getFirstChild().getNextSibling().getNextSibling().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 		loadAtechHolidays(docnode.getFirstChild().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 		loadAtechTeachers(docnode.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 	}
 
 	private void loadAtechSchedule (Node s) {
 		Logger.logINFO("Loading ATECH Schedule");
 		loadAtechScheduleNormal(s.getFirstChild().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 		loadAtechScheduleWednesday(s.getFirstChild().getNextSibling().getNextSibling().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 		loadAtechScheduleThursday(s.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 		loadAtechScheduleAssembly(s.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling());
-		References.loading.addProgress();
+		loading.addProgress();
 	}
 
 	private void loadAtechScheduleNormal (Node n) {
 		Logger.logINFO("Loading ATECH Normal Schedule");
 		loadschedule("normal", n);
-		References.loading.addProgress();
+		loading.addProgress();
 		normal.calcLengths();
 		normal.setLunch("normal", 1);
 		Logger.logINFO("Done loading ATECH Normal Schedule");
@@ -81,16 +83,16 @@ public class Atech extends School {
 					else if (day.equals("assembly"))
 						assembly.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
 					String[] stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
-					Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+					LocalTime s = LocalTime.of(sti(stuff)[0], sti(stuff)[1]), e;
 					stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
-					Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+					e = LocalTime.of(sti(stuff)[0], sti(stuff)[1]);
 					if (day.equals("normal")) normal.setClass(index, s, e);
 					else if (day.equals("wednesday")) wednesday.setClass(index, s, e);
 					else if (day.equals("thursday")) thursday.setClass(index, s, e);
 					else if (day.equals("assembly")) assembly.setClass(index, s, e);
 				} else addclass(day, loop, index);
 				logSchedule(day, index);
-				References.loading.addProgress();
+				loading.addProgress();
 			} else if (loop.getAttributes().getNamedItem("lunch") != null) {
 				int l = Integer.parseInt(loop.getAttributes().getNamedItem("lunch").getNodeValue());
 				if (day.equals("normal") && l == 1) {
@@ -118,11 +120,11 @@ public class Atech extends School {
 					assemblysecond = getlunch(loop);
 					assemblysecond.calcLength();
 				}
-				References.loading.addProgress();
+				loading.addProgress();
 			}
 			index++;
 			loop = loop.getNextSibling().getNextSibling();
-			References.loading.addProgress();
+			loading.addProgress();
 		}
 	}
 
@@ -135,21 +137,21 @@ public class Atech extends School {
 
 	private Lunch getlunch (Node n) {
 		String[] stuff = n.getFirstChild().getNextSibling().getTextContent().split(":");
-		Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
+		LocalTime s = LocalTime.of(sti(stuff)[0], sti(stuff)[1]), e;
 		stuff = n.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
-		Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-		References.loading.addProgress();
+		e = LocalTime.of(sti(stuff)[0], sti(stuff)[1]);
+		loading.addProgress();
 		return new Lunch(Integer.parseInt(n.getAttributes().getNamedItem("lunch").getNodeValue()), s, e);
 	}
 
 	private void addclass (String day, Node c, int index) {
 		Node child = c.getFirstChild().getNextSibling();
 		String[] stuff = child.getTextContent().split(":");
-		Time s = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-		References.loading.addProgress();
+		LocalTime s = LocalTime.of(sti(stuff)[0], sti(stuff)[1]), e;
+		loading.addProgress();
 		stuff = child.getNextSibling().getNextSibling().getTextContent().split(":");
-		Time e = new Time(Integer.parseInt(stuff[0]), Integer.parseInt(stuff[1]));
-		References.loading.addProgress();
+		e = LocalTime.of(sti(stuff)[0], sti(stuff)[1]);
+		loading.addProgress();
 		if (day.equals("normal")) {
 			normal.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
 			normal.setClass(index, s, e);
@@ -167,7 +169,7 @@ public class Atech extends School {
 			assembly.setClass(index, s, e);
 			assembly.aClass[index].calcLength();
 		}
-		References.loading.addProgress();
+		loading.addProgress();
 	}
 
 	private void loadAtechScheduleWednesday (Node w) {
@@ -175,7 +177,7 @@ public class Atech extends School {
 		loadschedule("wednesday", w);
 		wednesday.calcLengths();
 		wednesday.setLunch("wednesday", 2);
-		References.loading.addProgress();
+		loading.addProgress();
 		Logger.logINFO("Done loading ATECH Wednesday Schedule");
 	}
 
@@ -184,7 +186,7 @@ public class Atech extends School {
 		loadschedule("thursday", t);
 		thursday.calcLengths();
 		thursday.setLunch("thursday", 1);
-		References.loading.addProgress();
+		loading.addProgress();
 		Logger.logINFO("Done loading ATECH Thursday Schedule");
 	}
 
@@ -193,7 +195,7 @@ public class Atech extends School {
 		loadschedule("assembly", a);
 		assembly.calcLengths();
 		assembly.setLunch("assembly", 1);
-		References.loading.addProgress();
+		loading.addProgress();
 		Logger.logINFO("Done loading ATECH Assembly Schedule");
 	}
 
@@ -207,7 +209,7 @@ public class Atech extends School {
 			loop = loop.getNextSibling().getNextSibling();
 			holidays.add(new Holidays(name, day, month));
 			Logger.logALL("Holiday: " + holidays.get(holidays.size() - 1) + " Loaded");
-			References.loading.addProgress();
+			loading.addProgress();
 		}
 	}
 
@@ -218,16 +220,16 @@ public class Atech extends School {
 		loop = loop.getNextSibling().getNextSibling();
 		ccsdEmail = loop.getTextContent();
 		loop = loop.getNextSibling().getNextSibling();
-		References.loading.addProgress();
-		References.loading.addProgress();
+		loading.addProgress();
+		loading.addProgress();
 		while (loop != null) {
 			Node name = loop.getFirstChild().getNextSibling();
 			Node n = name.getFirstChild().getNextSibling();
 			Teacher temp = new Teacher(n.getNextSibling().getNextSibling().getTextContent(), n.getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent(), n.getTextContent());
 			n = name.getNextSibling().getNextSibling();
-			References.loading.addProgress();
+			loading.addProgress();
 			Node con = name.getNextSibling().getNextSibling().getFirstChild().getNextSibling();
-			References.loading.addProgress();
+			loading.addProgress();
 			if (!con.getTextContent().equals("")) temp.setExtension(Integer.parseInt(con.getTextContent()));
 			con = con.getNextSibling().getNextSibling();
 			temp.setEmail(con.getTextContent());
@@ -238,7 +240,7 @@ public class Atech extends School {
 			n = n.getNextSibling().getNextSibling();
 			temp.setDepartment(n.getTextContent());
 			Node lunch = n.getNextSibling().getNextSibling().getFirstChild().getNextSibling();
-			References.loading.addProgress();
+			loading.addProgress();
 			int[] lunches = new int[3];
 			for (int i = 0; i < 3; i++) {
 				lunches[i] = Integer.parseInt(lunch.getTextContent());
@@ -246,16 +248,38 @@ public class Atech extends School {
 			}
 			temp.setLunches(lunches);
 			Node classes = n.getNextSibling().getNextSibling().getNextSibling().getNextSibling().getFirstChild().getNextSibling();
-			References.loading.addProgress();
+			loading.addProgress();
 			while (classes != null) {
 				temp.add(classes.getTextContent());
 				classes = classes.getNextSibling().getNextSibling();
 			}
 			temp.setSchedules();
 			teachers.add(temp);
-			References.loading.addProgress();
+			loading.addProgress();
 			Logger.logALL("Teacher: " + teachers.get(teachers.size() - 1) + " Loaded");
 			loop = loop.getNextSibling().getNextSibling();
 		}
+	}
+
+	@Override
+	public String toString () {
+		return "Atech{" +
+			  "assembly=" + assembly +
+			  ", assemblyfirst=" + assemblyfirst +
+			  ", assemblysecond=" + assemblysecond +
+			  ", ccsdEmail='" + ccsdEmail + '\'' +
+			  ", holidays=" + holidays +
+			  ", normal=" + normal +
+			  ", normalfirst=" + normalfirst +
+			  ", normalsecond=" + normalsecond +
+			  ", schoolPhone='" + schoolPhone + '\'' +
+			  ", teachers=" + teachers +
+			  ", thursday=" + thursday +
+			  ", thursdayfirst=" + thursdayfirst +
+			  ", thursdaysecond=" + thursdaysecond +
+			  ", wednesday=" + wednesday +
+			  ", wednesdayfirst=" + wednesdayfirst +
+			  ", wednesdaysecond=" + wednesdaysecond +
+			  '}';
 	}
 }

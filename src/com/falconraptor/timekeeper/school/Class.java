@@ -1,15 +1,15 @@
 package com.falconraptor.timekeeper.school;
 
-import com.falconraptor.timekeeper.schedule.*;
+import java.time.*;
 
 public class Class {
 	private String name;
-	private Time start;
-	private Time end;
+	private LocalTime start;
+	private LocalTime end;
 	private int lunch;
 	private int length;
 
-	public Class (String name, Time start, Time end) {
+	public Class (String name, LocalTime start, LocalTime end) {
 		this.name = name;
 		this.start = start;
 		this.end = end;
@@ -17,9 +17,8 @@ public class Class {
 
 	public Class (String n, int sh, int sm, int eh, int em) {
 		name = n;
-		start = new Time(sh, sm);
-		end = new Time(eh, em);
-
+		start = LocalTime.of(sh, sm);
+		end = LocalTime.of(eh, em);
 	}
 
 	public Class (String name) {
@@ -43,7 +42,7 @@ public class Class {
 	}
 
 	public void calcLength () {
-		length = end.convert() - start.convert();
+		length = end.minusHours(start.getHour()).minusMinutes(start.getMinute()).getHour() * 60 + end.minusHours(start.getHour()).minusMinutes(start.getMinute()).getMinute();
 	}
 
 	@Override
@@ -59,19 +58,19 @@ public class Class {
 		this.name = name;
 	}
 
-	public Time getStart () {
+	public LocalTime getStart () {
 		return start;
 	}
 
-	public void setStart (Time start) {
+	public void setStart (LocalTime start) {
 		this.start = start;
 	}
 
-	public Time getEnd () {
+	public LocalTime getEnd () {
 		return end;
 	}
 
-	public void setEnd (Time end) {
+	public void setEnd (LocalTime end) {
 		this.end = end;
 	}
 }

@@ -4,6 +4,7 @@ import com.falconraptor.timekeeper.references.*;
 import com.falconraptor.timekeeper.school.Class;
 import com.falconraptor.utilities.logger.*;
 
+import java.time.*;
 import java.util.*;
 
 public class Schedule {
@@ -38,7 +39,7 @@ public class Schedule {
 		return aClass.length - 1;
 	}
 
-	public void setClass (int index, Time start, Time end) {
+	public void setClass (int index, LocalTime start, LocalTime end) {
 		if (index > getAmountOfClasses()) {
 			Logger.logERROR("Trying to change class that is not set in school");
 			return;
