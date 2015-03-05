@@ -52,20 +52,16 @@ public class Timekeeper extends JFrame {
 	}
 
 	private void doTime () {
-		new Thread(() -> {
-			leftTime.setText("");
-			LocalTime temp = checkTime();
-			if (temp == null) temp = LocalTime.of(0, 0);
-			else if (temp.getHour() == 0 && temp.getMinute() == 0 && temp.getSecond() == 0 || temp.getSecond() == 1) {
-				if (temp.getSecond() == 1 && temp.getNano() < settings.usHolidays.size())
-					leftTime.setText(settings.usHolidays.get(temp.getNano()).getName());
-				else if (temp.getNano() < settings.atech.holidays.size())
-					leftTime.setText(settings.atech.holidays.get(temp.getNano()).getName());
-			}
-			if (leftTime.getText().equals("")) leftTime.setText(temp.getHour() + ":" + temp.getMinute());
-			repaint();
-			validate();
-		}).start();
+		leftTime.setText("");
+		LocalTime temp = checkTime();
+		if (temp == null) temp = LocalTime.of(0, 0);
+		else if (temp.getHour() == 0 && temp.getMinute() == 0 && temp.getSecond() == 0 || temp.getSecond() == 1) {
+			if (temp.getSecond() == 1 && temp.getNano() < settings.usHolidays.size())
+				leftTime.setText(settings.usHolidays.get(temp.getNano()).getName());
+			else if (temp.getNano() < settings.atech.holidays.size())
+				leftTime.setText(settings.atech.holidays.get(temp.getNano()).getName());
+		}
+		if (leftTime.getText().equals("")) leftTime.setText(temp.getHour() + ":" + temp.getMinute());
 	}
 
 	private LocalTime checkTime () {
@@ -101,8 +97,13 @@ public class Timekeeper extends JFrame {
 
 	private LocalTime checkTimeLeft (Class a) {
 		if (a == null) return null;
-		LocalTime temp = LocalTime.now(), left = LocalTime.of(a.getEnd().minusHours(temp.getHour()).getHour(), a.getEnd().minusHours(temp.getHour()).minusMinutes(temp.getMinute()).getMinute());
+		LocalTime temp = LocalTime.now(), left = LocalTime.of(0, 0, 0, 0);
+		left = left.withHour(a.getEnd().minusHours(temp.getHour()).getHour());
+		if (a.getEnd().getMinute() > temp.getMinute())
+			left = left.withMinute(60 - left.minusMinutes(a.getEnd().getMinute() - temp.getMinute()).getMinute());
+		else left = left.withMinute(left.minusMinutes(a.getEnd().getMinute()).getMinute());
 		if (left.getHour() * 60 + left.getMinute() > a.getLength()) return null;
+		else if (left.compareTo(LocalTime.of(0, 0, 0, 0)) == 0) return null;
 		return left;
 	}
 
