@@ -32,7 +32,7 @@ public class References {
 	public static Create create;
 	public static Login login;
 	public static ArrayList<Thread> threads = new ArrayList<>(0);
-	public static Users users=new Users();
+	public static Users users = new Users();
 
 	public static int[] sti (String[] nums) {
 		int[] stuff = new int[nums.length];
@@ -43,6 +43,7 @@ public class References {
 			}
 		return stuff;
 	}
+
 	public static WindowListener shutdownProgram () {
 		return new WindowListener() {
 			@Override

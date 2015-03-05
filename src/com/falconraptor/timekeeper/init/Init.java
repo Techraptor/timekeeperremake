@@ -20,7 +20,7 @@ public class Init {
 		gui = new GUI();
 		timekeepergui = new com.falconraptor.timekeeper.guis.Timekeeper();
 		loading = new Loading();
-		connectionToDatabase=new ConnectionToDatabase();
+		connectionToDatabase = new ConnectionToDatabase();
 	}
 
 	public void start () {

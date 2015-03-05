@@ -2,7 +2,7 @@ package com.falconraptor.timekeeper.guis;
 
 import com.darkleach7.extra.*;
 import com.falconraptor.timekeeper.references.*;
-import com.falconraptor.utilities.logger.*;
+import com.falconraptor.timekeeper.school.Class;
 
 import javax.swing.*;
 import java.awt.*;
@@ -32,15 +32,8 @@ public class Timekeeper extends JFrame {
 			References.extras.setVisible(true);
 		});
 		addWindowListener(shutdownProgram());
-		threads.add(new Thread(threadForTime()));
-		threads.get(threads.size() - 1).setName("DateTime");
-		threads.get(threads.size() - 1).start();
 		setMaximumSize(new Dimension(200, 80));
 		setMinimumSize(new Dimension(200, 80));
-	}
-
-	private Runnable threadForTime () {
-		return () -> new java.util.Timer().schedule(new ChangeTime(), 0, 1000);
 	}
 
 	@Override
@@ -49,6 +42,30 @@ public class Timekeeper extends JFrame {
 		System.out.println(loading.getValue());
 		loading.dispose();
 		super.setVisible(b);
+		threads.add(new Thread(threadForTime()));
+		threads.get(threads.size() - 1).setName("DateTime");
+		threads.get(threads.size() - 1).start();
+	}
+
+	private Runnable threadForTime () {
+		return () -> new java.util.Timer().schedule(new ChangeTime(), 0, 900);
+	}
+
+	private void doTime () {
+		new Thread(() -> {
+			leftTime.setText("");
+			LocalTime temp = checkTime();
+			if (temp == null) temp = LocalTime.of(0, 0);
+			else if (temp.getHour() == 0 && temp.getMinute() == 0 && temp.getSecond() == 0 || temp.getSecond() == 1) {
+				if (temp.getSecond() == 1 && temp.getNano() < settings.usHolidays.size())
+					leftTime.setText(settings.usHolidays.get(temp.getNano()).getName());
+				else if (temp.getNano() < settings.atech.holidays.size())
+					leftTime.setText(settings.atech.holidays.get(temp.getNano()).getName());
+			}
+			if (leftTime.getText().equals("")) leftTime.setText(temp.getHour() + ":" + temp.getMinute());
+			repaint();
+			validate();
+		}).start();
 	}
 
 	private LocalTime checkTime () {
@@ -68,37 +85,30 @@ public class Timekeeper extends JFrame {
 		}
 		if (usIndex != -1) return LocalTime.of(0, 0, 1, usIndex);
 		if (atechIndex != -1) return LocalTime.of(0, 0, 0, atechIndex);
-		if (Objects.equals(date.getDayOfWeek().name(), "WEDNESDAY")) {
+		if (Objects.equals(date.getDayOfWeek().name(), "WEDNESDAY"))
 			for (com.falconraptor.timekeeper.school.Class a : settings.atech.wednesday.aClass) {
-				LocalTime temp = LocalTime.now();
-				temp = temp.minusHours(a.getStart().getHour());
-				temp = temp.minusMinutes(a.getStart().getMinute());
-				if (temp.getHour() * 60 + temp.getMinute() < a.getLength())
-					return LocalTime.of(a.getLength() / 60 - temp.getHour(), a.getLength() % 60 - temp.getMinute());
+				if (checkTimeLeft(a) != null) return checkTimeLeft(a);
 			}
-		} else if (date.getDayOfWeek().name().equals("THURSDAY")) {
+		else if (date.getDayOfWeek().name().equals("THURSDAY"))
 			for (com.falconraptor.timekeeper.school.Class a : settings.atech.thursday.aClass) {
-				LocalTime temp = LocalTime.now();
-				temp = temp.minusHours(a.getStart().getHour());
-				temp = temp.minusMinutes(a.getStart().getMinute());
-				if (temp.getHour() * 60 + temp.getMinute() < a.getLength())
-					return LocalTime.of(a.getLength() / 60 - temp.getHour(), a.getLength() % 60 - temp.getMinute());
+				if (checkTimeLeft(a) != null) return checkTimeLeft(a);
 			}
-		} else {
-			for (com.falconraptor.timekeeper.school.Class a : settings.atech.normal.aClass) {
-				LocalTime temp = LocalTime.now();
-				temp = temp.minusHours(a.getStart().getHour());
-				temp = temp.minusMinutes(a.getStart().getMinute());
-				if (temp.getHour() * 60 + temp.getMinute() < a.getLength())
-					return LocalTime.of(a.getLength() / 60 - temp.getHour(), a.getLength() % 60 - temp.getMinute());
+		else for (com.falconraptor.timekeeper.school.Class a : settings.atech.normal.aClass) {
+				if (checkTimeLeft(a) != null) return checkTimeLeft(a);
 			}
-		}
 		return null;
+	}
+
+	private LocalTime checkTimeLeft (Class a) {
+		if (a == null) return null;
+		LocalTime temp = LocalTime.now(), left = LocalTime.of(a.getEnd().minusHours(temp.getHour()).getHour(), a.getEnd().minusHours(temp.getHour()).minusMinutes(temp.getMinute()).getMinute());
+		if (left.getHour() * 60 + left.getMinute() > a.getLength()) return null;
+		return left;
 	}
 
 	private class ChangeTime extends TimerTask {
 		@Override
-		public void run () {
+		public final void run () {
 			LocalDateTime localDateTime = LocalDateTime.now();
 			if (lastSecond == localDateTime.getSecond()) return;
 			lastSecond = localDateTime.getSecond();
@@ -110,29 +120,13 @@ public class Timekeeper extends JFrame {
 				am = false;
 			}
 			dates += localDateTime.getMonthValue() + "\\" + localDateTime.getDayOfMonth() + "\\" + localDateTime.getYear();
-			times += hour + ":" + localDateTime.getMinute() + " ";
+			times += hour + ":" + localDateTime.getMinute() + ":" + localDateTime.getSecond() + " ";
 			if (am) times += "AM";
 			else times += "PM";
 			date.setText(dates);
 			time.setText(times);
-			if (lastMinute != localDateTime.getMinute()) {
-				new Thread(() -> {
-					leftTime.setText("");
-					Logger.logINFO("Starting to check time");
-					LocalTime temp = checkTime();
-					Logger.logINFO("Finished checking time");
-					if (temp == null) temp = LocalTime.of(0, 0);
-					else if (temp.getHour() == 0 && temp.getMinute() == 0 && temp.getSecond() == 0 || temp.getSecond() == 1) {
-						if (temp.getSecond() == 1 && temp.getNano() < settings.usHolidays.size())
-							leftTime.setText(settings.usHolidays.get(temp.getNano()).getName());
-						else if (temp.getNano() < settings.atech.holidays.size())
-							leftTime.setText(settings.atech.holidays.get(temp.getNano()).getName());
-					}
-					if (leftTime.getText().equals("")) leftTime.setText(temp.getHour() + ":" + temp.getMinute());
-					repaint();
-					validate();
-					this.cancel();
-				}).start();
+			if (lastMinute != localDateTime.getMinute() || lastMinute == -1) {
+				doTime();
 				lastMinute = localDateTime.getMinute();
 			}
 			repaint();
