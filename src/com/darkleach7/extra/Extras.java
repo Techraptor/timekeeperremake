@@ -9,11 +9,11 @@ import java.io.*;
 import java.util.*;
 
 public class Extras extends JFrame {
-	public ArrayList<JButton> b = new ArrayList<JButton>(0);
-	public ArrayList<JPanel> p = new ArrayList<JPanel>(0);
+	public final Calender cal = new Calender();
+	private final ArrayList<JButton> b = new ArrayList<>(0);
+	private final ArrayList<JPanel> p = new ArrayList<>(0);
 	public Box box = Box.createVerticalBox();
 	public boolean firstmine = true, firstlaunch = true;
-	public Calender cal = new Calender();
 
 	public Extras () {
 		super("Extras");
@@ -44,35 +44,43 @@ public class Extras extends JFrame {
 		b.get(b.size() - 1).setEnabled(false);
 		b.add(new JButton("Calender"));
 		p.add(new JPanel(new GridLayout(5, 2, 0, 0)));
-		for (int i = 0; i < b.size(); i++) {
-			b.get(i).addActionListener(clicked(b.get(i).getText()));
-			p.get(0).add(b.get(i));
+		for (JButton aB : b) {
+			aB.addActionListener(clicked(aB.getText()));
+			p.get(0).add(aB);
 		}
 		super.add(p.get(0));
 		super.pack();
 	}
 
 	private ActionListener clicked (final String button) {
-		return new ActionListener() {
-			public void actionPerformed (ActionEvent ae) {
-				if (button.equals("MineSweeper")) try {
-					Desktop.getDesktop().open(new File("resources\\jars\\minesweeper.jar"));
-				} catch (Exception e) {
-					System.err.println(e);
-				}
-				else if (button.equals("TimeGame")) try {
-					Desktop.getDesktop().open(new File("resources\\jars\\timegame.jar"));
-				} catch (Exception e) {
-					System.err.println(e);
-				}
-				else if (button.equals("Calender")) cal.appear();
-				else if (button.equals("UsefulShortcuts")) try {
-					Desktop.getDesktop().open(new File("usefulshortcuts.jar"));
-				} catch (Exception e) {
-					System.err.println(e);
-				}
-				dispose();
+		return ae -> {
+			switch (button) {
+				case "MineSweeper":
+					try {
+						Desktop.getDesktop().open(new File("resources\\jars\\minesweeper.jar"));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					break;
+				case "TimeGame":
+					try {
+						Desktop.getDesktop().open(new File("resources\\jars\\timegame.jar"));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					break;
+				case "Calender":
+					cal.appear();
+					break;
+				case "UsefulShortcuts":
+					try {
+						Desktop.getDesktop().open(new File("usefulshortcuts.jar"));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					break;
 			}
+			dispose();
 		};
 	}
 }

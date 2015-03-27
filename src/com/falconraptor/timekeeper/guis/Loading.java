@@ -28,7 +28,7 @@ public class Loading extends JFrame {
 		progressBar1.setValue(progressBar1.getValue() + 1);
 	}
 
-	public int getValue () {
+	public final int getValue () {
 		return progressBar1.getValue();
 	}
 }

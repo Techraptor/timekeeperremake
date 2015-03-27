@@ -13,7 +13,7 @@ public class Name {
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Name{" +
 			  "first='" + first + '\'' +
 			  ", last='" + last + '\'' +
@@ -22,7 +22,7 @@ public class Name {
 			  '}';
 	}
 
-	public String getFirst () {
+	public final String getFirst () {
 		return first;
 	}
 
@@ -30,7 +30,7 @@ public class Name {
 		this.first = first;
 	}
 
-	public String getLast () {
+	public final String getLast () {
 		return last;
 	}
 
@@ -38,7 +38,7 @@ public class Name {
 		this.last = last;
 	}
 
-	public String getMiddle () {
+	public final String getMiddle () {
 		return middle;
 	}
 
@@ -46,7 +46,7 @@ public class Name {
 		this.middle = middle;
 	}
 
-	public String getTitle () {
+	public final String getTitle () {
 		return title;
 	}
 

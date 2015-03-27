@@ -7,7 +7,7 @@ import java.sql.*;
 import static com.falconraptor.timekeeper.other.References.*;
 
 public class ConnectionToDatabase {
-	public Connection connection;
+	private Connection connection;
 
 	public void connect () {
 		try {

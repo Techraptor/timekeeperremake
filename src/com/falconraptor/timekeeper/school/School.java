@@ -3,7 +3,7 @@ package com.falconraptor.timekeeper.school;
 import com.falconraptor.timekeeper.schedule.*;
 
 public class School {
-	public Schedule schedule;
+	private Schedule schedule;
 	private String name;
 	private int periods;
 
@@ -11,13 +11,13 @@ public class School {
 		this.name = name;
 	}
 
-	public School (String name, int periods) {
+	protected School (String name, int periods) {
 		this.name = name;
 		this.periods = periods;
 		schedule = new Schedule(periods);
 	}
 
-	public String getName () {
+	public final String getName () {
 		return name;
 	}
 
@@ -25,7 +25,7 @@ public class School {
 		this.name = name;
 	}
 
-	public int getPeriods () {
+	public final int getPeriods () {
 		return periods;
 	}
 

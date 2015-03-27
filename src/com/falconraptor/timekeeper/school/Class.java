@@ -25,7 +25,7 @@ public class Class {
 		this.name = name;
 	}
 
-	public int getLunch () {
+	public final int getLunch () {
 		return lunch;
 	}
 
@@ -33,7 +33,7 @@ public class Class {
 		this.lunch = lunch;
 	}
 
-	public int getLength () {
+	public final int getLength () {
 		return length;
 	}
 
@@ -41,16 +41,16 @@ public class Class {
 		this.length = length;
 	}
 
-	public void calcLength () {
+	public final void calcLength () {
 		length = end.minusHours(start.getHour()).minusMinutes(start.getMinute()).getHour() * 60 + end.minusHours(start.getHour()).minusMinutes(start.getMinute()).getMinute();
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Class{" + "name='" + name + '\'' + ", start=" + start + ", end=" + end + ", lunch=" + lunch + ", length=" + length + '}';
 	}
 
-	public String getName () {
+	public final String getName () {
 		return name;
 	}
 
@@ -58,7 +58,7 @@ public class Class {
 		this.name = name;
 	}
 
-	public LocalTime getStart () {
+	public final LocalTime getStart () {
 		return start;
 	}
 
@@ -66,7 +66,7 @@ public class Class {
 		this.start = start;
 	}
 
-	public LocalTime getEnd () {
+	public final LocalTime getEnd () {
 		return end;
 	}
 

@@ -56,15 +56,15 @@
 			</Class>
 			<Class period="7">
 				<Start>12:26</Start>
-				<End>1:08</End>
+				<End>13:08</End>
 			</Class>
 			<Class period="8">
-				<Start>1:12</Start>
-				<End>1:54</End>
+				<Start>13:12</Start>
+				<End>13:54</End>
 			</Class>
 			<Class period="As">
-				<Start>1:54</Start>
-				<End>2:15</End>
+				<Start>13:54</Start>
+				<End>14:15</End>
 			</Class>
 			<Lunch lunch="1">
 				<Start>11:06</Start>
@@ -98,7 +98,7 @@
 			</Class>
 			<Class period="7">
 				<Start>12:17</Start>
-				<End>1:42</End>
+				<End>13:42</End>
 			</Class>
 			<Lunch lunch="1">
 				<Start>10:18</Start>
@@ -132,7 +132,7 @@
 			</Class>
 			<Class period="8">
 				<Start>12:17</Start>
-				<End>1:42</End>
+				<End>13:42</End>
 			</Class>
 			<Lunch lunch="1">
 				<Start>10:18</Start>
@@ -178,7 +178,7 @@
 			</Class>
 			<Class period="8">
 				<Start>12:18</Start>
-				<End>1:54</End>
+				<End>13:54</End>
 				<length>96</length>
 			</Class>
 			<Lunch lunch="1">

@@ -8,12 +8,8 @@ import java.util.*;
 import java.util.function.*;
 
 public class Teacher {
-	public Schedule normal;
-	public Schedule wednesday;
-	public Schedule thursday;
-	public Schedule assembly;
+	private final ArrayList<String> classes = new ArrayList<>(0);
 	private Name name;
-	private ArrayList<String> classes = new ArrayList<>(0);
 	private String room;
 	private String department;
 	private int extension;
@@ -26,7 +22,7 @@ public class Teacher {
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Teacher{" +
 			  "name=" + name +
 			  ", classes=" + classes +
@@ -40,10 +36,10 @@ public class Teacher {
 	}
 
 	public void setSchedules () {
-		normal = new Schedule(8);
-		wednesday = new Schedule(4);
-		thursday = new Schedule(4);
-		assembly = new Schedule(8);
+		Schedule normal = new Schedule(8);
+		Schedule wednesday = new Schedule(4);
+		Schedule thursday = new Schedule(4);
+		Schedule assembly = new Schedule(8);
 		Atech a = References.settings.atech;
 		for (int i = 1; i < classes.size(); i++) {
 			normal.addClass(i - 1, classes.get(i - 1));
@@ -66,7 +62,7 @@ public class Teacher {
 		thursday.calcLengths();
 	}
 
-	public int[] getLunches () {
+	public final int[] getLunches () {
 		return lunches;
 	}
 
@@ -74,7 +70,7 @@ public class Teacher {
 		this.lunches = lunches;
 	}
 
-	public String getWebsite () {
+	public final String getWebsite () {
 		return website;
 	}
 
@@ -82,7 +78,7 @@ public class Teacher {
 		this.website = website;
 	}
 
-	public int getExtension () {
+	public final int getExtension () {
 		return extension;
 	}
 
@@ -90,7 +86,7 @@ public class Teacher {
 		this.extension = extension;
 	}
 
-	public String getEmail () {
+	public final String getEmail () {
 		return email;
 	}
 
@@ -98,7 +94,7 @@ public class Teacher {
 		this.email = email;
 	}
 
-	public Name getName () {
+	public final Name getName () {
 		return name;
 	}
 
@@ -110,7 +106,7 @@ public class Teacher {
 		name = new Name(first, last, title);
 	}
 
-	public String getDepartment () {
+	public final String getDepartment () {
 
 		return department;
 	}
@@ -119,7 +115,7 @@ public class Teacher {
 		this.department = department;
 	}
 
-	public String getRoom () {
+	public final String getRoom () {
 		return room;
 	}
 

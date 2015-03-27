@@ -21,7 +21,7 @@ public class Lunch {
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Lunch{" +
 			  "start=" + start +
 			  ", end=" + end +
@@ -30,7 +30,7 @@ public class Lunch {
 			  '}';
 	}
 
-	public int getLength () {
+	public final int getLength () {
 		return length;
 	}
 
@@ -46,7 +46,7 @@ public class Lunch {
 		end = LocalTime.of(hour, minute);
 	}
 
-	public int getLunch () {
+	public final int getLunch () {
 		return lunch;
 	}
 
@@ -54,11 +54,11 @@ public class Lunch {
 		lunch = l;
 	}
 
-	public void calcLength () {
+	public final void calcLength () {
 		length = (getEnd().getHour() - getStart().getHour()) * 60 + getEnd().getMinute() - getStart().getMinute();
 	}
 
-	public LocalTime getStart () {
+	final LocalTime getStart () {
 		return start;
 	}
 
@@ -66,7 +66,7 @@ public class Lunch {
 		start = s;
 	}
 
-	public LocalTime getEnd () {
+	final LocalTime getEnd () {
 		return end;
 	}
 

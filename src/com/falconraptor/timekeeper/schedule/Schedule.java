@@ -8,19 +8,19 @@ import java.time.*;
 import java.util.*;
 
 public class Schedule {
-	public com.falconraptor.timekeeper.school.Class[] aClass;
+	public final com.falconraptor.timekeeper.school.Class[] aClass;
 	private Lunch lunch;
 
 	public Schedule (int classes) {
 		aClass = new Class[classes];
 	}
 
-	public void calcLengths () {
+	public final void calcLengths () {
 		for (Class c : aClass) if (c != null) c.calcLength();
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Schedule{" +
 			  "aClass=" + Arrays.toString(aClass) +
 			  ", lunch=" + lunch +
@@ -35,7 +35,7 @@ public class Schedule {
 		aClass[index] = new Class(name);
 	}
 
-	public int getAmountOfClasses () {
+	final int getAmountOfClasses () {
 		return aClass.length - 1;
 	}
 
@@ -49,18 +49,23 @@ public class Schedule {
 	}
 
 	public void setLunch (String schedule, int l) {
-		if (schedule.equals("normal")) {
-			if (l == 1) lunch = References.settings.atech.normalfirst;
-			else if (l == 2) lunch = References.settings.atech.normalsecond;
-		} else if (schedule.equals("wednesday")) {
-			if (l == 1) lunch = References.settings.atech.normalfirst;
-			else if (l == 2) lunch = References.settings.atech.normalsecond;
-		} else if (schedule.equals("thursday")) {
-			if (l == 1) lunch = References.settings.atech.normalfirst;
-			else if (l == 2) lunch = References.settings.atech.normalsecond;
-		} else if (schedule.equals("assembly")) {
-			if (l == 1) lunch = References.settings.atech.normalfirst;
-			else if (l == 2) lunch = References.settings.atech.normalsecond;
+		switch (schedule) {
+			case "normal":
+				if (l == 1) lunch = References.settings.atech.normalfirst;
+				else if (l == 2) lunch = References.settings.atech.normalsecond;
+				break;
+			case "wednesday":
+				if (l == 1) lunch = References.settings.atech.normalfirst;
+				else if (l == 2) lunch = References.settings.atech.normalsecond;
+				break;
+			case "thursday":
+				if (l == 1) lunch = References.settings.atech.normalfirst;
+				else if (l == 2) lunch = References.settings.atech.normalsecond;
+				break;
+			case "assembly":
+				if (l == 1) lunch = References.settings.atech.normalfirst;
+				else if (l == 2) lunch = References.settings.atech.normalsecond;
+				break;
 		}
 	}
 }

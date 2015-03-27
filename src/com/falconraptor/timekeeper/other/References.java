@@ -16,13 +16,15 @@ import java.util.*;
 
 public class References {
 	public static final String log = "[com.falconraptor.timekeeper.";
-	public static Console console = Logger.console;
+	public static final Console console = Logger.console;
+	public static final Shutdown shutdown = new Shutdown();
+	public static final ArrayList<Thread> threads = new ArrayList<>(0);
+	public static final Users users = new Users();
 	public static Init init;
 	public static Config config;
 	public static Settings settings;
 	public static Colors colors;
 	public static XML xml;
-	public static Shutdown shutdown = new Shutdown();
 	public static Timekeeper timekeeper;
 	public static GUI gui;
 	public static com.falconraptor.timekeeper.guis.Timekeeper timekeepergui;
@@ -31,8 +33,6 @@ public class References {
 	public static ConnectionToDatabase connectionToDatabase;
 	public static Create create;
 	public static Login login;
-	public static ArrayList<Thread> threads = new ArrayList<>(0);
-	public static Users users = new Users();
 
 	public static int[] sti (String[] nums) {
 		int[] stuff = new int[nums.length];
@@ -83,7 +83,7 @@ public class References {
 		};
 	}
 
-	public static void checkForShutdown () {
+	private static void checkForShutdown () {
 		try {
 			Thread.sleep(2000);
 		} catch (Exception e) {
@@ -101,7 +101,9 @@ public class References {
 			if (extras.cal != null) disposed.add(!extras.cal.isVisible());
 			else disposed.add(true);
 		} else disposed.add(true);
-		for (Boolean b : disposed) if (!b) return;
+		for (Boolean b : disposed) {
+			if (!b) return;
+		}
 		threads.forEach(java.lang.Thread::interrupt);
 		System.exit(0);
 	}

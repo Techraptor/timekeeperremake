@@ -13,21 +13,31 @@ import java.util.*;
 import static com.falconraptor.timekeeper.other.References.*;
 
 public class Atech extends School {
-	public Schedule normal = new Schedule(15), wednesday = new Schedule(10), thursday = new Schedule(10), assembly = new Schedule(15);
-	public Lunch normalfirst, normalsecond, wednesdayfirst, wednesdaysecond, thursdayfirst, thursdaysecond, assemblyfirst, assemblysecond;
-	public ArrayList<Holidays> holidays = new ArrayList<>(0);
-	public ArrayList<Teacher> teachers = new ArrayList<>(0);
+	public final Schedule normal = new Schedule(15);
+	public final Schedule wednesday = new Schedule(10);
+	public final Schedule thursday = new Schedule(10);
+	public final Schedule assembly = new Schedule(15);
+	public final ArrayList<Holidays> holidays = new ArrayList<>(0);
+	private final ArrayList<Teacher> teachers = new ArrayList<>(0);
+	public Lunch normalfirst;
+	public Lunch normalsecond;
+	private Lunch wednesdayfirst;
+	private Lunch wednesdaysecond;
+	private Lunch thursdayfirst;
+	private Lunch thursdaysecond;
+	private Lunch assemblyfirst;
+	private Lunch assemblysecond;
 	private String schoolPhone, ccsdEmail;
 
 	public Atech () {
 		super("Atech", 8);
 	}
 
-	public String getCcsdEmail () {
+	public final String getCcsdEmail () {
 		return ccsdEmail;
 	}
 
-	public String getSchoolPhone () {
+	public final String getSchoolPhone () {
 		return schoolPhone;
 	}
 
@@ -74,22 +84,38 @@ public class Atech extends School {
 				if (loop.getAttributes().getNamedItem("period").getNodeValue().equals("6")) {
 					addclass(day, loop, index);
 					index++;
-					if (day.equals("normal"))
-						normal.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
-					else if (day.equals("wednesday"))
-						wednesday.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
-					else if (day.equals("thursday"))
-						thursday.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
-					else if (day.equals("assembly"))
-						assembly.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
+					switch (day) {
+						case "normal":
+							normal.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
+							break;
+						case "wednesday":
+							wednesday.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
+							break;
+						case "thursday":
+							thursday.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
+							break;
+						case "assembly":
+							assembly.addClass(index, loop.getAttributes().getNamedItem("period").getNodeValue());
+							break;
+					}
 					String[] stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
 					LocalTime s = LocalTime.of(sti(stuff)[0], sti(stuff)[1]), e;
 					stuff = loop.getFirstChild().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getNextSibling().getTextContent().split(":");
 					e = LocalTime.of(sti(stuff)[0], sti(stuff)[1]);
-					if (day.equals("normal")) normal.setClass(index, s, e);
-					else if (day.equals("wednesday")) wednesday.setClass(index, s, e);
-					else if (day.equals("thursday")) thursday.setClass(index, s, e);
-					else if (day.equals("assembly")) assembly.setClass(index, s, e);
+					switch (day) {
+						case "normal":
+							normal.setClass(index, s, e);
+							break;
+						case "wednesday":
+							wednesday.setClass(index, s, e);
+							break;
+						case "thursday":
+							thursday.setClass(index, s, e);
+							break;
+						case "assembly":
+							assembly.setClass(index, s, e);
+							break;
+					}
 				} else addclass(day, loop, index);
 				logSchedule(day, index);
 				loading.addProgress();
@@ -129,10 +155,20 @@ public class Atech extends School {
 	}
 
 	private void logSchedule (String day, int index) {
-		if (day.equals("normal")) Logger.logALL("Normal Class: " + normal.aClass[index] + " Loaded");
-		else if (day.equals("wednesday")) Logger.logALL("Wednesday Class: " + wednesday.aClass[index] + " Loaded");
-		else if (day.equals("thursday")) Logger.logALL("Thursday Class: " + thursday.aClass[index] + " Loaded");
-		else if (day.equals("assembly")) Logger.logALL("Assembly Class: " + assembly.aClass[index] + " Loaded");
+		switch (day) {
+			case "normal":
+				Logger.logALL("Normal Class: " + normal.aClass[index] + " Loaded");
+				break;
+			case "wednesday":
+				Logger.logALL("Wednesday Class: " + wednesday.aClass[index] + " Loaded");
+				break;
+			case "thursday":
+				Logger.logALL("Thursday Class: " + thursday.aClass[index] + " Loaded");
+				break;
+			case "assembly":
+				Logger.logALL("Assembly Class: " + assembly.aClass[index] + " Loaded");
+				break;
+		}
 	}
 
 	private Lunch getlunch (Node n) {
@@ -152,22 +188,27 @@ public class Atech extends School {
 		stuff = child.getNextSibling().getNextSibling().getTextContent().split(":");
 		e = LocalTime.of(sti(stuff)[0], sti(stuff)[1]);
 		loading.addProgress();
-		if (day.equals("normal")) {
-			normal.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
-			normal.setClass(index, s, e);
-			normal.aClass[index].calcLength();
-		} else if (day.equals("wednesday")) {
-			wednesday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
-			wednesday.setClass(index, s, e);
-			wednesday.aClass[index].calcLength();
-		} else if (day.equals("thursday")) {
-			thursday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
-			thursday.setClass(index, s, e);
-			thursday.aClass[index].calcLength();
-		} else if (day.equals("assembly")) {
-			assembly.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
-			assembly.setClass(index, s, e);
-			assembly.aClass[index].calcLength();
+		switch (day) {
+			case "normal":
+				normal.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+				normal.setClass(index, s, e);
+				normal.aClass[index].calcLength();
+				break;
+			case "wednesday":
+				wednesday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+				wednesday.setClass(index, s, e);
+				wednesday.aClass[index].calcLength();
+				break;
+			case "thursday":
+				thursday.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+				thursday.setClass(index, s, e);
+				thursday.aClass[index].calcLength();
+				break;
+			case "assembly":
+				assembly.addClass(index, c.getAttributes().getNamedItem("period").getNodeValue());
+				assembly.setClass(index, s, e);
+				assembly.aClass[index].calcLength();
+				break;
 		}
 		loading.addProgress();
 	}
@@ -262,7 +303,7 @@ public class Atech extends School {
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Atech{" +
 			  "assembly=" + assembly +
 			  ", assemblyfirst=" + assemblyfirst +

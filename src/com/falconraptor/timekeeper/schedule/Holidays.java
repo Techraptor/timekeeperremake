@@ -12,7 +12,7 @@ public class Holidays {
 	}
 
 	@Override
-	public String toString () {
+	public final String toString () {
 		return "Holidays{" +
 			  "name='" + name + '\'' +
 			  ", day=" + day +
@@ -20,7 +20,7 @@ public class Holidays {
 			  '}';
 	}
 
-	public String getName () {
+	public final String getName () {
 		return name;
 	}
 
@@ -28,7 +28,7 @@ public class Holidays {
 		this.name = name;
 	}
 
-	public int getDay () {
+	public final int getDay () {
 		return day;
 	}
 
@@ -36,7 +36,7 @@ public class Holidays {
 		this.day = day;
 	}
 
-	public int getMonth () {
+	public final int getMonth () {
 		return month;
 	}
 

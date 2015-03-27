@@ -11,17 +11,12 @@ public class Timekeeper {
 	public static final String log = References.log + "Timekeeper.";
 
 	public static void main (String[] args) {
-		if (args.length >= 1) {
+		for (String s : args) {
 			try {
 				Logger.level = Integer.parseInt(args[0]);
 			} catch (Exception e) {
-				Logger.logERROR(log + "main] " + e);
+				if (s.equals("console")) console.setVisible(true);
 			}
-		}
-		Logger.logINFO("Log level set at: " + Logger.level);
-		if (args.length >= 2) {
-			if (args[1].toLowerCase().equals("console")) console.setVisible(true);
-			Logger.logINFO("Console started");
 		}
 		shutdown.packagename = Timekeeper.class.getSimpleName();
 		init = new Init();
@@ -34,7 +29,7 @@ public class Timekeeper {
 		init.start();
 	}
 
-	public void shutdown () {
+	void shutdown () {
 		Logger.logINFO("Shutting Down");
 		config.saveConfig();
 		Logger.logINFO("Config Saved");

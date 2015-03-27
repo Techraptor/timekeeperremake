@@ -10,26 +10,30 @@ import java.time.*;
 import java.util.*;
 
 public class Calender extends JFrame {
-    public final static String log = References.log + ".extra.utilities.Calender.Calender.";
-    public ArrayList<JPanel> p = new ArrayList<>(0);
-    public ArrayList<JButton> b = new ArrayList<>(0);
-    public ArrayList<JButton> d = new ArrayList<>(0);
-    public HashMap<JButton, ActionListener> da = new HashMap<JButton, ActionListener>();
+	private final static String log = References.log + ".extra.utilities.Calender.Calender.";
+	private final ArrayList<JPanel> p = new ArrayList<>(0);
+	private final ArrayList<JButton> b = new ArrayList<>(0);
+	private final ArrayList<JButton> d = new ArrayList<>(0);
+	private final HashMap<JButton, ActionListener> da = new HashMap<>();
     //public ArrayList<JLabel> l = new ArrayList<>(0);
-    public ArrayList<JMenu> m = new ArrayList<>(0);
-    public ArrayList<JMenuItem> mi = new ArrayList<>(0);
+    private final ArrayList<JMenu> m = new ArrayList<>(0);
     //public ArrayList<ActionListener> a = new ArrayList<>(0);
-    public JMenuBar menu = new JMenuBar();
-
-    public JLabel[] ld = new JLabel[7];
-    public boolean[] nm = new boolean[43];
+    private final JMenuBar menu = new JMenuBar();
+	private final JLabel[] ld = new JLabel[7];
     //public editdays ed = new editdays();
-    public JButton left = new JButton(""), right = new JButton(""), selectDate = new JButton("Go to");
-    int firstDayOfMonth, lastDayOfMonth, lengthOfMonth, lastDayOfLastMonth;
-    LocalDate currentDate = LocalDate.now();
-    LocalDate workingDate = currentDate.withDayOfMonth(1);
-    LocalDate selectedDate = LocalDate.now().withYear(1900).withDayOfMonth(1).withMonth(1);
-    Font font = new Font("Tahoma", Font.PLAIN, 12);
+    private final JButton left = new JButton("");
+	private final JButton right = new JButton("");
+	private final LocalDate currentDate = LocalDate.now();
+	public ArrayList<JMenuItem> mi = new ArrayList<>(0);
+	public boolean[] nm = new boolean[43];
+	public JButton selectDate = new JButton("Go to");
+	int lastDayOfMonth;
+	int lastDayOfLastMonth;
+	private int firstDayOfMonth;
+	private int lengthOfMonth;
+	private LocalDate workingDate = currentDate.withDayOfMonth(1);
+	private LocalDate selectedDate = LocalDate.now().withYear(1900).withDayOfMonth(1).withMonth(1);
+	private Font font = new Font("Tahoma", Font.PLAIN, 12);
 
     //int int = new int int = new int;
     public Calender() {
@@ -194,10 +198,10 @@ public class Calender extends JFrame {
     }
 
     private void clearMap() {
-        for (int i = 0; i < d.size(); i++) {
-            d.get(i).removeActionListener(da.get(d.get(i)));
-        }
-        da.clear();
+	    for (JButton aD : d) {
+		    aD.removeActionListener(da.get(aD));
+	    }
+	    da.clear();
     }
 
     private int fixday(int day) {
@@ -263,11 +267,11 @@ public class Calender extends JFrame {
             Color selectedColor = JColorChooser.showDialog(guiFrame, "Pick a Color"
                     , Color.GREEN);
             this.getContentPane().setBackground(selectedColor);
-            for (int i = 0; i < d.size(); i++) {
-                d.get(i).setBackground(selectedColor);
-                //b.get(i).setBackground(selectedColor);
-            }
-        });
+		   for (JButton aD : d) {
+			   aD.setBackground(selectedColor);
+			   //b.get(i).setBackground(selectedColor);
+		   }
+	   });
 
         JMenuItem bgImage = new JMenuItem("Set Custom Calender Image");
         //addActionListener
@@ -314,11 +318,10 @@ public class Calender extends JFrame {
     }
 
     private JMenuItem setMenuItem(JMenuItem j, int mn, String tt, int mn2, int ae) {
-        JMenuItem i = j;
-        i.setMnemonic(mn);
-        i.setToolTipText(tt);
-        i.setAccelerator(KeyStroke.getKeyStroke(mn2, ae));
-        return i;
+	    j.setMnemonic(mn);
+	    j.setToolTipText(tt);
+	    j.setAccelerator(KeyStroke.getKeyStroke(mn2, ae));
+	    return j;
     }
 
     private JPanel dateGUI() {
@@ -328,12 +331,12 @@ public class Calender extends JFrame {
         };
         Integer[] days = new Integer[31];
         for (int i = 0; i < 31; i++) {
-            days[i] = new Integer(i + 1);
-        }
+		   days[i] = i + 1;
+	   }
         Integer[] years = new Integer[201];
         for (int i = 0; i < 201; i++) {
-            years[i] = new Integer(i + 1900);
-        }
+		   years[i] = i + 1900;
+	   }
         JComboBox month = new JComboBox(months);
         JComboBox day = new JComboBox(days);
         JComboBox year = new JComboBox(years);
@@ -415,8 +418,8 @@ public class Calender extends JFrame {
         }
     }
 
-    public Font getFont() {
-        return font;
+	public final Font getFont () {
+		return font;
     }
 
     public void setFont(Font f) {
