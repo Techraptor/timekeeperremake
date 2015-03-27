@@ -7,7 +7,7 @@ import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.files.*;
 import com.falconraptor.utilities.logger.*;
 
-import static com.falconraptor.timekeeper.references.References.*;
+import static com.falconraptor.timekeeper.other.References.*;
 
 public class Init {
 	public Init () {

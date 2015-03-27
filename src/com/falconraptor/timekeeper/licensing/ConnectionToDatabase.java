@@ -4,7 +4,7 @@ import com.falconraptor.utilities.logger.*;
 
 import java.sql.*;
 
-import static com.falconraptor.timekeeper.references.References.*;
+import static com.falconraptor.timekeeper.other.References.*;
 
 public class ConnectionToDatabase {
 	public Connection connection;

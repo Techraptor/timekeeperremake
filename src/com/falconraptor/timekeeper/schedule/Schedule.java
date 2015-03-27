@@ -1,6 +1,6 @@
 package com.falconraptor.timekeeper.schedule;
 
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 import com.falconraptor.timekeeper.school.Class;
 import com.falconraptor.utilities.logger.*;
 

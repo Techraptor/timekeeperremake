@@ -1,11 +1,11 @@
 package com.falconraptor.timekeeper;
 
 import com.falconraptor.timekeeper.init.*;
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 import com.falconraptor.utilities.files.*;
 import com.falconraptor.utilities.logger.*;
 
-import static com.falconraptor.timekeeper.references.References.*;
+import static com.falconraptor.timekeeper.other.References.*;
 
 public class Timekeeper {
 	public static final String log = References.log + "Timekeeper.";

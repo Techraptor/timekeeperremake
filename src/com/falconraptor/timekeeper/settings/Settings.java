@@ -1,6 +1,6 @@
 package com.falconraptor.timekeeper.settings;
 
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 import com.falconraptor.timekeeper.schedule.*;
 import com.falconraptor.timekeeper.school.*;
 import com.falconraptor.timekeeper.school.schools.*;

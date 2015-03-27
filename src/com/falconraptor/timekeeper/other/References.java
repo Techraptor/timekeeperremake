@@ -1,4 +1,4 @@
-package com.falconraptor.timekeeper.references;
+package com.falconraptor.timekeeper.other;
 
 import com.darkleach7.extra.*;
 import com.falconraptor.timekeeper.Timekeeper;

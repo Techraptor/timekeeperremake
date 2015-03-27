@@ -2,93 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7fcb138-651d-4d17-9ba9-e28105c4f6f8" name="Default" comment="fixed timeleft">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\extras$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\extras.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\mines\mineGrid.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\mines\minesweeper$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\mines\minesweeper$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\mines\minesweeper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$10.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$11.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$6.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$7.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$8.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui$9.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\timegame\timegamegui.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\commands.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\faced.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\files.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\main$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\main$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\main$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\main.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\usefulshortcuts\urls.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\calender$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\calender$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\calender$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\calender.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\checklist.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\editdays$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\editdays.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\events$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\Calender\events.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\basenums$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\basenums.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\binaryclock$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\binaryclock$UpdateUITask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\binaryclock.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\calculator$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\calculator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\countdown$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\countdown$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\countdown$UpdateUITask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\countdown.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\daysleftofschool$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\daysleftofschool$UpdateUITask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\daysleftofschool.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\stopwatch$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\stopwatch$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\stopwatch$UpdateUITask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\stopwatch.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\extra\utilities\util.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Holiday.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\ImagePanel.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$6.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$7.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main$UpdateUITask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\Schedule.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\main\checkversion.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\options\coloroptionsdialog.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\options\optionsdialog$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\options\optionsdialog$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\options\optionsdialog$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\options\optionsdialog$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeperold\options\optionsdialog.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\Timekeeper.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeper\references\References$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\com\falconraptor\timekeeper\references\References.class" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\src\com\falconraptor\timekeeper\references\References.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/schools/Atech.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/schools/Atech.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Calender/Calender.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Calender/Calender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/init/Config.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/init/Config.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/licensing/ConnectionToDatabase.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/licensing/ConnectionToDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Extras$1.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Extras$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Extras.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Extras.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/references/References$1.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/references/References$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/references/References.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/references/References.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/init/GUI.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/init/GUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/init/Init.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/init/Init.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/guis/Loading.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/guis/Loading.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/schedule/Schedule.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/schedule/Schedule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/settings/Settings.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/settings/Settings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/Teacher.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/Teacher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/Timekeeper$1.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/Timekeeper$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/guis/Timekeeper$ChangeTime.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/guis/Timekeeper$ChangeTime.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/Timekeeper.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/Timekeeper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/guis/Timekeeper.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/guis/Timekeeper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/timekeeper/timekeeper.jar" afterPath="$PROJECT_DIR$/out/artifacts/timekeeper/timekeeper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/resources/schools/ATECH2015.xml" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/resources/schools/ATECH2015.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/resources/schools/ATECH2015.xml" afterPath="$PROJECT_DIR$/resources/resources/schools/ATECH2015.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/darkleach7/extra/Extras.java" afterPath="$PROJECT_DIR$/src/com/darkleach7/extra/Extras.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/darkleach7/extra/Calender/Calender.java" afterPath="$PROJECT_DIR$/src/com/darkleach7/extra/Calender/Calender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/licensing/ConnectionToDatabase.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/licensing/ConnectionToDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/GUI.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/GUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Init.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Init.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Loading.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Loading.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Schedule.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Schedule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/settings/Settings.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/settings/Settings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Teacher.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Teacher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -155,30 +99,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Timekeeper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Timekeeper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20899472" vertical-offset="1689" max-vertical-offset="2465">
-              <caret line="102" column="41" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="3094">
+              <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1404#1405#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Class.java">
+      <file leaf-file-name="Timekeeper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1105">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding>
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#1391#1392#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="731">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.47826087" vertical-offset="1173" max-vertical-offset="2414">
+              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Init.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Init.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="578">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,36 +145,6 @@
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="References.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/references/References.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1496">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#windowOpened#0;class#1589:2112" expanded="false" />
-                <element signature="method#windowClosing#0;class#1589:2112" expanded="false" />
-                <element signature="e#1798#1799#0" expanded="false" />
-                <element signature="e#1827#1828#0" expanded="false" />
-                <element signature="method#windowIconified#0;class#1589:2112" expanded="false" />
-                <element signature="method#windowDeiconified#0;class#1589:2112" expanded="false" />
-                <element signature="method#windowActivated#0;class#1589:2112" expanded="false" />
-                <element signature="method#windowDeactivated#0;class#1589:2112" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Atech.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2998" max-vertical-offset="4760">
-              <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -267,17 +195,20 @@
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Init.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Date.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/settings/Settings.java" />
-        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Time.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/references/References.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Lunch.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Class.java" />
         <option value="$PROJECT_DIR$/src/com/darkleach7/extra/Extras.java" />
-        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form" />
         <option value="$PROJECT_DIR$/resources/resources/USHolidays.xml" />
         <option value="$PROJECT_DIR$/resources/resources/schools/ATECH2015.xml" />
+        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/LocalDate.java" />
+        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/LocalTime.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java" />
+        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form" />
+        <option value="$PROJECT_DIR$/Timekeeper.xml" />
+        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" />
       </list>
     </option>
   </component>
@@ -433,6 +364,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,7 +411,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="logger" />
+              <option name="myItemId" value="files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -669,7 +601,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="references" />
+              <option name="myItemId" value="other" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,6 +682,10 @@
               <option name="myItemId" value="guis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Timekeeper" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -768,10 +704,65 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timekeeper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timekeeperremake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timekeeperremake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timekeeperremake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timekeeperremake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Calender" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1247,7 +1238,11 @@
       <workItem from="1424654278034" duration="2951000" />
       <workItem from="1424963674099" duration="5103000" />
       <workItem from="1424971927986" duration="3804000" />
-      <workItem from="1425581863654" duration="4309000" />
+      <workItem from="1425581863654" duration="4344000" />
+      <workItem from="1425667412758" duration="1097000" />
+      <workItem from="1426778326937" duration="2582000" />
+      <workItem from="1426976942058" duration="792000" />
+      <workItem from="1427403459677" duration="2481000" />
     </task>
     <task id="LOCAL-00001" summary="need help with the shutdown hook">
       <created>1410189999100</created>
@@ -1375,11 +1370,17 @@
       <option name="project" value="LOCAL" />
       <updated>1425582908020</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fixed timeleft">
+      <created>1425586231120</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1425586231120</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43833000" />
+    <option name="totallyTimeSpent" value="50820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1402,7 +1403,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32636657" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1413,6 +1413,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3971061" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32636657" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1452,20 +1453,23 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/references/References.java</url>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java</url>
           <line>2</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java</url>
-          <line>99</line>
+          <url>file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java</url>
+          <line>38</line>
           <properties />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1474,6 +1478,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1088">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#1391#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1496">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="method#windowOpened#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowClosing#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowIconified#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowDeiconified#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowActivated#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowDeactivated#0;class#1584:2107" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3213" max-vertical-offset="4675">
+          <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1088">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#1391#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1496">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="method#windowOpened#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowClosing#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowIconified#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowDeiconified#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowActivated#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowDeactivated#0;class#1584:2107" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3213" max-vertical-offset="4675">
+          <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/settings/Colors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2771739" vertical-offset="0" max-vertical-offset="425">
@@ -1534,13 +1624,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="2176">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1807,74 +1890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/settings/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Schedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="1037">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/references/References.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#windowOpened#0;class#1589:2112" expanded="false" />
-            <element signature="method#windowClosing#0;class#1589:2112" expanded="false" />
-            <element signature="e#1798#1799#0" expanded="false" />
-            <element signature="e#1827#1828#0" expanded="false" />
-            <element signature="method#windowIconified#0;class#1589:2112" expanded="false" />
-            <element signature="method#windowDeiconified#0;class#1589:2112" expanded="false" />
-            <element signature="method#windowActivated#0;class#1589:2112" expanded="false" />
-            <element signature="method#windowDeactivated#0;class#1589:2112" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Holidays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="799">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#534#535#0" expanded="false" />
-            <element signature="e#551#552#0" expanded="false" />
-            <element signature="e#651#652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../utilities/src/com/falconraptor/utilities/logger/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3108108" vertical-offset="565" max-vertical-offset="935">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#961#962#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35675675" vertical-offset="1058" max-vertical-offset="2431">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="816">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1882,28 +1901,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2173913" vertical-offset="0" max-vertical-offset="391">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Init.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3043478" vertical-offset="85" max-vertical-offset="578">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/darkleach7/extra/Extras.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
           <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1911,7 +1915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="969">
           <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1919,15 +1922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17957747" vertical-offset="0" max-vertical-offset="31586">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2998" max-vertical-offset="4760">
-          <caret line="205" column="18" selection-start-line="205" selection-start-column="18" selection-end-line="205" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1939,27 +1933,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.7391305" vertical-offset="0" max-vertical-offset="2142">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/schools/Atech.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4760">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/settings/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="408">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Schedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4322251" vertical-offset="35" max-vertical-offset="1037">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/school/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1105">
+        <state vertical-scroll-proportion="2.2173913" vertical-offset="17" max-vertical-offset="1071">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
             <element signature="e#1391#1392#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1496">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="method#windowOpened#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowClosing#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowIconified#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowDeiconified#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowActivated#0;class#1584:2107" expanded="false" />
+            <element signature="method#windowDeactivated#0;class#1584:2107" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Init.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="578">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20899472" vertical-offset="1689" max-vertical-offset="2465">
-          <caret line="102" column="41" selection-start-line="102" selection-start-column="41" selection-end-line="102" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="3094">
+          <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utilities/src/com/falconraptor/utilities/files/XML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29923275" vertical-offset="1039" max-vertical-offset="2856">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utilities/src/com/falconraptor/utilities/logger/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="935">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="731">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Timekeeper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47826087" vertical-offset="1173" max-vertical-offset="2414">
+          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

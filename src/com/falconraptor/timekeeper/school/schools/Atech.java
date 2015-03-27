@@ -1,6 +1,6 @@
 package com.falconraptor.timekeeper.school.schools;
 
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 import com.falconraptor.timekeeper.schedule.*;
 import com.falconraptor.timekeeper.school.*;
 import com.falconraptor.utilities.files.*;
@@ -10,7 +10,7 @@ import org.w3c.dom.*;
 import java.time.*;
 import java.util.*;
 
-import static com.falconraptor.timekeeper.references.References.*;
+import static com.falconraptor.timekeeper.other.References.*;
 
 public class Atech extends School {
 	public Schedule normal = new Schedule(15), wednesday = new Schedule(10), thursday = new Schedule(10), assembly = new Schedule(15);

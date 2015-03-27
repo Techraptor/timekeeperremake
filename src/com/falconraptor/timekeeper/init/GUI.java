@@ -1,6 +1,6 @@
 package com.falconraptor.timekeeper.init;
 
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 import com.falconraptor.utilities.logger.*;
 
 public class GUI {

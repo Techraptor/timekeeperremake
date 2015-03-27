@@ -1,6 +1,6 @@
 package com.falconraptor.timekeeper.init;
 
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 import com.falconraptor.timekeeper.schedule.*;
 import com.falconraptor.timekeeper.settings.*;
 import com.falconraptor.utilities.Colors;
@@ -12,7 +12,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.*;
 
-import static com.falconraptor.timekeeper.references.References.*;
+import static com.falconraptor.timekeeper.other.References.*;
 
 public class Config {
 	private final String log = References.log + "init.Config.";
@@ -24,8 +24,9 @@ public class Config {
 		Document doc;
 		try {
 			doc = xml.readXMLDoc("Timekeeper.xml");
+			if (doc == null) throw new Exception();
 		} catch (Exception e) {
-			Logger.logERROR(log + e);
+			Logger.logERROR(log + "loadConfig] " + e);
 			saveConfig();
 			return;
 		}
@@ -34,7 +35,7 @@ public class Config {
 		try {
 			docnode = doc.getDocumentElement();
 		} catch (Exception e) {
-			Logger.logERROR(log + e);
+			Logger.logERROR(log + "loadConfig] " + e);
 			saveConfig();
 			return;
 		}
@@ -76,7 +77,6 @@ public class Config {
 		} else settings.school = school.getTextContent();
 		loading.addProgress();
 		References.settings = settings;
-		References.xml = xml;
 	}
 
 	public void saveConfig () {
@@ -85,6 +85,7 @@ public class Config {
 		Logger.logINFO("Saving Config");
 		File file = new File("Timekeeper.xml");
 		if (file.exists()) file.delete();
+		xml.elements.clear();
 		xml.setNewFile();
 		xml.addElement("Timekeeper");
 		xml.appendToDoc(0);
@@ -93,8 +94,7 @@ public class Config {
 		xml.addElement("Foreground");
 		xml.appendElement(1, 2);
 		xml.addTextToElement(2, settings.foreground.toString());
-		String defualt;
-		defualt = (settings.foreground == settings.defaultForeground) + "";
+		String defualt = (settings.foreground == settings.defaultForeground) + "";
 		xml.setAttribute(2, "Default", defualt);
 		xml.addElement("Background");
 		xml.appendElement(1, 3);
@@ -115,7 +115,6 @@ public class Config {
 		xml.appendElement(0, 6);
 		xml.saveFile("Timekeeper.xml");
 		References.settings = settings;
-		References.xml = xml;
 	}
 
 	private void setDefaults () {

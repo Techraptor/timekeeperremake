@@ -1,6 +1,6 @@
 package com.falconraptor.timekeeper.guis;
 
-import com.falconraptor.timekeeper.references.*;
+import com.falconraptor.timekeeper.other.*;
 
 import javax.swing.*;
 
