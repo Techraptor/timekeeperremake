@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7fcb138-651d-4d17-9ba9-e28105c4f6f8" name="Default" comment="fixed timeleft">
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\blackleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\blackright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\blueleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\blueright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\cyanleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\cyanright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\grayleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\grayright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\greenleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\greenright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\lightgrayleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\lightgrayright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\magentaleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\magentaright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\orangeleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\orangeright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\pinkleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\pinkright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\redleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\redright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\whiteleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\whiteright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\yellowleft.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\Calender\yellowright.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\timekeeper\matrix.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dustin\Desktop\programing\ideajprojects\timekeeperremake\out\production\timekeeperremake\resources\images\usefulshortcuts\usefulshortcutsicon.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/schools/Atech.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/schools/Atech.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Calender/Calender.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Calender/Calender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Extras.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/darkleach7/extra/Extras.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/settings/Settings.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/settings/Settings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/Teacher.class" afterPath="$PROJECT_DIR$/out/production/timekeeperremake/com/falconraptor/timekeeper/school/Teacher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/timekeeper/timekeeper.jar" afterPath="$PROJECT_DIR$/out/artifacts/timekeeper/timekeeper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" afterPath="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/timekeeper.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/timekeeper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timekeeperremake.iws" />
@@ -92,7 +61,7 @@
       <file leaf-file-name="Timekeeper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="3264">
+            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3077">
               <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
               <folding />
             </state>
@@ -102,13 +71,21 @@
       <file leaf-file-name="References.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1021" max-vertical-offset="1666">
-              <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1938">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1749#1750#0" expanded="false" />
-                <element signature="e#1778#1779#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="2414">
+              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,8 +93,8 @@
       <file leaf-file-name="Timekeeper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6086956" vertical-offset="51" max-vertical-offset="646">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.22053872" vertical-offset="39" max-vertical-offset="646">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -178,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/LocalTime.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.form" />
         <option value="$PROJECT_DIR$/Timekeeper.xml" />
-        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java" />
         <option value="$PROJECT_DIR$/src/com/darkleach7/extra/Calender/Calender.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/schedule/Schedule.java" />
@@ -186,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/com/darkleach7/extra/Extras.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java" />
         <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java" />
+        <option value="$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java" />
       </list>
     </option>
   </component>
@@ -342,7 +319,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,11 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utilities.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
+              <option name="myItemId" value="Utilities.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,41 +353,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utilities.jar" />
+              <option name="myItemId" value="Utilities.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timekeeperremake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -707,6 +649,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -721,7 +664,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -1190,7 +1133,8 @@
       <workItem from="1427403459677" duration="2579000" />
       <workItem from="1427483616766" duration="3634000" />
       <workItem from="1429210350462" duration="921000" />
-      <workItem from="1429303902546" duration="307000" />
+      <workItem from="1429303902546" duration="410000" />
+      <workItem from="1429573350519" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="need help with the shutdown hook">
       <created>1410189999100</created>
@@ -1336,11 +1280,17 @@
       <option name="project" value="LOCAL" />
       <updated>1427489506398</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixed timeleft">
+      <created>1429304302059</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1429304302059</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55780000" />
+    <option name="totallyTimeSpent" value="56552000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1363,10 +1313,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32636657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32636657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31993568" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1377,7 +1327,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32475883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1387,11 +1336,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4340836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4340836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4533762" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32475883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32636657" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1465,9 +1415,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1496">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1492,10 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1088">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="e#1416#1417#0" expanded="false" />
-            <element signature="e#1433#1434#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,9 +1453,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1496">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1778#1779#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1744,14 +1686,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c91a58c1/73979b08-e932-44f2-a7fa-bdb4bee1b79f/techrapt_solder..users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1801,14 +1743,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c91a58c1/73979b08-e932-44f2-a7fa-bdb4bee1b79f/techrapt_timekeeper..users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1830,11 +1772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="799">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1879,9 +1816,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="935">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#961#962#0" expanded="false" />
-            <element signature="e#1633#1634#0" expanded="false" />
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#1677#1678#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1913,7 +1849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="650" max-vertical-offset="1122">
           <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1936,6 +1871,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5178082" vertical-offset="2259" max-vertical-offset="31586">
           <caret line="144" column="39" selection-start-line="144" selection-start-column="39" selection-end-line="144" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1951,10 +1887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="1071">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#1416#1417#0" expanded="false" />
-            <element signature="e#1433#1434#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1993,14 +1925,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1018" max-vertical-offset="2414">
-          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/darkleach7/extra/Calender/Calender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5540" max-vertical-offset="7191">
@@ -2013,6 +1937,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1462">
           <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2024,18 +1949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1021" max-vertical-offset="1666">
-          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1778#1779#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/guis/Timekeeper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3332">
@@ -2044,10 +1957,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/other/References.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1938">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/init/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="2414">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/falconraptor/timekeeper/Timekeeper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6086956" vertical-offset="51" max-vertical-offset="646">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.22053872" vertical-offset="39" max-vertical-offset="646">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -2083,7 +2014,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>utilities</last-edited>
+          <last-edited>scala-sdk-2.11.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,0 +1,8 @@
+[2015-3-6] [10:40:20] [ERROR] [com.falconraptor.timekeeper.init.Config.loadUSHolidays] java.lang.NumberFormatException: For input string: ""
+[2015-3-6] [10:40:20] [ERROR] [com.falconraptor.timekeeper.init.Config.loadUSHolidays] java.lang.NumberFormatException: For input string: ""
+[2015-3-6] [10:40:20] [ERROR] [com.falconraptor.timekeeper.init.Config.loadUSHolidays] java.lang.NumberFormatException: For input string: ""
+[2015-3-6] [10:40:20] [ERROR] [com.falconraptor.timekeeper.init.Config.loadUSHolidays] java.lang.NumberFormatException: For input string: ""
+[2015-3-6] [10:40:20] [ERROR] [com.falconraptor.timekeeper.init.Config.loadUSHolidays] java.lang.NumberFormatException: For input string: ""
+[2015-3-6] [10:40:40] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Recreated
+[2015-3-6] [10:40:40] [DEBUG] [com.falconraptor.utilities.files.Write.close] File Saved
+[2015-3-6] [10:40:40] [DEBUG] [com.falconraptor.utilities.files.Write.Write] File Created

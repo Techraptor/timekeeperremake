@@ -48,14 +48,14 @@ public class Config {
 		Node defaultatt = foreground.getAttributes().getNamedItem("Default");
 		if (defaultatt.getNodeValue().equals("true")) settings.foreground = settings.defaultForeground;
 		else {
-			int[] color = Colors.checkerrors(foreground.getTextContent());
+			int[] color = Colors.checkErrors(foreground.getTextContent());
 			settings.foreground = new Color(color[0], color[1], color[2]);
 		}
 		loading.addProgress();
 		defaultatt = background.getAttributes().getNamedItem("Default");
 		if (defaultatt.getNodeValue().equals("true")) settings.background = settings.defaultBackground;
 		else {
-			int[] color = Colors.checkerrors(foreground.getTextContent());
+			int[] color = Colors.checkErrors(foreground.getTextContent());
 			settings.background = new Color(color[0], color[1], color[2]);
 		}
 		loading.addProgress();
