@@ -6,8 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class Gui extends JFrame {
-    public Gui() {
+public class GUI extends JFrame {
+    public GUI() {
         super("Timekeeper");
         setContentPane(setGui());
         setVisible(true);
